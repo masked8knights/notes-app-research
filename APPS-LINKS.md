@@ -248,3 +248,22 @@ Compiled by the compiler lane from every findings file in notesapp/findings/ plu
 - Apple SpeechAnalyzer - https://developer.apple.com/documentation/speech/speechanalyzer - Apple's proprietary on-device speech framework (WWDC2025/277) - thread-c-local-models
 - Kokoro-82M - https://huggingface.co/hexgrad/Kokoro-82M - TTS candidate (Apache-2.0); code at https://github.com/hexgrad/kokoro, zh variant via onnx-community - thread-c-local-models
 - Piper - https://github.com/rhasspy/piper (archived; continuation https://github.com/OHF-Voice/piper1-gpl, GPL) - Lightweight TTS candidate - thread-c-local-models
+
+## R5 additions: study/PDF-textbook apps and IdeaCraft
+
+- aamirenic/IdeaCraft - https://github.com/aamirenic/IdeaCraft - Local-first Tauri 2 + Rust notes app (SQLite, block editor with Markdown shortcuts, page history, search palette, templates, export/backup, sync folder, opt-in local Ollama AI, minisign auto-updates; v1.0.0 2026-10-23, Windows-only installers) - open-source y (MIT) - R5-user-link
+- rickyb82/ideacraft - https://github.com/rickyb82/ideacraft - Unrelated namesake Rust mind-map canvas self-described as craft-family; likely confusion source - open-source y (license per repo) - R5-ideacraft
+- Drawboard PDF - https://www.drawboard.com - Windows stylus PDF markup prized for pressure ink over Windows Ink, virtual-paper feel, dockable tool favorites, palm rejection, calibrated measurement/protractor tools; 2023 pricing switch moved pressure ink behind Pro - open-source n - R5-user-link
+- Drawboard Projects (formerly Bullclip) - https://www.drawboard.com/projects - Team markup platform with live sync, versioning, Procore/Revit integrations - open-source n - R5-drawboard
+- PDFCraft (ArtCraft) - https://www.getartcraft.com - Desktop Rust PDF workbench; ArtCraft lineup is 13 pure-Rust apps (no-webviews principle), separate focused apps, one launcher - open-source n - R5-study
+- Flexcil - https://www.flexcil.com - Pen-gesture study annotator (circle-to-notebook, excerpt linking between PDF and notes); community top asks: working sync, pixel eraser, shape tools, better PDF engine - open-source n - R5-study
+- LiquidText - https://www.liquidtext.net - Active-reading workspace (excerpts on canvas, linked to source); complaints: lag, subscription-gated sync, no write-back to source PDF on desktop - open-source n - R5-study
+- CollaNote - (iPad App Store) - Free iPad notes+PDF+collaboration app; chronic bugginess and free-to-paid whiplash documented - open-source n - R5-study
+- MarginNote 4 - https://www.marginnote.com - Document+mindmap+flashcards study system; complaints: rigidity, bugs, handwriting polish missing - open-source n - R5-study
+- Xodo - https://xodo.com - Mainstream PDF annotator; crash complaints and monetization switches - open-source n - R5-study
+- PDF Expert (Readdle) - https://pdfexpert.com - PDF annotator; subscription switch backlash documented - open-source n - R5-study
+- University Notes: Study Notes (2026) - https://apps.apple.com/us/app/university-notes/id6777402601 - Memorization mechanics on PDFs (hide-answer layer, tape tool, rewrite loop) - open-source n - R5-study
+- Write by Styluslabs - https://github.com/styluslabs/Write - Cross-platform handwriting app with loved ink-manipulation primitives (select, move, erase, reflow handwritten text), open SVG format - open-source y (license per repo) - R5-study
+- Zotero - https://www.zotero.org - Reference manager with built-in PDF reader and annotation extraction back into notes with citations; ZotFile plugin is the notes-link-back-to-source benchmark - open-source y (AGPL) - R5-study
+- Hypothesis - https://web.hypothes.is - Social/group annotation over PDFs and web pages - open-source y (per project) - R5-study
+- Noteful / Freenotes / Notes+ - (iPad App Store) - iPad handwriting apps notable for the spreading layers feature (annotations separated from content) - open-source n - R5-study

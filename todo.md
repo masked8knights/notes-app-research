@@ -20,10 +20,14 @@
 16. [passed] R4 lane 6: MyScript/Nebo reverse-engineering deep dive (MyScriptJS, langergitanu/MyScript, xournalpp_htr, MyScript org, Nebo RE work).
 17. [passed] R4 lane 7: per-app deep run on the major apps named in threads (Goodnotes, Notability, NoteShelf, Amphi, Evernote, OneNote, Notion, Obsidian, Miro, Milanote, Anytype, Tana, Reflect, Logseq): features, likes, wants-changed.
 18. [passed] R4: integrate lanes into RESEARCH.md, update MILESTONES.md, secret-check gate, commit and push. Pushed as commit 90a003e after gate passed; remote verified clean.
+19. [passed] R5 lane A: aamirenic/IdeaCraft deep dive (MIT Tauri 2 + Rust notes app; pullable schema/command layer/sync-folder design; unrelated namesake rickyb82/ideacraft flagged).
+20. [passed] R5 lane B: Drawboard PDF deep dive (inking benchmark, features, pricing backlash, closed source).
+21. [passed] R5 lane C: study/PDF-textbook landscape for the BookCraft idea (Flexcil, LiquidText, CollaNote, MarginNote 4, Xodo, PDF Expert, PDFCraft/ArtCraft, newer entrants) + integration into master files, gate, push.
 
 ## Status notes
 
 - R4 launched because the user judged R2/R3 not deep enough: "do a proper research run of every app and repo for all of their features and all of the stuff that people like or want changed", track open-source status and where functionality can be pulled from, including reverse-engineered MyScript/Nebo.
+- R5 launched on the user's coverage question plus new material: IdeaCraft link and the BookCraft study-notebook idea (Drawboard PDF named as inking reference).
 - Item 8 explicitly deferred on user instruction: "dont make a build plan just yet".
 - Subagent lanes write only to their own findings file in findings/; main session is the only writer of RESEARCH.md, todo.md, MILESTONES.md.
 - R4 gate fixes: raw thread-3 exports untracked and gitignored; history scan case fix proven on a scratch file; 15 author-name rules now in the gitignored local rules file; secret-bearing one-shot helper scripts stubbed in checks/.
