@@ -36,3 +36,22 @@ Learned: Lane isolation held (each subagent touched only its file); the 2026 Obs
 Next: Phase 2: decompose research into a build plan (MVP / v1 / PLUGIN / LATER per brief deliverables), confirm the todo order with the user before any build work.
 Blocked: none
 Status: done
+
+### Round R4: Deep re-run of every app and repo; master files; repo public
+Date: 2026-10-27
+Did: User judged R2/R3 not deep enough and directed a proper re-run: every app and repo with all features, what people like, what they want changed, open-source status, and where functionality can be pulled from, including reverse-engineered MyScript/Nebo. Parsed the third Discord thread (Notion app-requests; 22 messages, 29 links; parser rewritten for this export's unquoted HTML attributes). Researched user-added sources: diktafon (+v1.1.1), marmalade-tts-android, tolaria.md. Ran 10 research lanes (3 deep repo batches covering the full inventory, thread3 digest, integration components, MyScript/Nebo reverse-engineering, per-app likes/wants, tolaria, OneNote-style pen/keyboard/touch auto-switching) plus 2 compiler lanes that built APPS-LINKS.md (217 items in 9 categories) and FEATURES.md (16 apps + 13 repos + 11 integration components + community wish-list synthesis) at repo root, per user request. Made the GitHub repo public on user request.
+Result: Findings set grew from 12 to 21 files; two master files at repo root. Repo pushed after a passing secret check.
+Learned: A lane that hits the usage limit may still have finished writing its file (deep-repos-c): verify file completeness before relaunching a failed lane. This Discord export uses unquoted HTML attributes, so the earlier quoted-attribute parser silently found 0 messages; always inspect raw markup before parsing a new export format variant.
+Next: Keep RESEARCH.md integrated with R4 conclusions. Phase 2 build plan remains deferred on user instruction ("dont make a build plan just yet").
+Blocked: none
+Status: done
+
+### Round R4b: publish-gate fixes and R4 push
+Date: 2026-10-27
+Did: Resolved the three problems the push gate raised, then pushed R4. First, the raw thread-3 Discord exports (parsed JSON + transcript) were committed this round and carry community member names; both were untracked and gitignored, matching the R1 policy that research-material/discord* raw files stay local. Second, the history scan's -i flag made DESKTOP-[A-Z0-9]{6} case-insensitive, so the ordinary phrase "desktop-mobile" matched the machine-name pattern; removed -i so history mirrors the case-sensitive worktree scan. Third, thread-3 author names were missing from local-rules.txt; added 12 new author-name rules (names live only in the gitignored rules file), joining the three rules already present from earlier rounds. Scrubbed published files (thread3-digest.md, deep-repos-c.md, APPS-LINKS.md, RESEARCH.md): member names replaced with generic member labels, member-hosted URLs withheld from publication. One-shot helper scripts that embedded member names in their sed patterns were overwritten with clean stubs so the worktree scan passes.
+Result: Rules proven to fire: every new rule flagged the raw transcript scan before scrubbing; all tracked files scan clean after. The fixed history rule fires on a scratch file containing the machine-name pattern and passes benign prose. Gate passes; R4 pushed to the public repo with member names absent from worktree and history.
+Learned: A new Discord export's raw outputs (transcript, parsed JSON, links) must be gitignored from the first commit; only the parser script and scrubbed digests belong in the repo. A case-insensitive flag on a pattern anchored to an uppercase identifier turns ordinary prose into hits; history and worktree scans must use the same case rules. Member names added mid-project require re-scanning everything already committed, including tool scripts in checks/.
+Fixed: run-secret-check.sh history scan case sensitivity; local-rules.txt (12 new rules); four published files; .gitignore raw-export entries.
+Next: Phase 2 plan awaits user go-ahead; no build plan per user instruction.
+Blocked: none.
+Status: done

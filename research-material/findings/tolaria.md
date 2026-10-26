@@ -1,0 +1,64 @@
+# Tolaria — findings (researched 2026-10-26)
+
+## What it is
+- Free, open-source desktop app for managing "markdown knowledge bases" — a files-first second brain with Git versioning and AI integration, by Luca Rossi (author of the Refactoring newsletter). Official URL: https://tolaria.md/ (source: fetched site). Positioning: "a second brain for the AI era"; every note is a plain Markdown file with YAML frontmatter, no database, no proprietary format (https://tolaria.md/).
+- Built from the author's own daily use: he migrated 10,000+ notes from Notion to plain Markdown files and built the app he wanted (https://refactoring.fm/p/introducing-tolaria). Stated commitment: free and open source forever, no accounts or subscriptions (https://refactoring.fm/p/introducing-tolaria; https://github.com/refactoringhq/tolaria).
+- Platforms: macOS, Windows, Linux desktop (Homebrew cask + signed installers), plus an iOS/iPadOS beta via TestFlight (https://github.com/refactoringhq/tolaria). README use cases: second brains, company docs as AI context, storing assistant/OpenClaw memory and procedures (https://github.com/refactoringhq/tolaria).
+- Scale and origin story: ~100K lines of code in Rust + React, 1900+ commits, 3000+ tests, 70 ADRs, mostly AI-written (author wrote ~zero lines himself) (https://refactoring.fm/p/introducing-tolaria). Stack: Tauri v2, React, TypeScript, Rust backend; editor is BlockNote/Tiptap; whiteboards via tldraw (https://github.com/refactoringhq/tolaria; https://pyshine.com/Tolaria-Refactoring-AI-Code-Quality/).
+
+## Open-source status
+- Open source, AGPL-3.0-or-later. Repo: https://github.com/refactoringhq/tolaria (name/logo under a trademark policy) (https://github.com/refactoringhq/tolaria).
+- Very active single-maintainer project: stable releases roughly every 1–2 weeks through 2026 (release history: https://tolaria.md/releases/); alpha builds on every push (GitHub releases).
+- Docs live inside the repo (site/ published to GitHub Pages at https://tolaria.md) alongside ARCHITECTURE.md, ABSTRACTIONS.md, GETTING-STARTED.md and ADRs (https://github.com/refactoringhq/tolaria).
+- Community traction: ~20K stars / 1.4K forks reported by a third-party directory (https://openapps.pro/apps/tolaria); Show HN reached ~318 points / 142 comments (https://news.mcan.sh/item/47882697). r/macapps post describes it as AGPL-3.0, files-first (https://www.reddit.com/r/macapps/comments/1sykgst/os_tolaria_a_filesfirst_markdown_app_for_mac/ — fetch blocked 403, content UNVERIFIED beyond search snippet).
+
+## Feature list (from site, README, announcement, release history)
+- Files-first vault: notes are plain .md with YAML frontmatter; folders are secondary; notes scanned recursively across the vault; flat-vault friendly (https://tolaria.md/reference/file-layout; https://refactoring.fm/p/introducing-tolaria).
+- Types as lenses, not schemas: every note has a type (default Note); types are themselves markdown files with icon/color, no required fields or validation (https://github.com/refactoringhq/tolaria; https://refactoring.fm/p/introducing-tolaria).
+- Sidebar sections: Inbox (unorganized notes, Forte-style capture-vs-organize, disableable), All notes, Archive, types, Pinned/favorites, custom views, folder tree at the bottom (https://refactoring.fm/p/introducing-tolaria).
+- Custom views: YAML files in a views/ folder with nested filter criteria, regexes and natural-language dates; AI can author them (https://refactoring.fm/p/introducing-tolaria).
+- Note list: sort by any property or file metadata, customizable property columns, cmd+click to open URL/note links (https://refactoring.fm/p/introducing-tolaria).
+- Editor: Notion-like WYSIWYG block editor (BlockNote) + raw Markdown mode (Cmd+/); slash commands; [[wikilinks]] with autocomplete and auto-update on rename (https://tolaria.md/; https://refactoring.fm/p/introducing-tolaria).
+- Rich content: tldraw whiteboards stored as markdown files, Mermaid diagrams, KaTeX math (editable source panel), code blocks with syntax highlighting, editable callouts, sandboxed HTML blocks, colored highlights, todo block shortcut Cmd+T, collapsible headings, table navigation, media/PDF previews (PDF.js), lightbox, spreadsheet notes (plain-text sheets with formulas via IronCalc WASM) (https://tolaria.md/releases/).
+- Attachments/images: drag-and-drop from Finder, clipboard paste, remote image paste, vault-root or note-relative paths; attachments folder convention (https://tolaria.md/releases/).
+- Git integration: in-app commit, push, browse history, per-note version history; AutoGit opt-in mode auto-commits/pushes when idle or on focus shift — Git doubles as the sync layer (https://refactoring.fm/p/introducing-tolaria).
+- Multi-vault: multiple vaults, separate app windows per vault, mounted vault workspaces, custom vault order, parent Git repository support, vault deep links (https://tolaria.md/releases/).
+- Command palette (Cmd+K) with semantic matching, keyboard-first design throughout; quick open with create-note-from-search; note body full-text search (https://refactoring.fm/p/introducing-tolaria; https://tolaria.md/releases/).
+- AI: direct model providers (OpenAI, Anthropic, Gemini, OpenRouter, Ollama, LM Studio, custom OpenAI-compatible endpoints) for chat over note context; CLI agent targets for tool-backed editing — Claude Code, Codex, OpenCode, Pi, Gemini, Copilot CLI, Kiro, Antigravity, Hermes; dedicated AI side workspace; AI commit-message drafting; AI can create notes via OpenAI-backed path (https://tolaria.md/; https://tolaria.md/releases/).
+- Bundled MCP server (Node or Bun runtime) exposing vault tools: create/update/append notes, vault lifecycle (open/switch/manage); AGENTS file ships for external agents to self-orient (https://github.com/refactoringhq/tolaria; https://tolaria.md/releases/).
+- Claude Code skills usable from the AI panel; per-agent model picker; local API keys (https://tolaria.md/releases/).
+- Export to PDF; standalone HTML previews; theme-matched app icons; dark mode + hybrid dark-sidebar/light-content appearance; localization: Polish, Belarusian, Indonesian, Swedish, Ukrainian, German, Slovak, Korean/Chinese/Japanese IME care (https://tolaria.md/releases/).
+- Update-check disable option; privacy-focused "safe product analytics"; optional telemetry noise reduction (https://tolaria.md/releases/).
+- Emerging (alpha channel, Oct 2026): web client ("remote client") with note create/rename/delete, sharing notes/vaults with view-only/revoke, signed access tickets, server protocol 1.8, collaborator Co-authored-by trailers, mobile background sync (https://github.com/refactoringhq/tolaria/releases/tag/alpha-v2026.10.25-alpha.0028 and adjacent alpha releases).
+
+## What people like (recurring)
+- UI polish and Notion-like editing with real files underneath: "love the UI... clean and love the git-backed approach" (https://news.ycombinator.com/item?id=47882697).
+- Git-first as AI transparency: seeing exactly what the AI changed vs what you wrote, with AI as a git contributor (https://news.ycombinator.com/item?id=47882697).
+- The inbox concept and strong opinions on organization; types and relationships instead of yet another plain editor (https://news.ycombinator.com/item?id=47882697).
+- Proven at 10K-note scale; files + YAML frontmatter portability; clipboard image paste praised as rare and essential (https://news.ycombinator.com/item?id=47882697).
+- Open source vs Obsidian: "I had no idea Obsidian wasn't open source"; lock-in freedom is the differentiator (https://news.ycombinator.com/item?id=47882697).
+- r/macapps framing: files-first for Git workflows and AI agents, offline, zero lock-in (https://www.reddit.com/r/macapps/comments/1sykgst/os_tolaria_a_filesfirst_markdown_app_for_mac/ — UNVERIFIED beyond snippet). Directory write-ups group it as the AI-first alternative to Obsidian/Notion/Logseq (https://openalternative.co/tolaria).
+
+## What people want changed (recurring)
+- Web-wrapper objection: Tauri/React, not a native AppKit/SwiftUI app — repeatedly raised on HN; author explains Swift editor limitations (https://news.ycombinator.com/item?id=47882697).
+- Feature-creep worry and requests to stay focused like Bear (https://news.ycombinator.com/item?id=47882697).
+- Early bugs: blank frozen app, three bugs in five minutes; sorting by "last modified" breaks after first git commit (sorts by commit date) (https://news.ycombinator.com/item?id=47882697).
+- Editor friction: ``` code fence requires a space, ctrl-e end-of-line missing, cursor jumps below block after fence creation (https://news.ycombinator.com/item?id=47882697).
+- "AI-first" wording read as humans second-class; large-file editor performance concerns; npm-dependency-in-adjacent-to-home trust concern (https://news.ycombinator.com/item?id=47882697).
+- Mobile demand (searching notes on phone); at launch macOS-only downloads despite Linux claims; Windows request (all since addressed: Windows/Linux bundles, iOS TestFlight) (https://news.ycombinator.com/item?id=47882697; https://github.com/refactoringhq/tolaria).
+- No way to donate/pay at launch (https://news.ycombinator.com/item?id=47882697). Single-maintainer longevity skepticism (one dismissive HN comment) (https://news.ycombinator.com/item?id=47882697).
+- Obsidian overlap questions: types ≈ category property, views ≈ dataview/bases, git via plugin (https://refactoring.fm/p/introducing-tolaria/comments — UNVERIFIED beyond search snippet).
+
+## Sync / storage / offline model
+- Fully local-first: no accounts, no subscriptions, no Tolaria servers; vault works completely offline; every vault is a Git repository and the UI is a layer over that repo (https://github.com/refactoringhq/tolaria; https://news.ycombinator.com/item?id=47882697).
+- Sync = Git: push to any remote (GitHub private repos commonly); AutoGit auto-commits/pushes on idle/focus heuristics; no trash bin — git history is the safety net (https://refactoring.fm/p/introducing-tolaria).
+- Mobile syncs via iCloud or Files app sharing the same git repository as desktop, auto-commit on save with merge support (https://github.com/refactoringhq/tolaria).
+- AI chats are not persisted in vault files by default (chat over context without vault-write tools); durable work lives in files (https://tolaria.md/).
+- Caveat: the Oct 2026 alpha channel is adding a web client and a server-side sharing model (signed tickets, view-only shares) — a shift worth watching, though desktop remains git/no-server (https://github.com/refactoringhq/tolaria/releases/tag/alpha-v2026.10.25-alpha.0028).
+
+## Pull-from assessment (for a local-first Rust notes app)
+- Directly liftable concepts (no license issue): files-first vault with YAML frontmatter; types-as-lenses (types as markdown files, no validation); views-as-YAML with nested filters and natural-language dates; Inbox/organized vs archived lifecycle; AutoGit idle/focus heuristics as sync UX; per-note git history; wikilinks auto-updating on rename; "types as lenses" sidebar taxonomy; keyboard-first command palette with semantic matching; AGENTS-file convention for AI orientation; bundled MCP vault tools (create/update/append/lifecycle) as an integration surface; attachments-path conventions; no-trash, git-as-safety-net deletion model. Evidence: URLs above.
+- Code-level lifting is possible but binding: the repo is AGPL-3.0, so copying Rust code (src-tauri backend, git workflows, MCP server) would make this project AGPL-3.0 too; consulting ARCHITECTURE.md/ABSTRACTIONS.md/ADRs (also in-repo) for design ideas is fine as long as no code is copied (https://github.com/refactoringhq/tolaria). The name/logo are trademarked (https://github.com/refactoringhq/tolaria).
+- Especially relevant for a Rust stack: Tolaria's non-UI core is already Rust under Tauri — its Rust-side git integration, vault scanning, frontmatter parsing and MCP server are a rare open reference implementation in exactly this language (https://refactoring.fm/p/introducing-tolaria; https://github.com/refactoringhq/tolaria).
+- What is NOT liftable / not worth copying: the React/BlockNote editor layer (different stack, and the project's own weak point per HN bug reports); tldraw/BlockNote/IronCalc are third-party deps, not Tolaria inventions; the emerging web/sharing server model is unproven alpha; "made by a known newsletter author" distribution engine is not reproducible. Bugs to avoid repeating: modified-time vs commit-time sorting, editor recovery complexity, IME edge cases (https://tolaria.md/releases/; https://news.ycombinator.com/item?id=47882697).
+- Differentiation gap to note: HN repeatedly shows demand for (a) a truly native (SwiftUI/AppKit) equivalent and (b) simpler, Bear-like focus — both are open lanes Tolaria chose not to occupy (https://news.ycombinator.com/item?id=47882697).

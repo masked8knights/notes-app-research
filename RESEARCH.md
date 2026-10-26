@@ -94,4 +94,43 @@ No published threshold exists for how much automatic filing people tolerate; the
 7. From Thread F: BlockSuite custom-block maturity; heavy-canvas FPS spikes on WKWebView/WebKitGTK; whether to dual-shell (Tauri + Electron for Linux).
 8. From Thread G: user testing needed on tolerance ceiling, conflict UX preference, and video-ambition level.
 9. UNVERIFIED items to re-check later: NicTanghe/BasScript, ThatSheepGuy22/ObbyNotes, an unreachable OfficeIMO fork (handle withheld),gitea sawt, strongcod3r/laplace, Bouquet page, two X posts, one YouTube video, MyScript pricing page (JS shell), OneNote web (JS shell).
-10. GitHub online copy established (private repo, see MILESTONES R2b); each future round pushes after a passing secret check.
+10. GitHub online copy established (private at R2b, now public per user request); each future round pushes after a passing secret check.
+
+## Round R4 additions
+
+Two new repo-root master files land this round, per user instruction to "leave links to all the apps in a .md file along with all the features in another .md file": APPS-LINKS.md (217 items in 9 categories, one line each: name, URL, description, open-source status with license, findings-file pointers; UNVERIFIED items flagged; similar-named distinct repos listed separately) and FEATURES.md (Part I: 16 apps feature-by-feature with wants/changed and sources; Part II: 13 repos + 11 integration components; Part III: 55-item community wish list plus feature clusters). No build plan was made, per user instruction ("dont make a build plan just yrt").
+
+## R4: the third Discord thread
+
+A new export (Notion app-requests thread, 22 messages, 29 links) was parsed with a new parser: this export uses UNQUOTED HTML attributes, so the earlier quoted-attribute parser silently found 0 messages; always inspect raw markup before parsing a new export variant. Core want: a self-hostable, no-paywall Notion-class app with user-chosen cloud backends (Google Drive/Dropbox/OneDrive) and anti-lock-in. AFFiNE gaps cited by users: no Excel-like in-cell functions, no one-database-many-views, ambiguous on-premise storage limits, cloud-only AI. The community's "gold formula" quote: Anytype on-premise with Notion UX. A detailed requirements list (one member) wants paragraph-level links surviving moves, encrypted local backup, readable-format auto backup, phone sync, standard-format export, checkboxes/images/color, privacy when synced, code formatting, with AI chat as nice-to-have. Also present: p2panda relay mention, and a Notion-meets-QuickBase vision with online/offline sync.
+Sources: findings/thread3-digest.md, research-material/discord-thread3-transcript.txt
+
+## R4: MyScript / Nebo reverse engineering
+
+Verdict: MyScript's recognition cannot be pulled from anything public. MyScriptJS (archived, Apache-2.0) contains only ink capture/rendering/transport glue; recognition runs behind developer keys. A published apktool+jadx teardown of Nebo Android (~31,045 classes) shows Nebo is a thin Java/SWIG shell over proprietary native engines (libMyScriptEngine Text/Math/Shape/Gesture) plus proprietary resource bundles: an architecture donor, not an algorithm donor, and nothing binary redistributable. Nebo's .bink stroke format has no published parser (Xournal++ issue #5730). No open MyScript reimplementation exists; xournalpp_htr (GPL-2.0, CRNN/CTC with stroke dynamics) is research-grade self-built HTR; RNote has no HTR. No DMCA takedowns found. Actionable shape: implement the MyScript interface contract (incremental strokes in, partial recognition out, JIIX/MathML/LaTeX export) against local engines (ML Kit, xournalpp_htr models); never touch APK artifacts.
+Sources: findings/myscript-nebo-reverse.md
+
+## R4: integration components verdict (license first)
+
+Excalidraw (MIT) is the cleanest true embedded view (React component in webview, weight S). Godot (MIT) is embeddable via LibGodot/libgodot (M-L). libVLC (LGPL-2.1, FFI) workable (M); Kdenlive via the MLT engine (LGPL-2.1, M) with the editor UI out of scope. ONLYOFFICE is AGPL-3.0: a license blocker for native embedding, iframe/WebView embed only (L). Audacity GPLv3 has no library/headless mode; OBS libobs GPL-2.0+ infects the host (Streamlabs precedent); GIMP GPL-3.0 headless/ScriptFu only; Krita plugins-only; Blender GPL-2.0+ headless via bpy. GPL-family components are therefore file-level or sidecar integrations only, never in-process. Photopea is closed source despite the free web app: disqualified. Stirling PDF is open-core (MIT essentials + proprietary folders), file-level (S-M).
+Sources: findings/integrations-1.md
+
+## R4: OneNote-style pen/keyboard/touch auto-switching
+
+User-requested feature, researched to architecture level. OneNote Windows ships "Automatically switch between inking, selecting, typing and panning" (File>Options>Advanced>Pen); iPad has "Draw with Touch"; Android has "Ignore touch input when using stylus". Best architecture reference is tldraw: reject non-pen pointers BEFORE they update input state (a public fix, PR #10346, addressed the exact ordering bug). Platform hooks: Windows WM_POINTER pointerType + POINTER_PEN_INFO; iOS UITouch.type + UIPencilInteraction + PencilKit drawingPolicy; macOS tabletPoint/Proximity; Android getToolType + ACTION_CANCEL palm cancel + contact-size heuristic; Linux libinput palm detection. Web pitfalls found: Firefox flipped pen to touch mid-stroke historically, and passive capacitive styluses are indistinguishable from fingers (pressure/width fallbacks needed). Working ruleset: pen in range means touches become navigation only (pan/zoom/scroll); last-used pen persists across lifts; finger-draw toggle and palm-rejection presets as user overrides. rnote (GPL-3.0, Rust/GTK4) is a study reference; tldraw is source-available with a proprietary license, so no production code reuse, concepts only.
+Sources: findings/input-mode-switching.md
+
+## R4: tolaria.md
+
+Tolaria (github.com/refactoringhq/tolaria) is AGPL-3.0-or-later, Tauri v2, roughly 100K LOC of Rust+React (mostly AI-written), plain .md files with YAML frontmatter, no accounts/servers, git-as-sync with opt-in AutoGit, Notion-like block editor plus raw mode, types-as-lenses, YAML custom views, tldraw whiteboards, Mermaid, sandboxed HTML blocks, Cmd+K palette, and AI-first design (OpenAI/Anthropic/Gemini/Ollama/LM Studio, CLI agent targets, bundled MCP server, AGENTS file). Reception: praise for UI polish, git-as-AI-transparency, and 10K-note scale; complaints about the Tauri web-wrapper feel, feature creep, and early bugs. Concepts and interactions are freely liftable; reusing its code binds the host project to AGPL.
+Sources: findings/tolaria.md
+
+## R4: per-app likes/wants (headline signals)
+
+Notability's ink is time-locked to audio (tap a stroke to jump the recording): its most irreplaceable feature. ConvertOneNote2MarkDown (766 stars) still exports each OneNote ink stroke as a positionless image although the COM API GetPageContent carries stroke positions plus ISF: ink-preserving OneNote import is a genuine open differentiator. Goodnotes 6 AI ink-smoothing deforms users' handwriting: on-device AI that touches user strokes needs a findable off switch. Noteshelf charged lifetime v2 buyers again for v3: pricing-trust caution. April 2026 Obsidian "Phantom in the Vault" campaign: a crafted vault plus a legitimate plugin config executed attacker commands on vault open, meaning vault files themselves are an attack surface.
+Sources: findings/apps-likes-wants.md
+
+## R4: repo inventory resolutions
+
+NicTanghe/BasScript does not exist (canonical counterpart: BaseScript.lang, irrelevant to this project). ThatSheepGuy22/ObbyNotes is not findable. slogsdon/bb-tui resolves to bborn/bb-tui (Go); a community member's OfficeIMO fork resolves to EvotecIT/OfficeIMO (MIT, .NET). Top liftable Rust-first assets: realbynl/Meridian-Notes (native Rust editor architecture, license to confirm), AlienTechSoftware/notecraft (Rust core/UI split, MIT/Apache-2.0, alpha 0.0.6), EkarinLB/e-journal (egui + encryption-at-rest, MIT), Niko1221/Strata (localhost LLM API pattern, MIT), gtg922r/obsidian-numerals (math engine as pure module, MIT, ~600 stars), hughhowey/neo (plain-file data model, MIT, ~1.6k stars), johansan/notebook-navigator (virtualized 100k-note browser; GPL-3.0 so spec-only, 2,782 stars / 1M+ downloads), kostyk348/CapsuleCraft (.eml-per-note storage, MIT). AFFiNE deep dive: BlockSuite duality, OctoBase sync, MIT.
+Sources: findings/deep-repos-a.md, findings/deep-repos-b.md, findings/deep-repos-c.md

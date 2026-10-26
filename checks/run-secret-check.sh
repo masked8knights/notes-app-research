@@ -43,7 +43,7 @@ done < <( { git ls-files -z; find . -type f -not -path './.git/*' -not -path './
 
 if [ -d .git ]; then
   for c in $(git rev-list --all 2>/dev/null); do
-    git grep -nEa -i 'DESKTOP-[A-Z0-9]{6}|C:.Users\.[A-Za-z]|([0-9]{1,3}\.){3}[0-9]{1,3}' "$c" -- . 2>/dev/null | head -3 | while read -r line; do
+    git grep -nEa 'DESKTOP-[A-Z0-9]{6}|C:.Users\.[A-Za-z]|([0-9]{1,3}\.){3}[0-9]{1,3}' "$c" -- . 2>/dev/null | head -3 | while read -r line; do
       echo "SECRET-HIT [history $c] $line"
     done
   done

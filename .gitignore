@@ -14,3 +14,7 @@ ARCHIVE/
 research-material/local-rules.txt
 research-material/authors-local-only.txt
 checks/commit-*.sh
+
+# R4: raw thread-3 Discord exports stay local (member names)
+research-material/discord-thread3-parsed.json
+research-material/discord-thread3-transcript.txt
