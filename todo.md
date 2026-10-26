@@ -23,11 +23,16 @@
 19. [passed] R5 lane A: aamirenic/IdeaCraft deep dive (MIT Tauri 2 + Rust notes app; pullable schema/command layer/sync-folder design; unrelated namesake rickyb82/ideacraft flagged).
 20. [passed] R5 lane B: Drawboard PDF deep dive (inking benchmark, features, pricing backlash, closed source).
 21. [passed] R5 lane C: study/PDF-textbook landscape for the BookCraft idea (Flexcil, LiquidText, CollaNote, MarginNote 4, Xodo, PDF Expert, PDFCraft/ArtCraft, newer entrants) + integration into master files, gate, push.
+22. [passed] R6 wave 1: full-depth lanes on minor note apps batch 1 (Squid, Concepts, Saber, Workflowy, DEVONthink, ente, Kinopio), batch 2 (Muse, Thymer, Ideon, OwlLuna, Akasha, Poznote, Tangent Notes, HelixNotes, Lockbook, Pele, Obsidian Publish, video editors), editors/publishers (Dillinger, Ghost, Homebrewery, Proofeditor, Amphi, Samsung Notes), sync/CRDT stack (Automerge, Yjs/yrs, Loro, Diamond Types, Beelay/Keyhive, any-sync, iroh, diff-match-patch, p2panda, BlockSuite, secsync, TanaMigrator, Cryptomator, Tailscale/Netbird, IlowObsidianSync).
+23. [passed] R6 wave 2: HTR/OCR engines A (ML Kit, TrOCR family, PARSeq, docTR, Tesseract, PaddleOCR), B (ocrmypdf, docling, paperless-ngx, Apple Vision/PencilKit, OnlineHTR, ArabicOCR_KHATT, palm-rejection), Xournal++/RNote/Supernote ecosystem, local AI models deep dive.
+24. [passed] R6 wave 3: Obsidian plugin cluster, OSS repos batch D (nexlore, Meridian-Notes, opensidian x2, cheeterdev/notes, xnotes-android), Nostr/transports/extras, UNVERIFIED-items verify-and-fill pass.
+25. [in progress] R6 final: integrate all waves into master files, synthesis into FEATURES.md, gate, push.
 
 ## Status notes
 
 - R4 launched because the user judged R2/R3 not deep enough: "do a proper research run of every app and repo for all of their features and all of the stuff that people like or want changed", track open-source status and where functionality can be pulled from, including reverse-engineered MyScript/Nebo.
 - R5 launched on the user's coverage question plus new material: IdeaCraft link and the BookCraft study-notebook idea (Drawboard PDF named as inking reference).
+- R6 launched on the user's directive "I dont want varied, I want everything to be reasearched in full and in depth": 12 lanes across 3 waves, all done; master files integrated; the gate and push close item 25.
 - Item 8 explicitly deferred on user instruction: "dont make a build plan just yet".
 - Subagent lanes write only to their own findings file in findings/; main session is the only writer of RESEARCH.md, todo.md, MILESTONES.md.
 - R4 gate fixes: raw thread-3 exports untracked and gitignored; history scan case fix proven on a scratch file; 15 author-name rules now in the gitignored local rules file; secret-bearing one-shot helper scripts stubbed in checks/.

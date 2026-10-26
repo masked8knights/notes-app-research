@@ -66,3 +66,13 @@ Fixed: run-secret-check.sh history scan case sensitivity; local-rules.txt (12 ne
 Next: Phase 2 plan awaits user go-ahead; no build plan per user instruction.
 Blocked: none.
 Status: done
+
+### Round R6: full-depth sweep of every remaining inventory item
+Date: 2026-10-26
+Did: Three waves of parallel subagent lanes (12 total) researched every remaining inventory item at full depth: minor note apps batch 1 (Squid, Concepts, Saber, Workflowy, DEVONthink, ente, Kinopio) and batch 2 (Muse/Allume, Thymer, Ideon, OwlLuna, Akasha, Poznote, Tangent, HelixNotes, Lockbook, Pele, Obsidian Publish, caption tools), editors and publishers (Dillinger, Ghost, Homebrewery, proofeditor, Amphi, Samsung Notes deep dive), the sync/CRDT+E2EE stack (BeeKEM, Loro protocol-e2ee, any-sync, secsync, p2panda; Rust-native yrs, Loro, iroh, automerge core, nostr-sdk), HTR/OCR engines in two files (TrOCR best open HTR; Tesseract disqualified for handwriting; docling, paperless-ngx, OnlineHTR, ArabicOCR_KHATT), the Xournal++/RNote/Supernote ecosystem (Supernote .note format fully reverse-engineered), local AI models (LLM/STT/TTS/RAG plus a pre-ship license checklist), 16 Obsidian plugins license-verified, OSS batch D (jpzk/opensidian identified as the closest existing project to ours), Nostr/transports, and a verify pass over all 34 UNVERIFIED entries. 12 findings files (~540 KB, 3,603 lines) written and transferred into the repo.
+Result: Coverage-audit statement closed: every inventoried link now has full-depth research or a documented not-found disposition. APPS-LINKS.md and FEATURES.md carry the R6 sections; RESEARCH.md carries the R6 summary. Licenses corrected: diamond-types ISC, secsync Apache-2.0 (dormant), RNote GPL-3.0-or-later, Xournal++ bare GPL-2.0, snlib and TanaMigrator no-license.
+Learned: The pull-from map now has its strongest entries: jpzk/opensidian (Rust+Tauri Obsidian clone), TrOCR (best open HTR), Kinopio's localStorage-first queued-ops pattern, Lockbook's Rust E2EE core, and the reverse-engineered Supernote format. Relay economics and single-identity keys keep Nostr a concepts-only transport.
+Fixed: Identifier and Windows-path scan of all 12 findings files run before transfer; clean.
+Next: Phase 2 plan remains deferred per user instruction ("dont make a build plan just yet").
+Blocked: none.
+Status: done
