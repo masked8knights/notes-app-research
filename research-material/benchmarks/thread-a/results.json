@@ -1,0 +1,21 @@
+{
+  "n": 10000,
+  "charsPerNote": 500,
+  "concurrentEditChars": 50,
+  "results": [
+    {
+      "lib": "yjs@13.6.33",
+      "editMs": 1769.350287,
+      "mergeMs": 140.95512899999994,
+      "ok": 10000,
+      "updateBytes": 5179401
+    },
+    {
+      "lib": "automerge",
+      "editMs": 1272.311658,
+      "mergeMs": 1154.1301409999996,
+      "ok": 1000,
+      "updateBytes": 608000
+    }
+  ]
+}
