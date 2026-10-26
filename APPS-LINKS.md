@@ -267,3 +267,38 @@ Compiled by the compiler lane from every findings file in notesapp/findings/ plu
 - Zotero - https://www.zotero.org - Reference manager with built-in PDF reader and annotation extraction back into notes with citations; ZotFile plugin is the notes-link-back-to-source benchmark - open-source y (AGPL) - R5-study
 - Hypothesis - https://web.hypothes.is - Social/group annotation over PDFs and web pages - open-source y (per project) - R5-study
 - Noteful / Freenotes / Notes+ - (iPad App Store) - iPad handwriting apps notable for the spreading layers feature (annotations separated from content) - open-source n - R5-study
+
+## R6 additions: full-depth sweep of every remaining inventory item (all researched at full depth)
+
+Note apps: Squid - (Android/Chrome OS, closed) - ink/finger-eraser loved; sync/backup unshipped ~2 years; Premium wall around PDF import/backup/export - R6-batch1
+Concepts - concepts.app (closed) - vector infinite canvas, precision system (guides/snap/measurement); subscription+packs paywall; cross-platform file-format non-interoperability - R6-batch1
+Saber - github.com/saber-notes/saber (GPLv3, Flutter, ~4.9k stars) - dual-password E2EE Nextcloud sync, dark-mode ink inversion; big-note load times, no cross-page stroke move, .sbe format anxiety - R6-batch1
+Workflowy - workflowy.com (closed) - mirrors, zoom-nav, desktop local daily backups; Jan 2026 free-tier tightening and no API are dominant grievances - R6-batch1
+DEVONthink - devontechnologies.com (closed, macOS) - import-vs-index, universal item links, replicants, smart rules, See Also, MCP exposure; v4.4 Tycho with AI assistant - R6-batch1
+ente - ente.io (AGPL-3.0) - audited E2EE, on-device ML, export CLI, Legacy Kit; notes now inside Ente Locker; Ensu local-LLM app Oct 2026 - R6-batch1
+Kinopio - kinopio.club (client PolyForm Noncommercial, server closed) - localStorage-first + queued-ops + websockets architecture; no self-host/true local files is the top complaint - R6-batch1
+Muse - museapp.com, rebranded Allume (closed) - nested boards spatial thinking; MCP-AI signal - R6-batch2
+Thymer - thymer.com (closed) - E2EE offline-first with Markdown Mirror two-way file sync - R6-batch2
+Ideon - github.com/3xpyth0n + theideon.com (AGPLv3, Docker) - disambiguated from ideon.app (domain for sale) - R6-batch2
+OwlLuna - github.com/owaisazmal/OwlLuna (MIT, SwiftUI/PencilKit, TestFlight) - R6-batch2
+Akasha - Microsoft Store listing 9n3xffmbl7kx ("local-only encrypted Flutter notes") - page body empty; further detail unverified - R6-batch2
+Poznote - GitHub (MIT, PHP+SQLite, ~908 stars) - MCP server, Git Sync, S3, TOTP; deployment/offline-limit complaints - R6-batch2
+Tangent Notes - tangentnotes.com (Apache-2.0) - sliding panels + branching map; no mobile is the adoption blocker - R6-batch2
+HelixNotes - ArkHost/HelixNotes on GitLab (AGPL) - Rust+Tauri 2.0+SvelteKit; Tantivy+CJK, AES-256-GCM secret blocks, WebDAV, Obsidian importer - R6-batch2
+Lockbook - lockbook.net (open-source) - Rust-core lb-rs architecture; top issues: backlinks, diagramming - R6-batch2
+Pele - NOT FOUND as a notes app; only pele.run (Mermaid renderer) exists; re-run if a URL is supplied - R6-batch2
+Obsidian Publish - publish.obsidian.md (closed, $8/site/mo) - selective publishing, built-in graph/backlinks/search; pricing backlash lesson - R6-batch2
+CapCut / Descript / LumaFusion - (closed) - media-block lessons: auto-captions (Pro-gated), transcript-as-editable-document, LumaFusion's no-auto-caption gap - R6-batch2
+Dillinger - dillinger.io (MIT) - render client-side, never send user text to a server; March 2025 phishing accusation recorded unverified - R6-editors
+Ghost - ghost.org (MIT) - Koenig block editor, memberships; Ghost 6.0 split-services - R6-editors
+Homebrewery - homebrewery.naturalcrit.com (MIT) - best public example of markdown-in themed-paged-PDF-out - R6-editors
+Proofeditor - proofeditor.ai (Every) - agent-first editor with MIT proof-sdk; notes↔AI contract (attributable suggestions, agent identities, audit trail) - R6-editors
+Amphi - two genuine products disambiguated: Amphi Notes (GPL/AGPL, concepts only) and closed Amphi AI iPad workspace; amphi.io ruled out as an ETL tool - R6-editors
+Samsung Notes - (closed, Samsung) - S Pen feature set (handwriting help, S Pen to text, PDF annotation, audio-linked notes, Galaxy AI); OneNote sync partnership ends July 2026; sync conflicts duplicate instead of merge; rasterized PDF export degrades handwriting; no bulk export - R6-editors
+Sync/CRDT stack (each full depth): Automerge, Yjs/yrs, Loro, Diamond Types (ISC, corrected), Beelay/Keyhive (BeeKEM), any-sync, iroh (MIT/Apache, 1.0 June 2026, default transport in Anytype), diff-match-patch, p2panda (post-compromise security work), BlockSuite, secsync (Apache-2.0, corrected; last npm publish mid-2024), TanaMigrator (no license), Cryptomator, Tailscale, NetBird, IlowObsidianSync - R6-sync
+HTR/OCR engines A: ML Kit Digital Ink (proprietary, ~20 MB/language, stroke-input only), TrOCR (MIT, best open handwriting: IAM CER 2.89 large / 3.42 base / 4.22 small), PARSeq (Apache-2.0, scene text only), docTR (Apache-2.0, 9.41 CER on handwriting), Tesseract (Apache-2.0, 49.58% CER on handwriting: disqualified as HTR), PaddleOCR v5 (Apache-2.0, mobile 16 MB recognition, handwriting claim Chinese-weighted) - R6-htr-a
+HTR/OCR engines B: ocrmypdf (MPL-2.0, concepts only), docling (MIT + Granite-Docling-258M Apache-2.0; layout 633 ms/page x86 CPU, ~506 MiB weights), paperless-ngx (GPL-3.0, concepts only), Apple Vision + PencilKit (closed, Swift bridge only), OnlineHTR (MIT, github.com/PellelNitram/OnlineHTR), ArabicOCR_KHATT (MIT, github.com/FixFips/ArabicOCR_KHATT; KHATT dataset licensing a hard checkpoint), palm-rejection techniques per platform (Android MotionEvent, iPadOS drawingPolicy/UIPencilInteraction, Windows pen-first suppression) - R6-htr-b
+Handwriting ecosystem: Xournal++ (GPL-2.0, C++/GTK3, v1.3.8), RNote (GPL-3.0-or-later, corrected from earlier assumption; Rust/GTK4, v0.14.x; rnote-engine unpublished on crates.io), Supernote .note format fully reverse-engineered 2026-08 (philips/supernote-typescript vector-format-spec; Walnut356/snlib Rust parser, no license) - R6-xournal
+Obsidian plugins (16 researched, registry cross-checked): Excalidraw (AGPL-3.0), InkedMark, Badges, List Callouts, Meta Bind, Sheets, Numerals, Notebook Navigator, Nostr Writer (MIT), Dataview (MIT), Templater (license conflict: AGPL package.json vs GPL badge, no LICENSE file, needs human check), Omnisearch (GPL-3.0), Kanban (GPL-3.0, orphaned maintenance), Remotely Save (Apache-2.0 with PolyForm-locked pro folder), LiveSync (MIT/Apache) - R6-plugins
+OSS repos batch D: nexlore (DerKezorm, AGPL-3.0, byte-preserving partial write-back + conflict copies concept), jpzk/opensidian (GPL-3.0-or-later, Rust+Tauri v2 clean-room Obsidian clone, closest existing project to ours, restricted-mode plugin trust design), thiagovasconcelosti/opensidian (MIT, Node MCP server module pullable), cheeterdev/notes (dead end: two-sentence README, no code, no license), Meridian-Notes (realbynl, MIT, pure-Rust custom-drawn editor, rope-buffer/UI crates possibly valuable), xnotes-android (shardulvs, MIT, 269 stars, open .xnote/xtemplate formats, no-network users immediately demand encryption+sync) - R6-batch-d
+Nostr/transports: NIP-44 v2 (Cure53-audited), NIP-59 gift wrap, NIP-78 kind 30078, NIP-77 negentropy, Blossom (public domain), nostr/nostr-sdk Rust crates (MIT); verdict: concepts-only for sync plus optional export path (relay economics, single-identity-key conflict); negentropy set-reconciliation and NIP-44 padding discipline worth pulling regardless; two nostrapps.com pages 404, apps researched via primary sources - R6-nostr
