@@ -1,0 +1,16 @@
+# Secrets stay out of the repo
+.env
+*.env
+
+# Raw source material contains usernames, user IDs, guild names: never publish
+research-material/discord-export-*.html
+research-material/discord-transcript-all-threads.txt
+research-material/discord-parsed-messages.json
+
+# Local-only areas
+BACKUPS/
+ARCHIVE/
+*.bak-pre*
+research-material/local-rules.txt
+research-material/authors-local-only.txt
+checks/commit-*.sh

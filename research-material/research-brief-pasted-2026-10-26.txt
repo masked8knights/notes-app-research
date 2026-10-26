@@ -1,0 +1,82 @@
+# Research Brief — Notes App
+
+You already have the app's feature list and design. This brief adds nothing about what the app is. It is only your research assignment: the design's open questions, the order to attack them in, and the rules for doing it.
+
+---
+
+## 1. The research threads
+
+Work them roughly in this order — earlier ones gate later ones.
+
+### Thread A — Sync and conflict resolution (gates everything)
+
+The most consequential open decision: CRDTs versus conflict files versus a hybrid.
+
+- Evaluate real implementations, not concepts: Automerge, Yjs, Loro, Diamond Types, and anything newer that is credible. For each: maturity, bundle size, performance at realistic note-app scale (10k+ documents, edited offline for days, then merged), and whether it can encrypt document contents before CRDT operations are created — a zero-knowledge app and a CRDT that needs to read plaintext operations may be incompatible. The intersection of local-first CRDT sync and end-to-end encryption is under-documented; real evidence there is high value.
+- The alternative is keeping both versions of a conflict and letting the user merge (Obsidian's approach). Find real accounts of how often conflicts actually happen in sync systems of this kind, and whether merge-it-yourself is tolerable in practice.
+- Also: peer-to-peer sync — is it worth the complexity over self-hosted servers? Look for local-first apps that ship or abandoned p2p, and what the failure modes are.
+
+### Thread B — The storage question (gates the data model)
+
+The hardest technical question: a block model (blocks with IDs, positions, types, no plain files at all) versus a plain-file mirror (files on disk as the API, accepting that Markdown has no concept of a block ID or a canvas position). Thymer does the mirror; Ideon does not attempt plain files.
+
+- Investigate how existing apps actually solved it: Obsidian's file-first model, Anytype's object model, Tana's supertags, Logseq's blocks over files, Reflect, and others. Read their docs and, where open source, their code.
+- For the canvas↔note bridge (a region of canvas becomes a normal linked note, live in both directions): find prior art. Does anything ship this? What does "live in both directions" mean at the storage layer — which side is the source of truth?
+- Answer: does a durable block store plus on-demand plain-file export beat a two-way mirror?
+
+### Thread C — The small local model
+
+The decision to ship one is made; the choice is not.
+
+- Survey the current field of small open-weights models usable for: summarizing long documents, rewriting and drafting, answering questions over the user's own notes (retrieval-augmented), transcribing speech (STT), and reading text aloud (TTS).
+- For each candidate: parameter count, quantized size on disk, real memory use, tokens per second on CPU and on the embedded GPUs of a laptop and a mid-range phone, license, and whether the vendor is trustworthy.
+- Resolve the transcription tension: a zero-knowledge app that still ships STT. Is on-device Whisper-class transcription feasible on a phone at the time of your research, at what size and quality? If not, what is the honest fallback?
+- Same question for on-device handwriting recognition and OCR — see Thread E.
+
+### Thread D — The indexing cost of the search promise
+
+The design's search rule has no exceptions, which makes it the most expensive promise in the app. Research what it costs:
+
+- What does the indexing pipeline look like for: PDFs (including scanned ones needing OCR), images (OCR), video (frame-by-frame OCR of on-screen text, plus transcription with timestamps), audio (transcription), handwriting, and code? Reusing the image-OCR pipeline on video frames is the proposed approach — find whether anything does this and how it performs.
+- Where does the state of the art sit for running OCR and transcription on-device for all of these, and what falls back to first sync?
+- How do existing apps with similar promises (Evernote's OCR, Notion's search, Obsidian's Omnisearch plugin, DEVONthink) structure their indexes, and where do they quietly cheat on the "always" part?
+
+### Thread E — Handwriting and OCR on-device
+
+The design promises handwriting recognition everywhere with no setup.
+
+- Survey the commercial SDK path (MyScript and any competitor): cost, platform coverage, offline capability, language coverage, and what the lock-in means for a local-first app.
+- Establish how close open models are: anything that runs on-device for handwriting-to-text and can match a commercial SDK on real handwriting. Name models, find benchmarks, and if none exist, say so plainly.
+- Also OCR: which engines run on-device (Tesseract, PaddleOCR, docTR, newer small vision models), and how they hold up on real handwriting and low-quality phone photos of paper, not clean scans.
+
+### Thread F — Editor and platform guts
+
+- Block-editor cores: ProseMirror, Lexical, BlockSuite, TipTap, and any newer entrant. Which can host an infinite-canvas-plus-document hybrid, where the same blocks live free on a canvas and inside a linear note? None is designed for this; establish how far each can be bent and what people who tried say.
+- Shell: Tauri versus Electron versus native, with real-world numbers for memory, startup, and bundle size, and specifically whether Tauri can carry the webview demands of a canvas app.
+- The embedded-app question: embedding a terminal, an HTTP endpoint, or a cron scheduler as canvas blocks. Research the security surface of each and build the case for or against shipping them in core versus plugin-only with an explicit permission grant. This needs a threat model written up either way.
+
+### Thread G — Trust and UX unknowns
+
+Some open questions are about people, not code, and user testing is the only real answer — but research what is known: how much automatic filing people tolerate before they feel out of control, how other apps handle local-only face recognition and what its real risk surface is, and what each level of video-editing ambition beyond trim-and-caption costs in scope.
+
+## 2. How to work
+
+- **Primary sources only.** Read each app's own documentation, changelogs, source code, and issue trackers. Marketing pages and third-party listicles rot and drift; where a page blocks crawling, say so and mark the finding unverified rather than filling it from memory.
+- **Name where every claim came from.** Every finding gets a citation or a link. If you state something without a source, mark it as your own assessment.
+- **Never fill a gap with invention.** "I don't know" and "nobody has published this" are real findings. A design with honest gaps is worth more than one padded with confident guesses.
+- **Benchmark rather than believe.** Where a claim is testable (a model's speed, an OCR engine on handwriting, a CRDT's merge behavior), run the test in your own environment and report numbers.
+- **One question at a time.** Pick the highest-gating unresolved question, work it to an answer, write it up, then move on. Do not fan out across all threads at once.
+- **Write everything down.** Keep a research-notes file, one section per thread, with findings, sources, and open sub-questions. Each session ends with its findings written there. This project should accumulate; a chat that ends with everything only in the conversation has failed.
+
+## 3. Deliverables
+
+- The research-notes file, kept current.
+- Decision write-ups: each answered question becomes a decision with reasoning, evidence, and which phase it belongs to (MVP, v1, PLUGIN, LATER).
+- Where a thread dead-ends, a written record of why, so nobody researches it twice.
+- The threat model for embedded blocks (terminal, webhook, cron) if the answer is "possible at all".
+
+## 4. What not to do
+
+- Do not redesign, restate the feature list, or produce a competing design document. Answer the open questions.
+- Do not add features. If research surfaces something the design lacks, bring it back as a question, not a feature.
+- Do not soften the design's promises to make them easier: the search rule, zero-knowledge encryption, and out-of-the-box handwriting are the point of the app. The research question is what they cost, not whether they can be quietly dropped.

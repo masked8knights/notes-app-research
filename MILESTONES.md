@@ -18,3 +18,21 @@ Learned: fetch-gate rule for subagents: URLs must appear in the task prompt text
 Next: Threads C-G research; then Phase 2 plan and user confirmation; git commit + push (blocked on user gh auth or token in .env).
 Blocked: GitHub push (same as R1).
 Status: done
+
+### Round R2b: GitHub online copy established
+Date: 2026-10-27
+Did: Ran checks/commit-r2.sh (commit d03e89d, 13 files, 2275 insertions). Secret checker passed over worktree and full history at the publish boundary. Created private GitHub repo notes-app-research via gh in WSL and pushed main (gh was already authenticated in the user's WSL, so no token in .env was needed).
+Result: Online copy live and private; future rounds push after each secret check.
+Learned: The repo lives on /mnt/c but WSL gh handles it fine; repo made private by default because findings quote community material, user can flip it public.
+Next: Threads C-G research lanes; then Phase 2 plan and user confirmation.
+Blocked: none
+Status: done
+
+### Round R3: Threads C-G answered; Phase 1 research complete
+Date: 2026-10-27
+Did: Ran 5 parallel lanes (C local models, D indexing cost, E handwriting/OCR, F editor/platform + embedded-block threat model, G trust/UX), each with inline URLs and its own findings file. Wrote the C-G conclusions into RESEARCH.md and expanded the open-questions list to per-thread items. Committed as R3 and pushed after a passing secret check.
+Result: All seven research threads from the brief now answered with cited findings; 12 findings files, 1 benchmark. Research phase of Phase 1 is complete.
+Learned: Lane isolation held (each subagent touched only its file); the 2026 Obsidian vault RAT campaign grounds the embedded-block threat model; "nobody has published this" turned out to be a recurring honest finding (phone tokens/sec, auto-filing tolerance ceiling, stolen-index threat models).
+Next: Phase 2: decompose research into a build plan (MVP / v1 / PLUGIN / LATER per brief deliverables), confirm the todo order with the user before any build work.
+Blocked: none
+Status: done

@@ -7,10 +7,10 @@
 3. [passed] Phase 1: digest Discord communities - extract every app, link, and feature request, referencing message IDs. Output: research-material/findings/community-digest.md.
 4. [passed] Phase 1: research every linked GitHub repo and app (subagent sweep, 27 repos + ~58 pages, remade.wiki included). Outputs: research-material/findings/github-repos-1+2.md, linked-apps-1+2.md.
 5. [passed] Phase 1: research brief Thread A (sync/CRDT, with measured benchmark) and Thread B (storage). Outputs: thread-a-sync.md, thread-b-storage.md, benchmarks/thread-a/.
-6. [in progress] Phase 1: research Threads C-G (local models, indexing cost, handwriting/OCR, editor internals, UX trust).
+6. [passed] Phase 1: research Threads C-G (local models, indexing cost, handwriting/OCR, editor internals + embedded-block threat model, UX trust). Outputs: thread-c..thread-g findings files; RESEARCH.md updated.
 7. [passed] Phase 1: write RESEARCH.md consolidating all findings with sources.
 8. [pending] Phase 2: decompose into plan, confirm with user before build work.
-9. [in progress] Git: run secret checker, commit round R2, create GitHub remote, push sanitized research (needs user's gh auth in WSL or token in .env).
+9. [passed] Git: secret check passed (worktree + history), commit d03e89d pushed to private GitHub repo notes-app-research (gh was already authenticated in WSL).
 10. [backlog] Rust build kickoff (after plan confirmation): repo scaffold, toolchain decision (Tauri vs Electron vs native), Phase 1 spine.
 
 ## Status notes
