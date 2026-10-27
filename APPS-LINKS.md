@@ -7,52 +7,52 @@ Compiled by the compiler lane from every findings file in notesapp/findings/ plu
 - Obsidian - https://obsidian.md - Proprietary markdown notes app with canvas, plugins, and a plugin ecosystem, the central comparison target throughout the research - open-source n (status disputed in findings) - community-digest, apps-likes-wants, thread-a-sync, thread-b-storage, thread-d-indexing, thread-f-editor-platform, thread-g-trust-ux, integrations-1
 - Obsidian Publish - https://publish.obsidian.md - Obsidian's paid publishing service mentioned as an example of hosted publishing - open-source n - linked-apps-1
 - OneNote - https://www.microsoft.com/microsoft-365/onenote - Microsoft's free-form note app with canvas and handwriting, a key inspiration for the project - open-source n - community-digest, apps-likes-wants, thread-b-storage, thread-e-handwriting, integrations-1
-- Evernote - https://evernote.com - Classic proprietary notes app, cited for its search and export pain points - open-source n - community-digest, thread-d-indexing, thread-g-trust-ux
-- Notion - https://www.notion.so - Proprietary block-based workspace app, frequently compared on editor architecture - open-source n - community-digest, apps-likes-wants
-- Goodnotes - https://www.goodnotes.com - Handwriting-first iPad notes app, cited for ink handling and page workflows - open-source n - community-digest, apps-likes-wants
+- Evernote - https://evernote.com/en-us/features/notes-app - Classic proprietary notes app, cited for its search and export pain points - open-source n - community-digest, thread-d-indexing, thread-g-trust-ux
+- Notion - https://www.notion.com/product/features - Proprietary block-based workspace app, frequently compared on editor architecture - open-source n - community-digest, apps-likes-wants
+- Goodnotes - https://www.goodnotes.com/features - Handwriting-first iPad notes app, cited for ink handling and page workflows - open-source n - community-digest, apps-likes-wants
 - Notability - https://notability.com - Handwriting and audio-note app for iPad - open-source n - apps-likes-wants
 - Noteshelf - https://www.noteshelf.co (also https://www.noteshelf.net) - Handwriting notes app, Noteshelf 3 on Android mentioned in community threads - open-source n - apps-likes-wants, community-digest
 - Samsung Notes - https://www.samsung.com/us/support/owners/app/samsung-notes - Samsung's built-in handwriting notes app - open-source n - community-digest, myscript-nebo-reverse
-- Squid - https://play.google.com/store/apps/details?id=com.steadfastinnovation.android.projectpapyrus - Handwriting notes app for Android (formerly Papyrus) - open-source n - community-digest
+- Squid - https://squidnotes.com - Handwriting notes app for Android (formerly Papyrus) - open-source n - community-digest
 - Miro - https://miro.com - Online collaborative whiteboard - open-source n - community-digest
 - Milanote - https://milanote.com - Visual board tool for creative work - open-source n - community-digest
 - Craft - https://www.craft.do - Proprietary document/notes app praised for polish - open-source n - apps-likes-wants
-- Anytype - https://anytype.io - Local-first, E2EE object-based notes app ("anytwo" in community shorthand) - open-source partial (client repos, license per repo) - community-digest, apps-likes-wants
+- Anytype - https://github.com/anyproto - Local-first, E2EE object-based notes app ("anytwo" in community shorthand) - open-source partial (client repos, license per repo) - community-digest, apps-likes-wants
 - Tana - https://tana.inc - Outline-based knowledge tool with supertags - open-source n - apps-likes-wants
 - Reflect - https://reflect.app - Encrypted notes app with backlinks - open-source n - apps-likes-wants
 - Logseq - https://github.com/logseq/logseq - Open-source outliner notes app - open-source y (AGPL-3.0) - apps-likes-wants
-- Joplin - https://joplinapp.org - Open-source markdown notes app with sync - open-source y (license in repo) - community-digest, apps-likes-wants
-- Notesnook - https://notesnook.com - E2EE open-source notes app - open-source y (GPL, per repo) - community-digest, apps-likes-wants
-- Trilium Notes - https://github.com/zadam/trilium (site https://triliumnotes.org) - Open-source hierarchical notes app with self-hosted sync - open-source y (AGPL-3.0) - community-digest, apps-likes-wants
-- AFFiNE - https://github.com/toeverything/affine (site https://affine.pro) - Open-source collaborative workspace app with canvas and docs - open-source y (MIT) - community-digest, apps-likes-wants
-- ente - https://ente.io - E2EE photos app cited for its trust and encryption UX - open-source y (AGPL-3.0, per repo) - community-digest, thread-g-trust-ux
-- Heptabase - https://wiki.heptabase.com/version-one - Visual thinking app with cards on canvas - open-source n - apps-likes-wants
-- Kinopio - https://kinopio.club/help/exporting - Spatial notes app cited for its export approach - open-source n - apps-likes-wants
-- tldraw - https://tldraw.dev - Canvas/whiteboard SDK, also a product; its rich-text and license model discussed - open-source y with a custom license (LICENSE.md in repo, watermarks without subscription) - thread-f-editor-platform, apps-likes-wants
+- Joplin - https://github.com/laurent22/joplin - Open-source markdown notes app with sync - open-source y (license in repo) - community-digest, apps-likes-wants
+- Notesnook - https://github.com/streetwriters/notesnook - E2EE open-source notes app - open-source y (GPL, per repo) - community-digest, apps-likes-wants
+- Trilium Notes - https://github.com/zadam/trilium - Open-source hierarchical notes app with self-hosted sync - open-source y (AGPL-3.0) - community-digest, apps-likes-wants
+- AFFiNE - https://github.com/toeverything/affine - Open-source collaborative workspace app with canvas and docs - open-source y (MIT) - community-digest, apps-likes-wants
+- ente - https://github.com/ente-io/ente - E2EE photos app cited for its trust and encryption UX - open-source y (AGPL-3.0, per repo) - community-digest, thread-g-trust-ux
+- Heptabase - https://www.heptabase.com - Visual thinking app with cards on canvas - open-source n - apps-likes-wants
+- Kinopio - https://kinopio.club - Spatial notes app cited for its export approach - open-source n - apps-likes-wants
+- tldraw - https://github.com/tldraw/tldraw - Canvas/whiteboard SDK, also a product; its rich-text and license model discussed - open-source y with a custom license (LICENSE.md in repo, watermarks without subscription) - thread-f-editor-platform, apps-likes-wants
 - Excalidraw - https://github.com/excalidraw/excalidraw - Open-source virtual whiteboard in Excalidraw's own name as well as its Obsidian plugin - open-source y (MIT) - community-digest, thread-f-editor-platform, integrations-1
 - Concepts - https://concepts.app - Infinite sketching app with vector ink, paid with subscriptions - open-source n - community-digest, apps-likes-wants
-- Saber - github.com/saber-notes/saber - Handwriting notes app mentioned in community threads - open-source y (GPLv3, Flutter) - community-digest, R6-batch1
+- Saber - https://github.com/saber-notes/saber - Handwriting notes app mentioned in community threads - open-source y (GPLv3, Flutter) - community-digest, R6-batch1
 - Workflowy - https://workflowy.com - Outline-based notes tool - open-source n - community-digest
 - DEVONthink - https://www.devontechnologies.com/apps/devonthink - Mac research database app cited for indexing and search UX - open-source n - thread-d-indexing, thread-g-trust-ux
 - CapCut - https://www.capcut.com - Video editor mentioned for editing UX - open-source n - thread-g-trust-ux
-- Descript - https://www.descript.com - Audio/video editor with transcript-based editing - open-source n - thread-g-trust-ux
+- Descript - https://www.descript.com/features - Audio/video editor with transcript-based editing - open-source n - thread-g-trust-ux
 - LumaFusion - https://lumafusion.com - Mobile multitrack video editor - open-source n - thread-g-trust-ux
 - Muse - https://adamwiggins.com/muse-retrospective - Spatial canvas thinking tool, retrospective write-up by its creator - open-source n (retrospective only) - community-digest
-- Thymer - https://thymer.com/markdown-mirror - Notes tool with a mirrored markdown view discussed for editing models - open-source n - linked-apps-1
-- Ideon - github.com/3xpyth0n (site theideon.com) - Notes app mentioned in community links - open-source y (AGPLv3, Docker) - linked-apps-1, R6-batch2
-- OwlLuna - https://github.com/owaisazmal/OwlLuna (site https://owaisazmal.github.io/OwlLuna) - Notes app by a community member - open-source y (license per repo) - community-digest, linked-apps-1
+- Thymer - https://thymer.com - Notes tool with a mirrored markdown view discussed for editing models - open-source n - linked-apps-1
+- Ideon - https://github.com/3xpyth0n - Notes app mentioned in community links - open-source y (AGPLv3, Docker) - linked-apps-1, R6-batch2
+- OwlLuna - https://github.com/owaisazmal/OwlLuna - Notes app by a community member - open-source y (license per repo) - community-digest, linked-apps-1
 - Akasha - https://apps.microsoft.com/detail/9n3xffmbl7kx - Windows notes app mentioned in links - open-source n (not stated) - linked-apps-1
 - Pele - (no URL in findings; discussed via a Reddit mermaid renderer thread) - Mermaid diagram renderer referenced in community discussion - not stated - linked-apps-1
-- Poznote - https://poznote.com (GitHub, PHP+SQLite) - Notes app mentioned in links - open-source y (MIT, ~908 stars) - linked-apps-1, R6-batch2
+- Poznote - https://github.com/timothepoznanski/poznote - Notes app mentioned in links - open-source y (MIT, ~908 stars) - linked-apps-1, R6-batch2
 - Amphi (useamphi.com, Amphi Labs LTD) - https://www.useamphi.com - closed-source iPad AI study canvas (notes, documents, flashcards, AI tutors) - open-source n. Distinct product with the same name: Amphi Notes, repo https://github.com/amphi2024/notes, free open-source (GPL-3.0-or-later) with self-hosted sync. The Discord thread linked useamphi.com (R8 fact-check) - community-digest
-- Tangent Notes - https://www.tangentnotes.com - Local-first notes app mentioned in links - open-source y (Apache-2.0; no mobile) - linked-apps-1, R6-batch2
-- Dillinger - https://dillinger.io (repo https://github.com/joemccann/dillinger) - Online markdown editor cited for editor UX - open-source y (MIT) - linked-apps-1
-- Homebrewery - https://homebrewery.naturalcrit.com - Markdown-to-D&D-document renderer cited for rendering approaches (URL partially UNVERIFIED in findings) - open-source y (license not stated) - linked-apps-1
-- Ghost - https://ghost.org (repo https://github.com/TryGhost/Ghost) - Publishing platform cited for editor/plugin architecture - open-source y (MIT) - linked-apps-1
-- Proofeditor - https://proofeditor.ai (repo https://github.com/proofeditor) - Proofing/markdown editor mentioned in links - open-source y (license not stated) - linked-apps-1
+- Tangent Notes - https://github.com/suchnsuch/Tangent - Local-first notes app mentioned in links - open-source y (Apache-2.0; no mobile) - linked-apps-1, R6-batch2
+- Dillinger - https://github.com/joemccann/dillinger - Online markdown editor cited for editor UX - open-source y (MIT) - linked-apps-1
+- Homebrewery - https://github.com/naturalcrit/homebrewery - Markdown-to-DHomebrewery - https://homebrewery.naturalcrit.com - Markdown-to-D&D-document renderer cited for rendering approaches (URL partially UNVERIFIED in findings)D-document renderer cited for rendering approaches - open-source y (license not stated) - linked-apps-1
+- Ghost - https://github.com/TryGhost/Ghost - Publishing platform cited for editor/plugin architecture - open-source y (MIT) - linked-apps-1
+- Proofeditor - https://github.com/proofeditor - Proofing/markdown editor mentioned in links - open-source y (license not stated) - linked-apps-1
 - sawt - URL withheld from publication (hosted under a community member account; see local links file) (UNVERIFIED) - Repo mentioned in community links - not stated - linked-apps-1
-- HelixNotes - https://helixnotes.com (repo https://gitlab.com/ArkHost/HelixNotes) - Notes app mentioned in links - open-source y (AGPL) - linked-apps-2
-- Lockbook - https://lockbook.net (repo https://github.com/Lockbook/lockbook) - E2EE notes/documents app - open-source y (license per repo) - linked-apps-2
+- HelixNotes - https://gitlab.com/ArkHost/HelixNotes - Notes app mentioned in links - open-source y (AGPL) - linked-apps-2
+- Lockbook - https://github.com/Lockbook/lockbook - E2EE notes/documents app - open-source y (license per repo) - linked-apps-2
 - Tolaria - https://github.com/refactoringhq/tolaria - Rust+Tauri+React notes app (user-added), with MCP server, built on BlockNote/tldraw/IronCalc, release alpha-v2026.10.25-alpha.0028 - open-source y (AGPL-3.0) - tolaria, community-digest
 - diktafon - https://github.com/Lukas-Novak/diktafon (user-added) - Android dictation/recorder app, MIT, fork of jaromiru/diktafon, releases v1.1.1, has diktafon-ingest companion and a Play Store listing cz.mod42.diktafon - open-source y (MIT) - user-added findings context
 - marmalade-tts-android - https://github.com/maxwhipw/marmalade-tts-android (user-added) - Android TTS engine built on espeak-ng (MIT source, GPL-3.0 APK), issues #5 and #20-#32 discussed - open-source y (MIT source / GPL-3.0 APK) - user-added findings context
@@ -71,9 +71,9 @@ Compiled by the compiler lane from every findings file in notesapp/findings/ plu
 - EkarinLB/e-journal - https://github.com/EkarinLB/e-journal - Journaling app, remade.wiki project - open-source y (MIT) - deep-repos-b, thread3-digest
 - cheeterdev/notes - https://github.com/cheeterdev/notes - Notes repo - open-source y (license not stated) - deep-repos-b
 - hughhowey/neo - https://github.com/hughhowey/neo - Novel-writing app by the author Hugh Howey - open-source y (MIT) - deep-repos-b
-- xnotes-android - https://f-droid.org/en/packages/com.xnotes (UNVERIFIED URL; forks by shardulvs, DarkL0gos, NicolasKDev) - Android notes app with forks, discussed as .xnote vector ink - open-source y (license not stated in findings) - community-digest, thread-b-storage
-- open-note (HasanMajid) - https://github.com/HasanMajid/open-note (site https://hasanmajid.github.io/open-note, site UNVERIFIED) - Open-source notes app, remade.wiki "open-note" project - open-source y (license not stated) - community-digest, thread3-digest
-- open-notebook (remade.wiki) - https://remade.wiki/projects/open-notebook - Remade project page for open-notebook - open-source y (MIT) - thread3-digest
+- xnotes-android - https://github.com/shardulvs/xnotes-android (forks: ismailGl, DarkL0gos, NicolasKDev) - Android notes app with forks, discussed as .xnote vector ink - open-source y (license not stated in findings) - community-digest, thread-b-storage
+- open-note (HasanMajid) - https://github.com/HasanMajid/open-note - Open-source notes app, remade.wiki "open-note" project - open-source y (license not stated) - community-digest, thread3-digest
+- open-notebook - (no public repo found in the research) - Remade.wiki open-source notebook project - open-source y (MIT claimed) - thread3-digest
 - NicTanghe/BasScript - (URL UNVERIFIED; findings note it may not exist) - Repo referenced in community links - not stated - community-digest
 - EvotecIT/OfficeIMO - https://github.com/EvotecIT/OfficeIMO - .NET library that reads and writes OneNote files, with OfficeIMO.MarkdownRenderer - open-source y (MIT) - community-digest, integrations-1
 - OfficeIMO (community-linked fork) - (URL UNVERIFIED; findings could not confirm it exists; canonical repo EvotecIT/OfficeIMO) - Repo name referenced in community links - MIT (.NET) via canonical repo - community-digest
@@ -115,7 +115,7 @@ Compiled by the compiler lane from every findings file in notesapp/findings/ plu
 - David-Magdy/TR_OCR_LARGE - https://github.com/David-Magdy/TR_OCR_LARGE - TrOCR-based handwriting OCR project - open-source y (license not stated) - thread-e-handwriting
 - PARSeq - https://github.com/baudm/parseq (Chinese demo https://gmgge.github.io/parseq_chinese) - Scene-text recognition model family, used for OCR comparisons - open-source y (Apache-2.0 per repo) - thread-e-handwriting
 - docTR - https://github.com/mindee/doctr - OCR document-text-recognition library by Mindee - open-source y (Apache-2.0 per repo) - thread-e-handwriting, thread-d-indexing
-- Tesseract - https://tesseract-ocr.github.io - Classic open-source OCR engine - open-source y (Apache-2.0) - thread-e-handwriting, thread-d-indexing
+- Tesseract - https://github.com/tesseract-ocr/tesseract - Classic open-source OCR engine - open-source y (Apache-2.0) - thread-e-handwriting, thread-d-indexing
 - PaddleOCR - https://github.com/PaddlePaddle/PaddleOCR - OCR toolkit from Baidu's PaddlePaddle - open-source y (Apache-2.0) - thread-e-handwriting, thread-d-indexing
 - ocrmypdf - https://github.com/ocrmypdf/ocrmypdf - Tool that adds OCR text layers to PDFs - open-source y (MPL-2.0 per repo) - thread-d-indexing, thread-e-handwriting
 - mkyt/ocrmypdf-AppleOCR - https://github.com/mkyt/ocrmypdf-AppleOCR - ocrmypdf plugin using Apple's OCR engine - open-source y (license not stated) - thread-d-indexing
@@ -124,9 +124,9 @@ Compiled by the compiler lane from every findings file in notesapp/findings/ plu
 - Apple Vision / VisionKit / PencilKit - https://developer.apple.com/documentation/vision (also https://developer.apple.com/videos/play/wwdc2019/234) - Apple's on-device vision, handwriting, and ink frameworks - open-source n - thread-e-handwriting, thread-d-indexing, myscript-nebo-reverse
 - xournalpp_htr - https://github.com/PellelNitram/xournalpp_htr (site https://lellep.xyz) - HTR tooling for Xournal++ handwriting files - open-source y (license not stated) - thread-e-handwriting
 - PellelNitram/OnlineHTR - https://github.com/PellelNitram/OnlineHTR - Online handwriting-recognition project by the same author - open-source y (license not stated) - thread-e-handwriting
-- langergitanu/MyScript - (repo per findings) - Reverse-engineering of the MyScript protocol - open-source y (license not stated) - myscript-nebo-reverse
-- langergitanu/SamsungNotes - (repo per findings) - Reverse-engineering of Samsung Notes file format - open-source y (license not stated) - myscript-nebo-reverse
-- langergitanu/ThunderNotes - (repo per findings) - Reverse-engineering of ThunderNotes format - open-source y (license not stated) - myscript-nebo-reverse
+- langergitanu/MyScript - https://github.com/langergitanu/MyScript - Reverse-engineering of the MyScript protocol - open-source y (license not stated) - myscript-nebo-reverse
+- langergitanu/SamsungNotes - https://github.com/langergitanu/SamsungNotes - Reverse-engineering of Samsung Notes file format - open-source y (license not stated) - myscript-nebo-reverse
+- langergitanu/ThunderNotes - https://github.com/langergitanu/ThunderNotes - Reverse-engineering of ThunderNotes format - open-source y (license not stated) - myscript-nebo-reverse
 - Xournal++ - https://github.com/xournalpp/xournalpp - Open-source handwriting notes app; issues 170, 1673, 2152, 4932, 5721, 5730 discussed, including issue 5730 on an open .bink format target - open-source y (GPL-2.0/3.0 per repo) - thread-e-handwriting
 - RNote - https://github.com/flxzt/rnote (site https://rnote.flxzt.net) - Open-source Rust handwriting/sketch notes app; issues 1147, 1363, 329 discussed - open-source y (GPL-3.0) - thread-e-handwriting
 - jya-dev/supernote-tool - https://github.com/jya-dev/supernote-tool - Tooling for Ratta Supernote files - open-source y (license not stated) - thread-e-handwriting
@@ -140,22 +140,22 @@ Compiled by the compiler lane from every findings file in notesapp/findings/ plu
 
 ## Sync/CRDT/storage
 
-- Automerge - https://automerge.org - CRDT library for synchronizing JSON-like data - open-source y (MIT per repo) - thread-a-sync
-- Yjs / yrs - https://crates.io/crates/yrs (Yjs at https://github.com/yjs/yjs) - CRDT ecosystem, with yrs the Rust port used from Rust clients - open-source y (MIT) - thread-a-sync
-- Loro - https://loro.dev (protocol at https://github.com/loro-dev/protocol) - Rust-native CRDT library for rich document sync - open-source y (MIT per repo) - thread-a-sync
+- Automerge - https://github.com/automerge/automerge - CRDT library for synchronizing JSON-like data - open-source y (MIT per repo) - thread-a-sync
+- Yjs / yrs - https://github.com/yjs/yjs (Rust port: https://github.com/y-crdt/y-crdt) - CRDT ecosystem, with yrs the Rust port used from Rust clients - open-source y (MIT) - thread-a-sync
+- Loro - https://github.com/loro-dev/loro - Rust-native CRDT library for rich document sync - open-source y (MIT per repo) - thread-a-sync
 - Diamond Types - https://github.com/josephg/diamond-types - Sequence CRDT project by josephg discussed for text sync - open-source y (license per repo) - thread-a-sync
 - Beelay / Keyhive - https://www.inkandswitch.com/keyhive/notebook/05 and https://www.inkandswitch.com/keyhive/notebook/06 - Ink & Switch's Keyhive notebook posts describing Beelay, a p2p sync/permission layer - open-source y (per project) - thread-a-sync
 - Malleable software essay - https://www.inkandswitch.com/essay/malleable-software/ - Ink & Switch essay shaping the project's local-first philosophy - n/a (essay) - thread-a-sync
 - Ilow-Space/IlowObsidianSync - https://github.com/Ilow-Space/IlowObsidianSync - Community Obsidian sync implementation - open-source y (license not stated) - thread-a-sync
 - any-sync - https://github.com/anyproto/any-sync - The sync/CRDT protocol behind Anytype - open-source y (MIT per repo) - thread-a-sync
-- iroh - https://www.iroh.computer/solutions/vpn - Rust P2P E2EE networking library used as sync transport option - open-source y (Apache-2.0/MIT per repo) - thread-a-sync, community-digest
+- iroh - https://github.com/n0-computer/iroh - Rust P2P E2EE networking library used as sync transport option - open-source y (Apache-2.0/MIT per repo) - thread-a-sync, community-digest
 - Nostr - https://nostr.org (protocol https://github.com/nostr-protocol/nostr and https://github.com/nostr-protocol/nips, NIP collection also via https://github.com/erskingardner/nips) - Decentralized relay protocol discussed as a sync/backup transport - open-source y (per repos) - thread-a-sync, linked-apps-1
 - bouquet - https://nostrapps.com/bouquet (UNVERIFIED; 404 in findings) - Nostr app reference - not stated - thread-a-sync
 - obsidian-nostr-writer - https://nostrapps.com/obsidian-nostr-writer (UNVERIFIED) - Nostr writing app reference - not stated - thread-a-sync
 - Obsidian Sync - https://help.obsidian.md/sync - Obsidian's paid sync service, which uses diff-match-patch internally - open-source n - thread-a-sync
 - diff-match-patch - (library referenced in findings for Obsidian Sync's algorithm) - Text-diff/patch library underlying Obsidian Sync - open-source y (Apache-2.0) - thread-a-sync
 - Dropbox conflicted copies - https://help.dropbox.com/syncing-overviews/conflicted-copies - Dropbox docs on conflicted-copy behavior discussed for file sync pitfalls - n/a (docs) - thread-a-sync
-- JSON Canvas - https://obsidian.md/blog/json-canvas (spec MIT) - Obsidian's open file format for infinite canvases - open-source y (MIT spec) - thread-b-storage, community-digest
+- JSON Canvas - https://github.com/jsoncanvas/jsoncanvas (spec MIT) - Obsidian's open file format for infinite canvases - open-source y (MIT spec) - thread-b-storage, community-digest
 - kepano/obsidian-skills JSON Canvas SKILL.md - (referenced in findings for a JSON Canvas skill file) - Example of using JSON Canvas - open-source y (per repo) - thread-b-storage
 - p2panda - (referenced in thread3-digest) - Local-first p2p protocol mentioned for sync - open-source y (license not stated) - thread3-digest
 - BlockSuite - https://github.com/toeverything/blocksuite - AFFiNE's block-editor framework discussed for document storage - open-source y (MIT) - thread-b-storage
@@ -183,16 +183,16 @@ Compiled by the compiler lane from every findings file in notesapp/findings/ plu
 
 ## Media/document components
 
-- ONLYOFFICE - https://www.onlyoffice.com (DocumentServer/DesktopEditors/sdkjs repos, AGPL-3.0) - Office-document editing suite embeddable via iframe + postMessage, with the milio48/bedoffice example integration - open-source y (AGPL-3.0) - integrations-1
+- ONLYOFFICE - https://github.com/ONLYOFFICE/DocumentServer (also DesktopEditors and sdkjs repos, AGPL-3.0) - Office-document editing suite embeddable via iframe + postMessage, with the milio48/bedoffice example integration - open-source y (AGPL-3.0) - integrations-1
 - Stirling PDF - https://github.com/Stirling-Tools/Stirling-PDF - Self-hosted PDF toolkit, MIT core with proprietary folders/features - open-source y (MIT core; some proprietary parts) - integrations-1
 - libVLC - https://github.com/videolan/vlc - VLC's media playback library for embedding audio/video - open-source y (LGPL-2.1) - integrations-1
-- Audacity - https://www.audacityteam.org - Open-source audio editor cited for audio workflows - open-source y (GPLv3) - integrations-1
-- OBS - https://obsproject.com - Open-source streaming/recording studio mentioned for capture - open-source y (GPL-2.0+) - integrations-1
-- GIMP - https://www.gimp.org - Open-source image editor cited as component option - open-source y (GPL-3.0) - integrations-1
+- Audacity - https://github.com/audacity/audacity - Open-source audio editor cited for audio workflows - open-source y (GPLv3) - integrations-1
+- OBS - https://github.com/obsproject/obs-studio - Open-source streaming/recording studio mentioned for capture - open-source y (GPL-2.0+) - integrations-1
+- GIMP - https://github.com/GNOME/gimp - Open-source image editor cited as component option - open-source y (GPL-3.0) - integrations-1
 - Krita - https://github.com/KDE/krita - Open-source painting app considered as an embedded raster option - open-source y (GPL) - integrations-1
 - Photopea - https://www.photopea.com (repo https://github.com/photopea/photopea, API client https://github.com/yikuansun/PhotopeaAPI) - Browser image editor, proprietary, with an API discussed for embedding - open-source n - integrations-1
-- Godot - https://godotengine.org (LibGodot PR https://github.com/godotengine/godot/pull/110863, https://github.com/migueldeicaza/libgodot, https://github.com/react-native-godot/react-native-godot) - Game engine examined for embedding canvases via LibGodot efforts and bindings - open-source y (MIT) - integrations-1
-- Blender - https://www.blender.org (bpy pip module; headless option https://github.com/oqton/blenderless) - 3D suite examined for embedding via bpy/blenderless - open-source y (GPL) - integrations-1
+- Godot - https://github.com/godotengine/godot (LibGodot PR https://github.com/godotengine/godot/pull/110863, https://github.com/migueldeicaza/libgodot, https://github.com/react-native-godot/react-native-godot) - Game engine examined for embedding canvases via LibGodot efforts and bindings - open-source y (MIT) - integrations-1
+- Blender - https://github.com/blender/blender (bpy pip module; headless option https://github.com/oqton/blenderless) - 3D suite examined for embedding via bpy/blenderless - open-source y (GPL) - integrations-1
 - Kdenlive - https://github.com/KDE/kdenlive - Open-source video editor cited for video workflows - open-source y (GPL-3.0) - integrations-1
 - MLT - https://github.com/mltframework/mlt - Media framework underlying Kdenlive for video editing pipelines - open-source y (LGPL-2.1) - integrations-1
 - onenote_parser - https://docs.rs/onenote_parser - Rust crate for parsing OneNote .one files - open-source y (per crate) - thread-b-storage, integrations-1
@@ -202,7 +202,7 @@ Compiled by the compiler lane from every findings file in notesapp/findings/ plu
 ## Formats and protocols
 
 - Markdown - (spec via markdownguide/pandoc references in findings) - The notes app's primary document format - open standard - throughout
-- JSON Canvas - https://obsidian.md/blog/json-canvas - Open canvas file format from Obsidian - open-source y (MIT spec) - thread-b-storage
+- JSON Canvas - https://github.com/jsoncanvas/jsoncanvas - Open canvas file format from Obsidian - open-source y (MIT spec) - thread-b-storage
 - RFC 5322 .eml - https://datatracker.ietf.org/doc/html/rfc5322 - Email message format used by CapsuleCraft for serialization - open standard - thread3-digest
 - .xnote vector ink - (format discussed in findings, xnotes-android) - Vector ink file format from the xnotes Android app - format spec - community-digest, thread-b-storage
 - .one / .onepkg - (OneNote file format, discussed in findings) - Microsoft OneNote container formats examined for import - proprietary format (documented/parseable) - thread-b-storage, integrations-1
@@ -215,16 +215,16 @@ Compiled by the compiler lane from every findings file in notesapp/findings/ plu
 
 ## Community/remake projects
 
-- remade.wiki - https://remade.wiki - Community wiki cataloging remakes of beloved software; projects below - community project - thread3-digest
-- remade.wiki/projects/prosecraft - https://remade.wiki/projects/prosecraft - Remake page for Prosecraft - community remake - thread3-digest
-- remade.wiki/projects/capsulecraft - https://remade.wiki/projects/capsulecraft - Remake page for CapsuleCraft - community remake - thread3-digest
-- remade.wiki/projects/open-notebook - https://remade.wiki/projects/open-notebook - Remake page for open-notebook - community remake (MIT) - thread3-digest
-- remade.wiki/projects/notecraft-onenote - https://remade.wiki/projects/notecraft-onenote - Remake page for the OneNote-style notecraft - community remake - thread3-digest
-- remade.wiki/projects/open-note - https://remade.wiki/projects/open-note - Remake page for open-note - community remake - thread3-digest
-- remade.wiki/projects/e-journal - https://remade.wiki/projects/e-journal - Remake page for e-journal - community remake (MIT) - thread3-digest
-- remade.wiki/projects/notecraft - https://remade.wiki/projects/notecraft - Remake page for notecraft - community remake - thread3-digest
-- remade.wiki/projects/scriptcraft - https://remade.wiki/projects/scriptcraft - Remake page for scriptcraft - community remake - thread3-digest
-- ArtCraft/FigCraft - https://getartcraft.com/apps/figcraft (repo https://github.com/storytold/figcraft) - Community creative app, FigCraft page and repo - open-source y (license per repo) - linked-apps-1
+- remade.wiki - https://remade.wiki - Community wiki cataloging remakes of beloved software; its repo-backed projects are listed in the open-source section above - community project - thread3-digest
+- Prosecraft - (no public repo found) - Remake project cataloged on remade.wiki, no linked repo - community remake - thread3-digest
+- Covered by the capsuleos repo entry above
+- Covered by the open-notebook entry above
+- Covered by the AlienTechSoftware/notecraft entry above
+- Covered by the HasanMajid/open-note entry above
+- Covered by the EkarinLB/e-journal entry above
+- Covered by the notecraft repo entries above
+- ScriptCraft - (no public repo found) - Remake project cataloged on remade.wiki, no linked repo - community remake - thread3-digest
+- FigCraft (ArtCraft) - https://github.com/storytold/figcraft - Community creative app - open-source y (license per repo) - linked-apps-1
 - Meridian/NoteCraft community working title - (release v0.0.6, EML/HTML serialization, per findings) - Community notes project that changed working names, released v0.0.6 - open-source y (license not stated) - community-digest
 - strongcod3r.github.io/laplace - https://strongcod3r.github.io/laplace (UNVERIFIED) - Community project page reference - not stated - linked-apps-1
 - notecraft-core-studio.base44.app - https://notecraft-core-studio.base44.app (UNVERIFIED) - Community-built notecraft page on base44 - not stated - linked-apps-1
@@ -257,9 +257,9 @@ Compiled by the compiler lane from every findings file in notesapp/findings/ plu
 - Drawboard Projects (formerly Bullclip) - https://www.drawboard.com/projects - Team markup platform with live sync, versioning, Procore/Revit integrations - open-source n - R5-drawboard
 - PDFCraft (ArtCraft) - https://www.getartcraft.com - Desktop Rust PDF workbench; ArtCraft lineup is 13 pure-Rust apps (no-webviews principle), separate focused apps, one launcher - open-source n - R5-study
 - Flexcil - https://www.flexcil.com - Pen-gesture study annotator (circle-to-notebook, excerpt linking between PDF and notes); community top asks: working sync, pixel eraser, shape tools, better PDF engine - open-source n - R5-study
-- LiquidText - https://www.liquidtext.net - Active-reading workspace (excerpts on canvas, linked to source); complaints: lag, subscription-gated sync, no write-back to source PDF on desktop - open-source n - R5-study
+- LiquidText - https://www.liquidtext.net/pricing-features - Active-reading workspace (excerpts on canvas, linked to source); complaints: lag, subscription-gated sync, no write-back to source PDF on desktop - open-source n - R5-study
 - CollaNote - (iPad App Store) - Free iPad notes+PDF+collaboration app; chronic bugginess and free-to-paid whiplash documented - open-source n - R5-study
-- MarginNote 4 - https://www.marginnote.com - Document+mindmap+flashcards study system; complaints: rigidity, bugs, handwriting polish missing - open-source n - R5-study
+- MarginNote 4 - https://www.marginnote.com/en/features/index.html - Document+mindmap+flashcards study system; complaints: rigidity, bugs, handwriting polish missing - open-source n - R5-study
 - Xodo - https://xodo.com - Mainstream PDF annotator; crash complaints and monetization switches - open-source n - R5-study
 - PDF Expert (Readdle) - https://pdfexpert.com - PDF annotator; subscription switch backlash documented - open-source n - R5-study
 - University Notes: Study Notes (2026) - https://apps.apple.com/us/app/university-notes/id6777402601 - Memorization mechanics on PDFs (hide-answer layer, tape tool, rewrite loop) - open-source n - R5-study

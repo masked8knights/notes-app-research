@@ -42,7 +42,7 @@ Renamed from Nebo to MyScript Notes on iOS and Android; Windows keeps the name N
 
 ## 2. Write by Styluslabs
 
-**Ink engine / pressure & tilt.** Custom vector ink on an SVG native document format; Apple Pencil support in Write Pro ("STANDARD NOTE-TAKING AND DRAWING TOOLS — Apple Pencil support"). Explicit pressure-sensitivity claims are not made in the official material consulted — **UNVERIFIED**. (https://www.styluslabs.com/; https://spark.mwm.ai/en/apps/stylus-labs-write-pro/1498369428 — store-listing mirror; original listing: https://apps.apple.com/us/app/stylus-labs-write-pro/id1498369428)
+**Ink engine / pressure & tilt.** Custom vector ink on an SVG native document format; Apple Pencil support in Write Pro ("STANDARD NOTE-TAKING AND DRAWING TOOLS — Apple Pencil support"). Explicit pressure-sensitivity claims are not made in the official material consulted — **UNVERIFIED**. R9 camoufox re-scrape of the live App Store listing confirms the listing itself makes no pressure-sensitivity claim either. (https://www.styluslabs.com/; https://spark.mwm.ai/en/apps/stylus-labs-write-pro/1498369428 — store-listing mirror; original listing: https://apps.apple.com/us/app/stylus-labs-write-pro/id1498369428)
 
 **Palm rejection.** Not documented in official material — **UNVERIFIED**.
 
@@ -116,7 +116,7 @@ Renamed from Nebo to MyScript Notes on iOS and Android; Windows keeps the name N
 
 **Platforms.** iPadOS, Windows 10+, macOS; touch, pen, mouse, trackpad, multi-monitor. (https://www.liquidtext.net/)
 
-**Pricing.** Free Basic edition; one-time Pro purchase (third-party sources say $79.99–$89.99); LIVE subscription ~$8.99–$10.99/month; LIVE Unlimited ~$15.99–$18.99/month; student discount ~$3.99/month annual (third-party pricing trackers; official pricing page exists but publishes amounts only in-app — figures marked **UNVERIFIED** where they rest on third parties only). (https://www.liquidtext.net/; https://mentalclone.com/blog/liquidtext-pricing; https://paperlike.com/blogs/paperlikers-insights/liquidtext-vs-marginnote; https://beingpaperless.com/liquidtext-5-0-syncing-backup/)
+**Pricing.** Free Basic edition; one-time Pro purchase (third-party sources say $79.99–$89.99); LIVE subscription ~$8.99–$10.99/month; LIVE Unlimited ~$15.99–$18.99/month; student discount ~$3.99/month annual (third-party pricing trackers; official pricing page publishes amounts only in images — figures marked **UNVERIFIED** where they rest on third parties only). R9 camoufox scrape of the live official pricing page confirms the tier structure: Basic / Pro 2023 one-time / LIVE / LIVE Unlimited, one-week free trial on LIVE, real-time sync and backup, real-time collaboration with one colleague (LIVE), unlimited storage with upgradable collaborators and priority support (LIVE Unlimited), and student pricing offered via upgrade from inside the app. (https://www.liquidtext.net/pricing-features; https://mentalclone.com/blog/liquidtext-pricing; https://paperlike.com/blogs/paperlikers-insights/liquidtext-vs-marginnote; https://beingpaperless.com/liquidtext-5-0-syncing-backup/)
 
 **UX note.** Praise: "wholly unlike any other PDF app" workflow; Editor's Choice from Apple and Microsoft (vendor-collected quotes). (https://www.liquidtext.net/liquidtextadeeperdive) Complaints: subscription-locked features and pricing seen as restrictive for students; Basic tier limited to a single document and no inking. (https://www.capterra.com/p/264823/Liquid-Text/ — third-party reviews, **UNVERIFIED** as vendor claims)
 

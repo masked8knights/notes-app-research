@@ -40,6 +40,10 @@
 36. [passed] R8: apply corrections to FEATURES.md (25 edits), APPS-LINKS.md (Amphi pairing, Meridian license note), apps-likes-wants.md (Amphi attribution); corrections documented in research-material/findings/r8-factcheck-corrections.md with the six lane verdict tables.
 37. [passed] Repo cleanup: move one-off scripts from checks/ to ARCHIVE, fix stale paths (FEATURES.md header points at assistant-workspace findings dir), README refresh.
 38. [passed] R8 close: MILESTONES entry, secret gate, commit, push. Evidence: commit 09363d3 pushed to main (15 files: 8 master/README/todo/MILESTONES edits, 7 new R8 findings files, checks/ cleanup); gate passed; remote HEAD verified equal to local.
+39. [passed] R9 links: APPS-LINKS.md rework done — forge URLs for all open-source projects (remade.wiki project lines collapsed to pointers, Prosecraft/ScriptCraft kept as no-repo records), vendor features pages for closed-source apps (Evernote, Notion, Goodnotes, Descript, Heptabase, Kinopio, LiquidText, MarginNote, Squid, Thymer); backup at BACKUPS/APPS-LINKS.md.bak-preR9.
+40. [passed] R9 repo cleanup: bench.js and discord-thread3-parser.py moved to ARCHIVE/ and untracked; repo is markdown plus raw research data; checks/ holds only the secret gate.
+41. [passed] R9 camoufox: 334 URLs scraped from WSL camoufox (323 ok, 11 documented errors); corpus in scraper/r9-corpus.jsonl; 71 UNVERIFIED-fill candidates matched into research-material/findings/r9-camoufox-sweep.md; three strongest fills merged into r7-feature-inventory-majors.md L110 (Notability $99.99/yr Pro, 400 AI quizzes/month) and r7-feature-inventory-handwriting.md L45 (Stylus Labs listing makes no pressure claim) and L119 (LiquidText tier structure confirmed, dollar figures still UNVERIFIED).
+42. [in progress] R9 close: MILESTONES entry, secret gate, commit, push.
 
 ## Status notes
 

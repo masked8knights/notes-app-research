@@ -1,0 +1,237 @@
+# R9 camoufox sweep: verification fills
+
+- Lane: R9 camoufox scrape over 334 target URLs (415 UNVERIFIED targets, 323 pages loaded, 11 errored).
+- Method: each UNVERIFIED target's cited URLs were loaded with the camoufox browser (headless, anti-detection); body text was captured to `scraper/r9-corpus.jsonl` and matched against the claim's distinctive keywords. Targets matching at 50 percent or higher keyword overlap are listed below as candidate fills; the fraction and the matched words are recorded so a future session can re-check the page rather than trust the matcher.
+- Rule followed: this report does not rewrite the finding lines themselves. Each row names the finding file and line to update, the claimed gap, and the scraped source. Lines with 70 percent or higher overlap are the strongest; the rest are leads, not verdicts.
+- No machine names, IPs or credentials. Compiled 2026-10-27.
+
+## r7-feature-inventory-handwriting.md (18 rows)
+
+- L287 (match 73%): **(a) PdfCraft (storytold, Rust, open source).** Native reader/editor: view, annotate, organize, combine, split, secure PDFs; annotations, form filling, bookmarks, layers, attachments; written from scratch in Rust; Apach
+  - Source: https://gizmodo.com/download/pdfcraft
+  - Matched words: pdfcraft, storytold, rust, open, source, native, reader, editor, view, annotate
+- L289 (match 72%): **(b) PdfCraft: PDF Scanner (App Store, commercial).** Convert images/Office files to PDF and back, merge/split/compress/reorder, annotate & form filling (pencil icon, Premium), AI Summary, Read Aloud, widgets, Siri Shor
+  - Source: https://apps.apple.com/in/app/pdfcraft/id6746790039
+  - Matched words: pdfcraft, scanner, convert, images, office, files, merge, split, reorder, annotate
+- L85 (match 71%): **Sync / storage.** Cloud sync across devices (store listing, 2025 update). E2EE not claimed — **UNVERIFIED**. (https://apps.apple.com/us/app/flexcil-note-good-pdf-reader/id1531466462)
+  - Source: https://apps.apple.com/us/app/flexcil-note-good-pdf-reader/id1531466462
+  - Matched words: sync, storage, cloud, sync, across, devices, store, update, https, apple
+- L115 (match 71%): **Sync / storage.** LiquidText Live cloud subscription: real-time project synchronization across devices with continuous backup. E2EE not claimed — **UNVERIFIED**. (https://www.liquidtext.net/)
+  - Source: https://www.liquidtext.net/
+  - Matched words: sync, liquidtext, live, cloud, subscription, project, synchronization, across, devices, continuous
+- L87 (match 64%): **Export.** Exporting notes and templates; watermark removal in paid tier. **UNVERIFIED** fidelity detail. (https://flexcil-ipad.appstor.io/)
+  - Source: https://flexcil-ipad.appstor.io/
+  - Matched words: export, exporting, notes, templates, watermark, removal, detail, https, appstor
+- L421 (match 64%): **Handwriting-to-text.** Lasso-select handwriting → Convert to Text (or math). Works only on ink created inside the app; imported images/PDFs are static and neither lasso nor Scribble extracts text from them. Scribble us
+  - Source: https://www.handwritingocr.com/handwriting-to-text/how-do-you-convert-handwriting-to-text-in-goodnotes
+  - Matched words: handwriting-to-text, handwriting, convert, text, math, works, only, inside, imported, images
+- L365 (match 61%): **Audio.** Legacy Notes Plus: audio recording during note-taking. Current Notes+ audio not documented — **UNVERIFIED**. (https://medium.com/notesplusapp/notes-plus-tutorials-9e674dfdee19)
+  - Source: https://medium.com/notesplusapp/notes-plus-tutorials-9e674dfdee19
+  - Matched words: audio, notes, plus, audio, recording, note-taking, notes, audio, https, medium
+- L45 (match 57%): **Ink engine / pressure & tilt.** Custom vector ink on an SVG native document format; Apple Pencil support in Write Pro ("STANDARD NOTE-TAKING AND DRAWING TOOLS — Apple Pencil support"). Explicit pressure-sensitivity cla
+  - Source: https://apps.apple.com/us/app/stylus-labs-write-pro/id1498369428
+  - Matched words: custom, vector, document, format, apple, pencil, support, write, standard, note-taking
+- L119 (match 56%): **Pricing.** Free Basic edition; one-time Pro purchase (third-party sources say $79.99–$89.99); LIVE subscription ~$8.99–$10.99/month; LIVE Unlimited ~$15.99–$18.99/month; student discount ~$3.99/month annual (third-part
+  - Source: https://beingpaperless.com/liquidtext-5-0-syncing-backup/
+  - Matched words: pricing, free, basic, one-time, purchase, live, subscription, month, live, unlimited
+- L59 (match 56%): **Sync / storage / E2EE.** No vendor cloud: standard Apple document browser, iCloud and any Files-integrated cloud, Files app integration on iOS. E2EE not claimed — **UNVERIFIED**. (https://apps.apple.com/us/app/stylus-l
+  - Source: https://apps.apple.com/us/app/stylus-labs-write/id1580794413
+  - Matched words: sync, cloud, standard, apple, document, browser, icloud, cloud, files, apple
+- L417 (match 56%): **Ink engine / pressure & tilt.** "Smart Ink" marketing: straighten and align handwriting, adjust spacing, reshape paragraphs without losing your style. Pressure/tilt documentation not in consulted pages — **UNVERIFIED**
+  - Source: https://www.goodnotes.com/features/tablet-stylus-experience
+  - Matched words: smart, marketing, straighten, align, handwriting, adjust, spacing, reshape, paragraphs, without
+- L189 (match 55%): **Handwriting-to-text.** OCR exists for scanned documents (image-to-PDF with OCR per Google Play listing); handwriting recognition not documented — **UNVERIFIED**. (https://play.google.com/store/apps/details/Xodo_PDF_Rea
+  - Source: https://play.google.com/store/apps/details/Xodo_PDF_Reader_Editor?id=com.xodo.pdf.reader
+  - Matched words: scanned, documents, google, play, play, google, details, xodo, reader, editor
+- L253 (match 55%): **Sync / storage.** Drawboard account carries subscription across devices; cloud workspace on higher tiers. E2EE not claimed — **UNVERIFIED**. (https://support.drawboard.com/hc/en-us/articles/4406251856527-Plans-Benefits
+  - Source: https://support.drawboard.com/hc/en-us/articles/4406251856527-Plans-Benefits
+  - Matched words: sync, storage, drawboard, account, subscription, devices, cloud, tiers, support, drawboard
+- L315 (match 53%): **Export fidelity.** Export to PDF; an iOS 18 export crash was fixed per version history — fidelity claims not documented — **UNVERIFIED**. (https://noteful-note-taking-on-pdf-ios.soft112.com/)
+  - Source: https://noteful-note-taking-on-pdf-ios.soft112.com/
+  - Matched words: export, export, export, crash, fixed, version, history, https
+- L37 (match 51%): **Nebo / iink SDK licensing as currently published.** MyScript publishes a handwriting-recognition & interactive-ink SDK for developers/OEMs ("flexible, easy to integrate and OS-agnostic"). (https://www.myscript.com/sdk/
+  - Source: https://github.com/MyScript/interactive-ink-examples-ios
+  - Matched words: iink, myscript, interactive-ink, developers, easy, integrate, https, myscript, https, myscript
+- L65 (match 50%): **Pricing.** Free "Write" plus paid "Write Pro" one-time purchase (Pro listing: https://apps.apple.com/us/app/stylus-labs-write-pro/id1498369428). Exact current Pro price not published on official pages consulted — **UNV
+  - Source: https://apps.apple.com/us/app/stylus-labs-write-pro/id1498369428
+  - Matched words: free, write, plus, write, https, apple, exact, current, official, pages
+- L171 (match 50%): **Sync / storage / E2EE.** Card library with filtering/search/batch edit and backlinks across mind maps and documents (user manual). Cross-device sync and E2EE not documented — **UNVERIFIED**. (https://manual.marginnote.
+  - Source: https://manual.marginnote.com.cn/mn4/en/
+  - Matched words: card, search, edit, backlinks, mind, maps, documents, user, manual, manual
+- L301 (match 50%): **Handwriting-to-text.** Experimental feature converting lasso selections (including handwriting) to text, requires iOS 27 or later (version history). General HWR languages not documented — **UNVERIFIED**. (https://notef
+  - Source: https://noteful-note-taking-on-pdf-ios.soft112.com/
+  - Matched words: experimental, lasso, selections, including, handwriting, text, requires, later, version, history
+
+## r7-feature-inventory-majors.md (24 rows)
+
+- L360 (match 86%): - **Sync & storage:** @tldraw/sync is the official multiplayer library: "It's our library for fast, fault-tolerant shared document syncing", deployable via a Cloudflare template using Durable Objects (one WebSocket serve
+  - Source: https://tldraw.dev/docs/sync
+  - Matched words: sync, storage, tldraw, sync, library, it's, library, fast, fault-tolerant, shared
+- L356 (match 81%): - **Editor features:** The package ships thirteen default shape types: arrow, bookmark, draw, embed, frame, geo, group, image, line, note, text, video, highlight (https://tldraw.dev/reference/tlschema/TLDefaultShape). Th
+  - Source: https://tldraw.dev/sdk-features/default-shapes
+  - Matched words: editor, package, thirteen, default, shape, types, arrow, bookmark, draw, embed
+- L123 (match 78%): - **Audio:** Record lectures/meetings/ideas alongside handwritten notes (App Store listing: https://apps.apple.com/us/app/noteshelf-ai-notes-pdf/id6458735203). Audio-note sync like Notability: **UNVERIFIED**.
+  - Source: https://apps.apple.com/us/app/noteshelf-ai-notes-pdf/id6458735203
+  - Matched words: audio, record, lectures, meetings, ideas, alongside, handwritten, notes, listing, https
+- L94 (match 72%): - **Pricing model:** Free tier; Special Edition, Essential ($11.99/year class), Pro ($35.99/year with link sharing, real-time collaboration, advanced AI, cross-platform library sync); AI Pass +$9.99/month; 7-day trial (h
+  - Source: https://support.goodnotes.com/hc/en-us/articles/13808767840015-Introducing-Our-New-Payment-Plans
+  - Matched words: pricing, free, special, edition, essential, year, year, link, sharing, real-time
+- L85 (match 71%): - **Editor features:** Import and annotate PDFs; share notebook links for collaboration (https://apps.apple.com/us/app/goodnotes-ai-notes-docs-pdf/id1444383602); export handwritten/typed notes as PDFs, email, print (same
+  - Source: https://apps.apple.com/us/app/goodnotes-ai-notes-docs-pdf/id1444383602
+  - Matched words: editor, import, pdfs, share, notebook, collaboration, https, apple, export, handwritten
+- L110 (match 70%): - **AI:** AI-powered quizzes and flashcards generated from notes; real-time summaries (https://notability.com/). Smart Notes and Chat with Notes during recordings referenced as Pro AI features (third-party: https://check
+  - Source: https://checkthat.ai/brands/notability/pricing
+  - Matched words: quizzes, flashcards, generated, notes, real-time, notability, smart, notes, chat, notes
+- L13 (match 68%): - **Editor features:** Backlinks and unlinked mentions (core Backlinks plugin, https://obsidian.md/help/plugins); Canvas: infinite canvas with text/file/image cards, card-to-file conversion, canvas-of-notes organization 
+  - Source: https://obsidian.md/help/plugins
+  - Matched words: editor, backlinks, unlinked, mentions, core, backlinks, plugin, obsidian, help, plugins
+- L112 (match 65%): - **Pricing model:** Free app with Starter tier; Plus, Pro, Business tiers with 30-day trial (https://notability.com/pricing; https://notability.com/pricing/compare). Free tier has an Edit Limit (third-party description:
+  - Source: https://checkthat.ai/brands/notability/pricing
+  - Matched words: pricing, model, free, starter, tier, plus, business, tiers, notability, pricing
+- L143 (match 63%): - **Sync & storage:** Sync with other Galaxy devices via Samsung account; sync limits exist (e.g., 100,000+ stroke handwriting limit, auto-sync toggles) per official community support post (https://us.community.samsung.c
+  - Source: https://us.community.samsung.com/t5/Global-Content/Samsung-Notes-Synchronization/bc-p/3439461#M1184
+  - Matched words: sync, sync, other, galaxy, devices, samsung, account, sync, stroke, handwriting
+- L52 (match 62%): - **Search & OCR:** "You can search for text, handwriting, images, or even spoken words in audio and video recording" (https://support.microsoft.com/en-us/onenote/onenote-help-and-learning/search-notes-in-onenote). Audio
+  - Source: https://learn.microsoft.com/en-us/archive/blogs/descapa/onenote-audio-search-amp-audio-search-languages
+  - Matched words: search, search, text, words, audio, video, recording, support, microsoft, onenote
+- L89 (match 62%): - **Sync & storage:** Cloud sync via Goodnotes account; local files exportable; cross-platform library sync on Pro (https://www.goodnotes.com/pricing). E2EE: **UNVERIFIED**.
+  - Source: https://www.goodnotes.com/pricing
+  - Matched words: sync, storage, cloud, sync, goodnotes, account, files, sync, goodnotes, pricing
+- L107 (match 61%): - **Sync & storage:** Cloud sync via Notability/iCloud — **UNVERIFIED this session**. Notability Cloud exists as a plan/admin capability (https://notability.com/pricing/compare).
+  - Source: https://notability.com/pricing/compare
+  - Matched words: sync, storage, cloud, sync, notability, notability, cloud, plan, admin, notability
+- L238 (match 61%): - **Pricing model:** "Free to start, unlimited docs and blocks"; paid plans add AI assistant, unlimited storage, full version history (30-day), publishing, collaboration (https://craft.do/pricing). Exact prices: **UNVERI
+  - Source: https://craft.do/pricing
+  - Matched words: pricing, model, free, start, unlimited, docs, blocks, plans, assistant, unlimited
+- L358 (match 61%): - **Audio/video:** Video is a default shape type (embedded video asset) (https://tldraw.dev/reference/tlschema/TLDefaultShape); audio recording: **UNVERIFIED this session**.
+  - Source: https://tldraw.dev/reference/tlschema/TLDefaultShape
+  - Matched words: video, video, default, shape, type, video, asset, tldraw, reference, tlschema
+- L84 (match 59%): - **Capture:** Email-in: import documents by emailing them to a custom Goodnotes email address (App Store listing, https://apps.apple.com/us/app/goodnotes-ai-notes-docs-pdf/id1444383602). Web clipper: **UNVERIFIED**.
+  - Source: https://apps.apple.com/us/app/goodnotes-ai-notes-docs-pdf/id1444383602
+  - Matched words: capture, import, documents, emailing, them, custom, goodnotes, email, https, apple
+- L366 (match 56%): - **Open vs closed:** SDK source is public and MIT-licensed packages exist only through v3; from 2.0 the source carried a custom tldraw license "adapted from the Scratch source code license", free for non-commercial use 
+  - Source: https://tldraw.substack.com/p/license-updates-for-the-tldraw-sdk
+  - Matched words: open, source, only, source, custom, tldraw, license, adapted, scratch, source
+- L18 (match 55%): - **Collaboration/sharing:** Shared vaults via Sync (https://obsidian.md/pricing). No real-time co-editing — **UNVERIFIED**.
+  - Source: https://obsidian.md/pricing
+  - Matched words: sharing, shared, vaults, sync, obsidian, pricing
+- L67 (match 55%): - **Editor features:** Tasks with due dates and a central Tasks view that stays in sync with in-note tasks; tasks live alongside web clips, images, documents, audio (https://help.evernote.com/hc/en-us/articles/1500003792
+  - Source: https://www.theory7.net/support/en-us/tips-tricks/how-to-use-evernote-notes-every-device
+  - Matched words: editor, tasks, central, tasks, view, sync, tasks, tasks, images, documents
+- L228 (match 54%): - **Capture:** Import/convert documents from other apps (App Store listing, https://apps.apple.com/us/app/craft-docs-and-visual-ideas/id1487937127). Web clipper: **UNVERIFIED this session**.
+  - Source: https://apps.apple.com/us/app/craft-docs-and-visual-ideas/id1487937127
+  - Matched words: capture, import, documents, other, store, https, apple
+- L338 (match 54%): - **Editor features:** Live vector strokes editable after the fact, layers, slice and mask tools, customizable tools/palettes, PDF markup (https://concepts.tophatch.com/en). Precision tools (measurement guides, scale) — 
+  - Source: https://concepts.tophatch.com/en
+  - Matched words: editor, live, vector, editable, layers, tools, tools, palettes, concepts, precision
+- L184 (match 53%): - **Pricing model:** Free plan with limited monthly bullets; Pro paid tier; education: free Pro for university faculty, for students for the course duration; 50% nonprofit discount (https://workflowy.com/pricing/). Exact
+  - Source: https://checkthat.ai/brands/workflowy/pricing
+  - Matched words: pricing, free, plan, limited, monthly, bullets, tier, free, students, course
+- L182 (match 52%): - **AI:** AI Quick Actions for Pro subscribers with AI enabled (https://workflowy.com/whats-new/). Named AI agents (research, task planning, note editing) and bring-your-own-API-key unlimited queries — third-party (https
+  - Source: https://noteapps.info/apps/workflowy
+  - Matched words: workflowy, named, agents, research, task, planning, note, editing, unlimited, queries
+- L346 (match 52%): - **Platforms:** iOS/iPadOS, Android (Google Play listing https://play.google.com/store/apps/details?id=com.tophatch.concepts&hl=en_US), and Windows (review of the Windows build at https://www.windowscentral.com/concepts
+  - Source: https://play.google.com/store/apps/details?id=com.tophatch.concepts&hl=en_US
+  - Matched words: android, google, play, play, google, details, tophatch, concepts, windows, review
+- L342 (match 50%): - **Sync & storage:** Local-first storage; multi-device/cloud sync is subscription-gated — the vendor positions cloud sync inside paid plans (pricing page https://concepts.tophatch.com/en/pricing). A long-time user repor
+  - Source: https://www.reddit.com/r/ConceptsApp/comments/14m4ab4/didnt_renew_my_concepts_subscription_found_an_app/
+  - Matched words: sync, cloud, sync, cloud, sync, pricing, https, concepts, pricing, user
+
+## r7-feature-inventory-oss.md (17 rows)
+
+- L157 (match 73%): **License & repo.** Fully open source; monorepo https://github.com/ente/ente — "fully open source end-to-end encrypted photos, authenticators and more" (https://github.com/ente/ente). Ente stresses exportability: "You ca
+  - Source: https://github.com/ente/ente
+  - Matched words: license, repo, fully, open, source, monorepo, github, ente, ente, fully
+- L61 (match 71%): **License & repo.** Clients open-sourced under GPLv3 on 2022-09-01, with the sync server under AGPLv3 (announcement with maintainer answers: https://www.reddit.com/r/opensource/comments/x3ds2w/notesnook_is_now_open_sourc
+  - Source: https://github.com/streetwriters/notesnook-sync-server
+  - Matched words: license, repo, clients, under, gplv, sync, server, under, agplv, https
+- L115 (match 69%): **Sync & collaboration.** Cloud workspaces for collaboration; self-host free for up to 10 seats per workspace (https://affine.pro/). Self-host Docker image updated with every stable release (maintainer post: https://www.
+  - Source: https://www.reddit.com/r/selfhosted/comments/1b0dyqt/affinepro_our_notionmiro_open_source_alternative/
+  - Matched words: sync, collaboration, cloud, collaboration, self-host, workspace, https, affine, self-host, docker
+- L41 (match 68%): **Features.** Notebooks/notes/todos, Markdown editing with rich plugins and themes, extension API for scripts and plugins (https://joplinapp.org/), Web Clipper browser extension for Firefox and Chrome (https://github.com
+  - Source: https://github.com/diogocaveiro/joplin_pt-pt
+  - Matched words: notebooks, notes, markdown, plugins, themes, extension, plugins, https, clipper, browser
+- L111 (match 63%): **Tech stack & storage.** Editor built on BlockSuite, "the open-source collaborative editor project behind AFFiNE", providing block-based editing over a framework for general-purpose collaborative apps (https://github.co
+  - Source: https://github.com/domartisan/artisan-block-editor
+  - Matched words: editor, built, blocksuite, open-source, collaborative, editor, project, behind, affine, block-based
+- L233 (match 63%): **Features.** Vector drawing/handwriting with infinite canvas, PDF and image import/export, adaptive UI that switches between pen/keyboard workflows (repo: https://github.com/flxzt/rnote). Selection/transform of strokes,
+  - Source: https://github.com/flxzt/rnote
+  - Matched words: vector, drawing, infinite, canvas, image, import, export, adaptive, between, repo
+- L89 (match 62%): **Features.** Deep note tree with multi-parent hierarchy, note hoisting, note versioning, scripting, and self-hosting named as Trilium's novel concepts (https://www.reddit.com/r/Trilium/comments/uxpqae/is_trilium_not_ver
+  - Source: https://www.reddit.com/r/Trilium/comments/uxpqae/is_trilium_not_very_popular/
+  - Matched words: deep, note, hierarchy, note, hoisting, note, versioning, scripting, self-hosting, novel
+- L231 (match 61%): **Tech stack & storage.** Rust + GTK4/libadwaita, vector-based sketchbook/handwriting app (repo: https://github.com/flxzt/rnote). Native .rnote document format **UNVERIFIED this session** (would have used the repo README
+  - Source: https://github.com/QiXinia/Rnote_Vue
+  - Matched words: rust, libadwaita, handwriting, repo, https, github, flxzt, rnote, rnote, document
+- L145 (match 59%): **Platforms.** macOS, Windows, Linux desktop; iOS and Android apps; free plan works across macOS, Windows, iOS, Android (https://aisotools.com/blog/anytype-review-2026, https://www.fahimai.com/anytype). Web app **UNVERIF
+  - Source: https://www.fahimai.com/anytype
+  - Matched words: macos, windows, desktop, android, free, plan, works, across, macos, windows
+- L159 (match 57%): **Tech stack & storage.** E2EE platform using Libsodium, with data encrypted before it leaves the device; self-hosting via Docker Compose is part of the documented review scope (https://hasgeek.com/rootconf/ente-self-hos
+  - Source: https://hasgeek.com/rootconf/ente-self-hosting-images-technical-review/sub/review-of-ente-an-open-source-e2ee-self-hosted-alt-FK8L54TNuHrQBsivJJgDHW
+  - Matched words: tech, storage, platform, using, libsodium, data, encrypted, leaves, device, self-hosting
+- L183 (match 56%): **Tech stack & storage.** Flutter/Dart app focused on handwriting notes (org self-description: https://github.com/saber-notes). Storage format details (per-note file/container) not captured **UNVERIFIED this session** (w
+  - Source: https://github.com/saber-notes/saber
+  - Matched words: storage, flutter, dart, handwriting, notes, github, saber-notes, storage, format, file
+- L47 (match 55%): **Plugins & AI.** Plugin and theme ecosystem via the Extension API, "you can also easily create your own" (https://github.com/laurent22/joplin). First-party AI features not captured **UNVERIFIED this session** (would hav
+  - Source: https://github.com/laurent22/joplin
+  - Matched words: plugins, plugin, theme, also, easily, create, your, github, laurent, joplin
+- L161 (match 55%): **Features.** Notes app with rich text and checkbox-style notes distributed inside the ente platform; release notes for the monorepo reference note/AI-pack behavior ("follow-up questions about notes and packs... continui
+  - Source: https://github.com/ente/ente/releases
+  - Matched words: notes, text, notes, ente, platform, release, notes, note, about, notes
+- L91 (match 54%): **Sync & collaboration.** Sync is server-based: run Trilium Server (self-host) and clients sync to it. No E2EE on the standard sync path captured **UNVERIFIED this session** (would have used https://triliumnext.github.io
+  - Source: https://www.reddit.com/r/selfhosted/comments/1mzeltd/trilium_notes_update/
+  - Matched words: sync, sync, trilium, server, self-host, sync, sync, would, have, used
+- L169 (match 52%): **Platforms.** Ente Auth ships on Android, iOS, Mac, Windows, Linux and Web (https://f-droid.org/en/packages/io.ente.auth/); the Notes app platforms beyond mobile are not captured **UNVERIFIED this session** (would have 
+  - Source: https://f-droid.org/en/packages/io.ente.auth/
+  - Matched words: ente, auth, android, windows, linux, f-droid, ente, auth, notes, have
+- L67 (match 51%): **Sync & collaboration.** E2EE sync across devices through Streetwriters' servers; the self-hostable sync server exists in alpha with full on-premise self-hosting as a stated goal (https://github.com/streetwriters/notesn
+  - Source: https://github.com/streetwriters/notesnook-sync-server
+  - Matched words: sync, sync, devices, sync, server, alpha, full, on-premise, self-hosting, https
+- L401 (match 50%): **Features.** Knowledge-base positioning: "company docs as context for AI" and OpenClaw/assistant memory integration (https://github.com/refactoringhq/tolaria). HN Show HN discussion exists (https://news.ycombinator.com/
+  - Source: https://github.com/refactoringhq/tolaria
+  - Matched words: positioning, company, docs, context, openclaw, assistant, memory, integration, github, refactoringhq
+
+## r7-remakes-evernote-notion.md (3 rows)
+
+- L145 (match 81%): - "Show HN: An open source alternative to Evernote (Self Hosted)", June 2022 (https://news.ycombinator.com/item?id=31580045). It stored notes as Markdown in a git repo; HN commenters immediately pushed back that it wasn'
+  - Source: https://news.ycombinator.com/item?id=31580045
+  - Matched words: show, open, source, alternative, evernote, self, hosted, june, https, news
+- L100 (match 61%): - Repo: https://github.com/bangle-io/bangle-io — ~1.2k stars; no license detected on the repo page this session (**UNVERIFIED** license). Last commit 2026-07-12; last release v1.0.1, 2026-07-06 (feeds).
+  - Source: https://github.com/bangle-io/bangle-io
+  - Matched words: repo, https, github, bangle-io, bangle-io, stars, repo, last, commit, last
+- L169 (match 61%): - **"OpenKnowledge"** (Show HN June 2026, "open source AI-first alternative to Obsidian/Notion", https://news.ycombinator.com/item?id=48675435) — repo not identified this session; new and unproven. **UNVERIFIED.**
+  - Source: https://news.ycombinator.com/item?id=48675435
+  - Matched words: openknowledge, show, open, source, ai-first, alternative, obsidian, notion, https, news
+
+## r7-user-repos-a.md (7 rows)
+
+- L93 (match 89%): Blinko is an open-source, self-hosted "personal AI note tool" / AI-powered card note-taking app for quick capture of fleeting thoughts, built in TypeScript (https://github.com/blinkospace/blinko, README). Repo health: ~1
+  - Source: https://github.com/blinkospace/blinko
+  - Matched words: blinko, open-source, self-hosted, personal, note, tool, ai-powered, card, note-taking, quick
+- L69 (match 82%): QOwnNotes is an open-source plain-text file notepad and todo-list manager with Markdown support and Nextcloud/ownCloud integration, for GNU/Linux, macOS and Windows (https://github.com/pbek/QOwnNotes, README). Written in
+  - Source: https://dev.co/ai/frameworks/qownnotes
+  - Matched words: qownnotes, open-source, plain-text, file, todo-list, manager, markdown, support, nextcloud, owncloud
+- L119 (match 77%): EdgeEver is a modern open-source notes/knowledge-base workspace preserving the classic Evernote-style three-pane workflow (tree view / note list / editor), positioned as an Evernote/Obsidian/Joplin alternative with "inst
+  - Source: https://github.com/tianma-if/edgeever
+  - Matched words: edgeever, modern, open-source, notes, workspace, classic, three-pane, workflow, tree, view
+- L103 (match 75%): From README + official docs blog + press (https://github.com/blinkospace/blinko; https://docs.blinko.space/en/blog/blinko; https://openapps.pro/apps/blinko): quick-capture "flash" model — jot ideas the moment they strike
+  - Source: https://github.com/blinkospace/blinko
+  - Matched words: readme, official, docs, https, github, blinkospace, blinko, https, docs, blinko
+- L99 (match 68%): Self-hosted server app: all data lives in the operator's environment — "All your notes and data are stored securely in your self-hosted environment" (https://github.com/blinkospace/blinko, README). Storage: PostgreSQL vi
+  - Source: https://github.com/render-examples/blinko
+  - Matched words: self-hosted, server, data, your, notes, data, your, self-hosted, https, github
+- L23 (match 51%): The rewrite: the desktop releases reference a local SQLite database (e.g., "v0.7.2.6-sqlite-fix" fixing SQLite variable limits, https://github.com/turtl/desktop/releases), replacing the old IndexedDB stack. Sync remains 
+  - Source: https://github.com/turtl/core-rs
+  - Matched words: desktop, releases, local, sqlite, fixing, sqlite, https, github, turtl, desktop
+- L125 (match 51%): The most interesting model in the set: server-centric with triple-write persistence — every note is stored simultaneously as `content_json` (TipTap/ProseMirror document, editor source of truth), `content_markdown` (API/a
+  - Source: https://github.com/tianma-if/edgeever
+  - Matched words: most, model, note, content, json, editor, source, content, markdown, agent
+
+## r7-user-repos-b.md (2 rows)
+
+- L190 (match 56%): - Plugins/extensions/marketplace: "Bazaar" marketplace (kernel/bazaar) with community plugins, themes, icons, templates, and emojy/icon packs distributed as GitHub packages; hundreds of packages listed at https://github.
+  - Source: https://github.com/siyuan-note/bazaar
+  - Matched words: plugins, bazaar, bazaar, community, plugins, themes, icons, templates, icon, github
+- L121 (match 51%): - License history check (per task note): the LICENSE file's own commit history (GitHub atom feed for LICENSE) shows the file existing since 2021-12-14 with subsequent commits 2022-03-06, 2022-06-19, and 2025-02-11 — the 
+  - Source: https://github.com/usememos/memos/commits/main/LICENSE
+  - Matched words: license, history, license, commit, history, github, license, file, commits, commit
