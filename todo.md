@@ -39,7 +39,7 @@
 35. [passed] R8 fact-check, lane 6: HTR/OCR + sync stack + local AI + Nostr + sentiment numbers.
 36. [passed] R8: apply corrections to FEATURES.md (25 edits), APPS-LINKS.md (Amphi pairing, Meridian license note), apps-likes-wants.md (Amphi attribution); corrections documented in research-material/findings/r8-factcheck-corrections.md with the six lane verdict tables.
 37. [passed] Repo cleanup: move one-off scripts from checks/ to ARCHIVE, fix stale paths (FEATURES.md header points at assistant-workspace findings dir), README refresh.
-38. [in progress] R8 close: MILESTONES entry, secret gate, commit, push.
+38. [passed] R8 close: MILESTONES entry, secret gate, commit, push. Evidence: commit 09363d3 pushed to main (15 files: 8 master/README/todo/MILESTONES edits, 7 new R8 findings files, checks/ cleanup); gate passed; remote HEAD verified equal to local.
 
 ## Status notes
 
