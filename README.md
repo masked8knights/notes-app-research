@@ -2,23 +2,34 @@
 
 Research phase of a project to build a new notes app: Rust-native, local-first,
 handwriting-first, zero-knowledge. Nothing is being built yet; this repository
-holds the research only, accumulated across repeated full-depth passes (R1-R6).
+holds the research only, accumulated across repeated full-depth passes (R1-R9).
 
 ## What is here
+
+Research output:
 
 - `RESEARCH.md` — the running synthesis: what the research found, thread by
   thread and round by round, with a pointer to the findings file behind every
   claim.
-- `APPS-LINKS.md` — the master inventory: every app and repository mentioned in
-  the source material, one entry each, with open-source status and where
-  functionality can be pulled from.
 - `FEATURES.md` — the master feature list: everything people said they want,
-  grouped, with per-round synthesis at the end.
-- `research-material/` — raw inputs and findings. `findings/` holds one file per
-  research lane (the R8 fact-check verdict tables live alongside them); the
-  original source exports and parsed transcripts are gitignored.
-- `MILESTONES.md` — chronological round log. `todo.md` — task state.
-  `REQUIREMENTS.md` — stated requirements. `LEARNINGS.md` — durable lessons.
+  grouped into tables, with the source evidence linked per row.
+- `APPS-LINKS.md` — the master inventory: every app and repository mentioned in
+  the source material, one table row each, with open-source status, repo or
+  features-page link, and where functionality can be pulled from.
+- `research-material/` — raw inputs and cited evidence. `findings/` holds one
+  file per research lane, including the R8 fact-check verdict tables and the R9
+  camoufox sweep; the Discord HTML exports themselves stay untracked.
+
+Project management (separate from the research):
+
+- `project/MILESTONES.md` — chronological round log.
+- `project/todo.md` — task state.
+- `project/REQUIREMENTS.md` — stated requirements and standing rules.
+- `project/PLAYBOOK.md` — the workflow rules the project runs under.
+
+`AGENTS.md` at the root is the bootstrap pointer for any assistant opening the
+folder. `checks/` holds the pre-push secret scanner, the only script in the
+repository. `BACKUPS/` and `ARCHIVE/` are gitignored working folders.
 
 ## What the source material is
 
@@ -40,13 +51,17 @@ was committed.
   internet-wide sentiment sweep, and the Evernote/Notion remake landscape.
 - R8: full fact-check of the master files in six parallel verification lanes
   (see `research-material/findings/r8-factcheck-corrections.md`); corrections
-  applied to `FEATURES.md`, `APPS-LINKS.md`, and `apps-likes-wants.md`.
+  applied to the master files.
+- R9: link policy enforced in `APPS-LINKS.md` (repo-only for open source,
+  vendor features pages for closed source), a camoufox scrape of 334 URLs that
+  turned 71 unverified claims into cited evidence, and a markdown-only cleanup.
 
 ## Reading order
 
 `RESEARCH.md` is the entry point. `FEATURES.md` answers "what do people want";
 `APPS-LINKS.md` answers "what exists and what can we borrow". Findings files in
-`research-material/findings/` hold the cited evidence.
+`research-material/findings/` hold the cited evidence. Project state lives in
+`project/`.
 
 ## Status
 
