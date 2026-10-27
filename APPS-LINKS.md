@@ -31,7 +31,7 @@ Compiled by the compiler lane from every findings file in notesapp/findings/ plu
 - tldraw - https://tldraw.dev - Canvas/whiteboard SDK, also a product; its rich-text and license model discussed - open-source y with a custom license (LICENSE.md in repo, watermarks without subscription) - thread-f-editor-platform, apps-likes-wants
 - Excalidraw - https://github.com/excalidraw/excalidraw - Open-source virtual whiteboard in Excalidraw's own name as well as its Obsidian plugin - open-source y (MIT) - community-digest, thread-f-editor-platform, integrations-1
 - Concepts - https://concepts.app - Infinite sketching app with vector ink, paid with subscriptions - open-source n - community-digest, apps-likes-wants
-- Saber - (no URL in findings) - Handwriting notes app mentioned in community threads - open-source y (per its repo, license not stated in findings) - community-digest
+- Saber - github.com/saber-notes/saber - Handwriting notes app mentioned in community threads - open-source y (GPLv3, Flutter) - community-digest, R6-batch1
 - Workflowy - https://workflowy.com - Outline-based notes tool - open-source n - community-digest
 - DEVONthink - https://www.devontechnologies.com/apps/devonthink - Mac research database app cited for indexing and search UX - open-source n - thread-d-indexing, thread-g-trust-ux
 - CapCut - https://www.capcut.com - Video editor mentioned for editing UX - open-source n - thread-g-trust-ux
@@ -39,13 +39,13 @@ Compiled by the compiler lane from every findings file in notesapp/findings/ plu
 - LumaFusion - https://lumafusion.com - Mobile multitrack video editor - open-source n - thread-g-trust-ux
 - Muse - https://adamwiggins.com/muse-retrospective - Spatial canvas thinking tool, retrospective write-up by its creator - open-source n (retrospective only) - community-digest
 - Thymer - https://thymer.com/markdown-mirror - Notes tool with a mirrored markdown view discussed for editing models - open-source n - linked-apps-1
-- Ideon - https://theideon.com - Notes app mentioned in community links - open-source n (not stated) - linked-apps-1
+- Ideon - github.com/3xpyth0n (site theideon.com) - Notes app mentioned in community links - open-source y (AGPLv3, Docker) - linked-apps-1, R6-batch2
 - OwlLuna - https://github.com/owaisazmal/OwlLuna (site https://owaisazmal.github.io/OwlLuna) - Notes app by a community member - open-source y (license per repo) - community-digest, linked-apps-1
 - Akasha - https://apps.microsoft.com/detail/9n3xffmbl7kx - Windows notes app mentioned in links - open-source n (not stated) - linked-apps-1
 - Pele - (no URL in findings; discussed via a Reddit mermaid renderer thread) - Mermaid diagram renderer referenced in community discussion - not stated - linked-apps-1
-- Poznote - https://poznote.com - Notes app mentioned in links - open-source n (not stated) - linked-apps-1
+- Poznote - https://poznote.com (GitHub, PHP+SQLite) - Notes app mentioned in links - open-source y (MIT, ~908 stars) - linked-apps-1, R6-batch2
 - Amphi - https://useamphi.com (repo https://github.com/amphi2024/notes) - Notes app mentioned in community threads - open-source y (GPL-3.0+) - community-digest
-- Tangent Notes - https://www.tangentnotes.com - Local-first notes app mentioned in links - open-source n (not stated) - linked-apps-1
+- Tangent Notes - https://www.tangentnotes.com - Local-first notes app mentioned in links - open-source y (Apache-2.0; no mobile) - linked-apps-1, R6-batch2
 - Dillinger - https://dillinger.io (repo https://github.com/joemccann/dillinger) - Online markdown editor cited for editor UX - open-source y (MIT) - linked-apps-1
 - Homebrewery - https://homebrewery.naturalcrit.com - Markdown-to-D&D-document renderer cited for rendering approaches (URL partially UNVERIFIED in findings) - open-source y (license not stated) - linked-apps-1
 - Ghost - https://ghost.org (repo https://github.com/TryGhost/Ghost) - Publishing platform cited for editor/plugin architecture - open-source y (MIT) - linked-apps-1
