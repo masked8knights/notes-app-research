@@ -19,7 +19,7 @@ Conventions: every app and repo section uses the same groups in the same order: 
 
 ### Docs analysis
 - Free plan: up to 3 files total across notebooks/text docs/whiteboards, 5 MB import size, 20 min audio recording per notebook, watermarked exports, up to 3 folders; notebooks above 3 become read-only (editable ones user-chosen) — https://www.goodnotes.com/pricing and https://support.goodnotes.com/hc/en-us/articles/13808767840015-Compare-Goodnotes-Plans-and-Features (snippet via search; page itself blocked 403)
-- Plans: Free $0; Essential $11.99/yr (unlimited files/audio, no watermark, basic AI); Pro $35.99/yr (private link sharing, hosting real-time collaboration, cross-platform cloud sync, advanced AI incl. Meetings and Create Mode); AI Pass +$9.99/mo (~12x more AI credits); Special Edition one-time purchase on Apple only (no Goodnotes Cloud, limited AI); Teams $120/seat/yr (SAML SSO, domain control, admin console); Enterprise custom — https://www.goodnotes.com/pricing
+- Plans: Free $0; Essential $11.99/yr (unlimited files/audio, no watermark, basic AI); Pro $35.99/yr (private link sharing, hosting real-time collaboration, cross-platform cloud sync, advanced AI incl. Meetings and Create Mode); AI Pass +$9.99/mo (~12x more AI credits); Special Edition: NOT found on the current pricing page (R12 lane 1 re-check of goodnotes.com/pricing) — treat as unconfirmed; Teams $120/seat/yr (SAML SSO, domain control, admin console); Enterprise custom — https://www.goodnotes.com/pricing
 - AI split: on-device no-credit features (Math conversion, Circle to Lasso, Spell check, Handwriting reflow, Convert to text, Scribble-to-erase) vs credit-based cloud AI (Ask Mode, quiz generator, Meeting AI, image generation) — https://support.goodnotes.com/hc/en-us/articles/10779112528399-A-guide-to-Goodnotes-AI
 - Math AI is powered by Wolfram|Alpha LLM API with Solve/Teach Me modes — https://support.goodnotes.com/hc/en-us/articles/13683534670223-Goodnotes-AI-for-Math
 - Study Sets with spaced-repetition "Smart Learn"; AI does not auto-generate flashcards from notes (third-party claim analysis) — https://studycardsai.com/blog/can-goodnotes-convert-notes-into-flashcards (UNVERIFIED against official docs; support.403)
@@ -70,7 +70,7 @@ Conventions: every app and repo section uses the same groups in the same order: 
 | Essential | $11.99/yr, 7-day trial |
 | Pro | $35.99/yr (cross-platform sync, collab hosting) |
 | AI Pass | +$9.99/mo, ~12x AI credits |
-| Special Edition | Apple one-time purchase, varies by region (previously recorded as a flat $29.99, FAQ-only listing) |
+| Special Edition | R12 lane 1: not found on the current pricing page — unconfirmed (previously recorded as an Apple-only one-time purchase, region-variable) |
 | Teams | $120/seat/yr; Enterprise custom |
 | Platforms | iOS, macOS, Android, Windows, web (previously iPad/macOS/Windows/web; Android now included) |
 | Closed source | |
@@ -865,7 +865,7 @@ Sources: apps-likes-wants.md, thread-b-storage.md ; findings/r12-enrich-b.md
 
 | Item | Detail |
 |---|---|
-| Business | Free / Pro $20/mo early-bird ($30 regular) / Business from $35/mo. (tana.inc, R8 fact-check) |
+| Business | R12 lane 1 re-verified on tana.com/pricing: outliner real tiers are Free / Pro $20-30 / Business $35; the third-party 'Core $10/Plus $20' listing is wrong. |
 | Business | The older $10-18 tiers are gone. (R8 fact-check (tana.inc)) |
 | Business | The separate Tana Outliner product lists Plus $8/mo. |
 | Business | 2026 split: the outliner product (outliner.tana.inc) prices Free ~1,000 nodes / Plus-Pro from $10/mo, while the meeting platform prices Pro ~$20/mo early-bird (~$30 standard) and Max ~$80/mo early-bird (~$120 standard) — two products, two ladders; reviews must state which they cover. (R12) |
@@ -1571,7 +1571,7 @@ Sources: deep-repos-b.md, github-repos-2.md ; findings/r12-enrich-f.md
 
 | What people say |
 |---|
-| 2,782 stars / 104 forks / 1,072,639 downloads per obsidianstats (5.0 rating). |
+| 1.5k-1.6k (R12 lane 5) stars / 104 forks / 1,072,639 downloads per obsidianstats (5.0 rating). |
 | Reddit/forum word of mouth calling it a real replacement for the default file browser. |
 | A case study reports 180 releases and ~zero hand-written LOC (AI-assisted development). |
 | The docs are a blueprint in themselves: a startup/boot process doc (cold vs warm boot, metadata cache), a metadata pipeline doc (cache rebuild, provider stages) and a storage architecture doc (which store holds what). |
@@ -1846,7 +1846,7 @@ Sources: github-repos-2.md ; findings/r12-enrich-d.md
 
 | What people say |
 |---|
-| The known failure modes are the migration map: COM automation requires matching admin elevation (OneNote and the terminal both as admin or conversion fails, issue #123). |
+| The known failure modes are the migration map: COM automation requires matching admin elevation (OneNote and the terminal both as admin or conversion fails, issue #102). |
 | COM class factory errors (#102). |
 | Trailing periods in page titles break PowerShell 5 conversions (#197). |
 | Hand-written ink is the hard part: OneNote exports each ink stroke as a separate image without position. |
@@ -2085,7 +2085,7 @@ Cross-cutting conclusion carried from the findings: the three recurring gaps acr
 - Editors/publishers verdict: The Samsung Notes deep dive exposed the trust pattern of the whole category: PDF export rasterizes handwriting, no bulk export, sync conflicts duplicate instead of merge.: findings/r6-editors-publishers.md
 - Nostr/transports verdict: concepts-only for sync plus an optional export path. At least four shipped apps sync notes over Nostr, but relay economics (471 public relays, 343 offline) and the single-identity-key conflict with per-note keys argue against Nostr as primary transport.: findings/r6-nostr-transports-extras.md
 - Nostr/transports verdict: Pull regardless: negentropy set-reconciliation (NIP-77) and NIP-44 padding discipline; NIP-44 v2 is Cure53-audited.: findings/r6-nostr-transports-extras.md
-- Nostr/transports verdict: nostr crate 0.45.5 runs ~446K downloads/month (crate 0.45.5, Oct 2026).: findings/r6-nostr-transports-extras.md
+- Nostr/transports verdict: nostr crate 0.45.5 runs ~446K downloads/month (crate 0.45.5, Oct 2026; estimate).: findings/r6-nostr-transports-extras.md
 - Nostr/transports verdict: iroh (MIT/Apache, 1.0 June 2026, default transport in Anytype) is the stronger Rust-native p2p lane.: findings/r6-nostr-transports-extras.md
 - Verify-pass closure: 34 unverified entries tracked, 22 resolved, 5 partially, 7 not found.: findings/r6-unverified-resolutions.md
 - Verify-pass license corrections applied: diamond-types ISC, secsync Apache-2.0, snlib and TanaMigrator no-license-unpullable, Xournal++ bare GPL-2.0, RNote GPL-3.0-or-later (not Apache/EUPL as first assumed).: findings/r6-unverified-resolutions.md
@@ -2176,3 +2176,16 @@ Coverage index:
 - Total: about 99 app and repo entries across the seven lanes (17+12+12+19+7+17+15); the round was framed as ~104, with the delta from shared-name entries and verdict rows.
 
 Sources: findings/r12-enrich-a.md, findings/r12-enrich-b.md, findings/r12-enrich-c.md, findings/r12-enrich-d.md, findings/r12-enrich-e.md, findings/r12-enrich-f.md, findings/r12-enrich-g.md, findings/r12-int-features-patches.md.
+
+## Accessibility
+
+No findings file covers accessibility systematically; the corpus's total accessibility signal is seven passing mentions across five files, none of them a per-app survey. The strongest evidence found is structural: a 2026 writeup on building a canvas editor over ProseMirror names screen-reader accessibility "probably the hardest unresolved problem", with the ProseMirror author himself confirming accessibility and touch as the structural risks of any non-DOM view (findings: thread-f-editor-platform.md; https://discuss.prosemirror.net/t/building-a-canvas-based-editor-on-top-of-prosemirror-s-state-and-plugin-system/8982). The same carries into master-file advice: the canvas-plus-document hybrid's hardest cost is accessibility (findings: thread-f-editor-platform.md). In ink apps, hit-target sizes are a documented accessibility finding (findings: linked-apps-2.md). The only WCAG conformance claim anywhere in the corpus belongs to a TTS utility rather than a notes app (TalkBack support targeting WCAG 2.1 AA in marmalade-tts-android, findings: github-repos-2.md). No APPS-LINKS row records screen-reader support, keyboard-only navigation, or contrast behavior for any note app: per-app accessibility (VoiceOver/NVDA/TalkBack) is UNVERIFIED across the board and is the cheapest remaining survey lane for R13.
+
+## Search quality
+
+User-facing search quality (ranking, fuzzy matching, OCR-search accuracy, search latency) has no dedicated findings file; the corpus covers indexing internals (thread-d-indexing) and editor platforms (thread-f-editor-platform) but never measures quality. Corpus evidence that it matters: Trilium-class users want revisions, scripting, OCR-search and protected notes (findings: linked-apps-1.md), and GoodNotes advertises handwriting OCR search as a core feature (findings: apps-likes-wants.md). Outside the corpus, measured search-quality complaints exist for mainstream apps: Google Keep search lags noticeably on large accounts (https://www.reddit.com/r/GoogleKeep/comments/1k8kab0/does_gkeep_have_limit_when_it_comes_to_the_number/), and Google Keep's search is described as slow when notes pile up (https://www.saner.ai/blogs/best-google-keep-alternatives). A quality comparison lane (search latency, ranking sanity checks, handwriting-search accuracy on the same sample set) would fill the gap; no such measurement exists anywhere in the corpus as of R12.
+
+## Data ownership
+
+No dedicated findings file; the corpus's only direct treatment is one line: data-ownership/server fear is the most-cited reason for PKM decisions (findings: r7-user-sentiment-sweep.md), with partial overlap in thread-g-trust-ux. Fresh gaps researched in R12-confirm-9 sharpen the pattern for mainstream apps: Capacities stores no markdown files on disk and has no local-only mode (https://docs.capacities.io/faq/general-questions; https://feedback.capacities.io/feature-ideas/p/idea-local-mode-use-capacities-without-server-sync), and users explicitly worry the hosted model could make data inaccessible if the company folds (https://www.reddit.com/r/PKMS/comments/1r7qa4r/obsidian_notes_v_capacities_why_this_has_been/); Google Keep has no portable export format short of Takeout HTML/JSON without link structure (https://www.sheetifycrm.com/blogs/updates/what-are-the-disadvantages-of-google-keep; https://www.marqly.com/blog/export-google-keep); Roam added a local-storage option only with its Roam 1.0 update (https://roamresearch.com). A dedicated data-ownership audit per app (file access, export fidelity, cloud-only status) is the missing R13 artifact.
+

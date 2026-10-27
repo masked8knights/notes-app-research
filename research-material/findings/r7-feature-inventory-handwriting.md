@@ -94,6 +94,9 @@ Renamed from Nebo to MyScript Notes on iOS and Android; Windows keeps the name N
 
 ---
 
+**Handwriting-to-text.** The official App Store release notes reference fixing a crash that could occur during handwriting recognition, so Flexcil ships some handwriting-recognition machinery; a general handwriting-to-text feature is still not documented in the store listing or on the vendor site. (https://apps.apple.com/us/app/flexcil-note-good-pdf-reader/id1531466462)
+
+
 ## 4. LiquidText
 
 **Concept.** Every project creates a document pane plus multiple infinite workspaces; you pull excerpts from documents onto workspaces and connect notes to source text. Patented multi-touch document manipulation gestures. (https://www.liquidtext.net/liquidtextadeeperdive; https://www.liquidtext.net/pricing-features)
@@ -232,6 +235,9 @@ Renamed from Nebo to MyScript Notes on iOS and Android; Windows keeps the name N
 
 ---
 
+**Handwriting-to-text.** Readdle added handwriting recognition to PDF Expert with iPadOS 27 (September 2026): handwriting becomes searchable without changing how it looks, works on anything written with Apple Pencil or finger, supports 29 languages, and operates across the whole library including annotations made in other apps. (https://support.readdle.com/pdfexpert/en_US/annotate-pdfs; https://9to5mac.com/2026/09/17/pdf-expert-update-adds-handwriting-recognition-expands-apple-pencil-support-more/)
+
+
 ## 9. Drawboard PDF
 
 **Ink engine / pressure & tilt.** "Write and draw with top-tier pressure sensitive ink for every type of stylus… Surface Pen or Apple Pencil, pixel-perfect precision, tilt and imperceptible lag" (product tour). Pen settings include a pressure-sensitivity toggle for active pens; pressure curves adjustable (firm pressure = thicker stroke). (https://www.drawboard.com/pdf/product-tour; https://support.drawboard.com/hc/en-us/articles/360001578856-Drawboard-PDF-Pen-and-ink-settings; https://www.drawboard.com/blog/12-drawboard-pdf-features-and-tricks-to-increase-productivity-that-you-might-not-know-about)
@@ -259,6 +265,9 @@ Renamed from Nebo to MyScript Notes on iOS and Android; Windows keeps the name N
 **UX note.** Praise: natural ink feel for engineering/construction markup. Complaints: 7-tool limit on the free tier and plan restructuring frustrated long-time users (Legacy License program acknowledges early $10 buyers). (https://www.drawboard.com/blog/acknowledging-drawboards-early-users-and-introducing-the-legacy-license)
 
 ---
+
+**Audio-linked notes.** Documented feature: the official product tour states users can "record or upload audio notes and attach them to sections." (https://www.drawboard.com/pdf/product-tour)
+
 
 ## 10. Drawboard Projects (formerly Bullclip)
 
@@ -322,6 +331,9 @@ Renamed from Nebo to MyScript Notes on iOS and Android; Windows keeps the name N
 
 ---
 
+**Audio-linked notes.** Documented feature: the official App Store listing states users can "record audio while you take notes," with playback position synced to the annotations on the page. (https://apps.apple.com/us/app/noteful-notes-pdf-markup/id1587904334)
+
+
 ## 13. Freenotes
 
 **Positioning.** AI-driven digital notepad: realistic handwriting feel, PDF annotation, infinite canvas, flashcards, AI summaries. (https://freenotes-note-taking.updatestar.com/ — listing aggregator; store listing: https://apps.apple.com/us/app/freenotes-ai-notes-taking/id6464237904)
@@ -375,6 +387,9 @@ Renamed from Nebo to MyScript Notes on iOS and Android; Windows keeps the name N
 **UX note.** Praise (third-party): free, generous pen set, stabilization/refinement controls. Complaints: not documented in consulted material — **UNVERIFIED**.
 
 ---
+
+**Audio.** Documented feature in the current app: the official App Store listing includes voice recording among its tools (alongside the calculator, timer and AI tools), so audio recording is no longer merely a legacy Notes Plus capability. (https://apps.apple.com/us/app/notes-notes-for-pencil/id1609361989)
+
 
 ## 15. University Notes
 

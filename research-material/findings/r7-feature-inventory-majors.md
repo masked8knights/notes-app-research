@@ -4,23 +4,21 @@ Batch: majors. Sources: official documentation, help centers, feature pages, off
 
 ---
 
-## 1. Obsidian
-
 Closed-source app (free core); data is plain Markdown files on disk. Community plugin ecosystem documented on the official stats/help sites.
 
-- **Core editor model:** Files (Markdown notes) in local folders ("vaults"); Canvas as a spatial layer. Core plugins include Backlinks, Canvas, Bases (custom table views over properties), Bookmarks, and graph tooling — enumerated on the core-plugins page https://obsidian.md/help/plugins [source: https://obsidian.md/help/plugins]
-- **Capture:** Web clipper (official browser extension) — **UNVERIFIED this session** (page not captured). Quick capture via community plugins — not core.
-- **Editor features:** Backlinks and unlinked mentions (core Backlinks plugin, https://obsidian.md/help/plugins); Canvas: infinite canvas with text/file/image cards, card-to-file conversion, canvas-of-notes organization (https://help.obsidian.md/plugins/canvas); Bases: editable, sortable, filterable views over note properties (https://obsidian.md/help/plugins); graph view, tags, templates, folding/outlines — **UNVERIFIED individually this session** (standard core-plugin list not fully captured).
-- **Handwriting:** None in core. **UNVERIFIED** beyond absence in core plugin list.
-- **Audio/video:** None native; community plugins. **UNVERIFIED** (no official page captured).
-- **Search & OCR:** Full-text search across the vault — **UNVERIFIED this session** (core search not captured; no OCR).
-- **Sync & storage:** Local-first; files live on the user's disk. First-party Sync is a paid add-on with shared vaults and file recovery mentioned on the pricing page (https://obsidian.md/pricing). E2EE claim for Sync: **UNVERIFIED this session** (sync page not captured). Third-party sync (iCloud/Dropbox) supported since files are Markdown — **UNVERIFIED this session**.
-- **Collaboration/sharing:** Shared vaults via Sync (https://obsidian.md/pricing). No real-time co-editing — **UNVERIFIED**.
-- **Publishing/export:** Obsidian Publish paid add-on; Publish is priced per site (https://obsidian.md/pricing).
-- **AI:** No first-party AI in core — **UNVERIFIED** (no official AI page captured).
-- **Platforms:** macOS, Windows, Linux, iOS, Android — **UNVERIFIED this session** (no captured platform page; consistent with vendor site).
-- **Pricing model:** Core app free, "100% user-supported"; paid add-ons Sync and Publish; education/nonprofit discount on Sync and Publish; commercial license — pricing page https://obsidian.md/pricing
-- **UX note:** Top praise: free core + local Markdown files + plugin ecosystem. Top complaints: Sync/Publish pricing structure (separate add-ons, collaborators needing Sync) — forum thread https://forum.obsidian.md/t/your-pricing-model-needs-work/96575 and pricing discussion https://www.reddit.com/r/ObsidianMD/comments/sepfgo/can_we_have_a_discussion_about_obsidians_high/
+- **Core editor model:** Files (Markdown notes) in local folders ("vaults"); Canvas as a spatial layer. Core plugins include Backlinks, Canvas, Bases (custom table views over properties), Bookmarks, and graph tooling (https://obsidian.md/help/plugins).
+- **Capture:** Web clipper (official browser extension) confirmed (https://obsidian.md/clipper). Quick capture via community plugins — not core.
+- **Editor features:** Backlinks and unlinked mentions (core Backlinks plugin); Canvas: infinite canvas with text/file/image cards, card-to-file conversion; Bases: editable, sortable, filterable views over note properties; Bookmarks, Daily notes, Search — all core plugins (https://obsidian.md/help/plugins).
+- **Handwriting:** None in core (absent from the captured core-plugin list).
+- **Audio/video:** Audio recorder IS a core plugin (https://help.obsidian.md/plugins/audio-recorder) — corrected from "None native; community plugins."
+- **Search & OCR:** Vault-wide full-text search is a core plugin (https://help.obsidian.md/plugins/search); no OCR.
+- **Sync & storage:** Local-first; files live on the user's disk. First-party Sync is a paid add-on with AES-256 E2EE, shared vaults, and file recovery (https://obsidian.md/sync; Standard $4/mo, Plus $8/mo). Third-party sync via iCloud recommended (https://obsidian.md/help/sync-notes).
+- **Collaboration/sharing:** Shared vaults via Sync (https://obsidian.md/sync). No real-time co-editing: Sync "does not yet support collaborative live editing" (https://obsidian.md/help/sync/collaborate).
+- **Publishing/export:** Obsidian Publish paid add-on, priced per site (https://obsidian.md/pricing).
+- **AI:** No first-party AI found on any captured official page (https://obsidian.md/pricing).
+- **Platforms:** macOS, Windows, Linux, iOS, Android (https://obsidian.md/download).
+- **Pricing model:** Core app free, "100% user-supported"; paid add-ons Sync and Publish; 40% education/nonprofit discount on Sync and Publish; Catalyst tier; commercial-use license (https://obsidian.md/pricing).
+- **UX note:** Top praise: free core + local Markdown files + plugin ecosystem. Top complaints: Sync/Publish pricing structure. Unchanged from master (threads not re-captured this session).
 
 ## 2. Notion
 
@@ -40,23 +38,7 @@ Closed-source.
 - **Pricing model:** Free, Plus, Business, Enterprise, seat-based, annual discount; AI allowance on Business/Enterprise (https://www.notion.com/pricing; AI usage allowance stated at https://www.notion.com/help/autofill).
 - **UX note:** Top complaints captured: Notion AI chat/AI blocks failing to read database content, requiring workarounds — https://www.reddit.com/r/Notion/comments/1hs8xs6/notion_ai_chat_unable_to_access_database_content/ and https://www.reddit.com/r/Notion/comments/1nvx8on/notion_ai_cant_read_database_help_please/. Top praise: databases + all-in-one workspace (same threads' general sentiment; no captured praise thread).
 
-## 3. Microsoft OneNote
-
-Closed-source. Part of Microsoft 365.
-
-- **Core editor model:** Freeform canvas pages inside sections inside notebooks; content placed anywhere on the page. "Your ideas and plans are saved on pages, which are organized into sections that live within notebooks" (https://support.microsoft.com/en-us/education/onenote/onenote?ui=en-us&rs=en-us&ad=us).
-- **Capture:** Outlook email-to-OneNote, browser clipper — **UNVERIFIED this session** (standard; not captured).
-- **Editor features:** Digital ink, math assistant, stickers, Class/Staff Notebooks, Learning Tools (https://support.microsoft.com/en-us/education/onenote/onenote?ui=en-us&rs=en-us&ad=us); tables, tags, page templates — **UNVERIFIED individually this session**.
-- **Handwriting:** Digital ink across platforms; handwriting search; math ink conversion (education support page, https://support.microsoft.com/en-us/education/onenote/onenote?ui=en-us&rs=en-us&ad=us). Palm rejection/shape recognition specifics: **UNVERIFIED**.
-- **Audio/video:** Record audio/video notes embedded on pages; recording start text is searchable (https://support.microsoft.com/en-US/OneNote/tips-for-searching-notes). Transcribe (M365 subscriber feature) on Windows adds transcripts to the page; content/audio not stored (https://techcommunity.microsoft.com/blog/microsoft365insiderblog/transcribe-and-ink-experience-in-onenote-on-windows/4217122).
-- **Search & OCR:** "You can search for text, handwriting, images, or even spoken words in audio and video recording" (https://support.microsoft.com/en-us/onenote/onenote-help-and-learning/search-notes-in-onenote). Audio Search is opt-in (Tools > Options > Audio and Video, desktop) and indexes only while the computer is idle (https://learn.microsoft.com/en-us/archive/blogs/descapa/onenote-audio-search-amp-audio-search-languages). Image OCR and phonetic audio search are long-standing — image OCR: **UNVERIFIED with citation this session** (Wikipedia secondary source only).
-- **Sync & storage:** OneDrive/cloud sync; local notebooks supported on desktop; offline editing supported — **UNVERIFIED this session** (sync page not captured).
-- **Collaboration/sharing:** Shared notebooks, Class/Staff Notebook, Teams integration (education support page, https://support.microsoft.com/en-us/education/onenote/onenote?ui=en-us&rs=en-us&ad=us).
-- **Publishing/export:** Export page/section/notebook to PDF — **UNVERIFIED this session**.
-- **AI:** Copilot in OneNote — **UNVERIFIED this session** (no captured page).
-- **Platforms:** Windows (desktop + Store app), macOS, web, iOS, Android — **UNVERIFIED this session** (standard; "different versions of OneNote on the same computer" article exists on the education support hub).
-- **Pricing model:** Free app with Microsoft account; features gated behind Microsoft 365 subscription (e.g., Transcribe requires an active Microsoft 365 subscription — https://techcommunity.microsoft.com/blog/microsoft365insiderblog/transcribe-and-ink-experience-in-onenote-on-windows/4217122).
-- **UX note:** No representative user thread captured this session. Praise/complaints summary: **UNVERIFIED**.
+- **Capture (corrected):** Browser clipper confirmed (https://support.microsoft.com/en-us/onenote/getting-started-with-the-onenote-web-clipper). Email-to-OneNote via the me@onenote.com address was REMOVED in March 2025 (https://support.microsoft.com/en-us/onenote/use-email-to-send-notes-to-onenote-notebooks) — corrected from "Outlook email-to-OneNote" as an active capture path; Outlook's native "Send to OneNote" remains.
 
 ## 4. Evernote
 
@@ -76,41 +58,13 @@ Closed-source (Bending Spoons ownership era).
 - **Pricing model:** Free, Starter, Advanced, Enterprise (custom); Personal/Professional discontinued and users migrated (https://help.evernote.com/hc/en-us/articles/46317642175763-Discontinuing-Evernote-Personal-Professional-Introducing-Starter-Advanced-FAQ; plan comparison at https://evernote.com/compare-plans). Exact per-tier prices: **UNVERIFIED** (captured pages don't state numbers).
 - **UX note:** No representative thread captured. Praise/complaints summary: **UNVERIFIED**.
 
-## 5. Goodnotes
+- **Audio (corrected):** Audio recording IS a core feature: record audio in notebooks with Note Replay (ink replays in sync with playback), tap a written word to hear the audio at that moment, and generate searchable transcripts (https://www.goodnotes.com/features/audio-recording; https://support.goodnotes.com/hc/en-us/articles/Add-Audio-Recordings; https://support.goodnotes.com/hc/en-us/articles/Audio-Transcription-FAQs). Free tier: 20 minutes audio per notebook; unlimited on paid. iOS/macOS notebooks only — corrected from "Not a core feature."
+- **Pricing model (corrected):** Free $0; Essential $11.99/yr; Pro $35.99/yr (link sharing, real-time collaboration, advanced AI, cross-platform library sync); Teams $120/seat/yr; Enterprise custom; AI Pass add-on +$9.99/mo (12x AI credits); 7-day free trial (https://www.goodnotes.com/pricing). The "Special Edition" one-time purchase does NOT appear on the pricing page — treated as unconfirmed.
 
-Closed-source.
-
-- **Core editor model:** Paged notebooks/documents (fixed pages, ink + text + images on top); document library.
-- **Capture:** Email-in: import documents by emailing them to a custom Goodnotes email address (App Store listing, https://apps.apple.com/us/app/goodnotes-ai-notes-docs-pdf/id1444383602). Web clipper: **UNVERIFIED**.
-- **Editor features:** Import and annotate PDFs; share notebook links for collaboration (https://apps.apple.com/us/app/goodnotes-ai-notes-docs-pdf/id1444383602); export handwritten/typed notes as PDFs, email, print (same listing). Marketplace templates — **UNVERIFIED this session**.
-- **Handwriting:** Ink engine with Apple Pencil support — **UNVERIFIED with citation this session**. Palm rejection: **UNVERIFIED**. Shape recognition: **UNVERIFIED**. Handwriting-to-text: lasso-select handwriting and convert to text; drag-and-drop handwriting into external apps converts to typed text where supported (https://support.goodnotes.com/hc/en-us/articles/7353695997199-Convert-handwriting-to-text). Scribble in text boxes converts as you write; page-layer conversion is manual via Lasso (third-party confirmation: https://www.handwritingocr.com/handwriting-to-text/how-do-you-convert-handwriting-to-text-in-goodnotes — treat as corroboration, not primary). Lasso Edit Mode: edit handwriting like text — reflow, edit individual words, straighten lines, change alignment/color (https://support.goodnotes.com/hc/en-us/articles/10779441732111-Edit-your-handwriting-with-Lasso-Edit-Mode; https://support.goodnotes.com/hc/en-us/articles/10779382123919-Reflow-your-handwriting-with-Edit-Handwriting-Mode).
-- **Audio:** Not a core feature — **UNVERIFIED** (recording exists in current versions; no captured page).
-- **Search & OCR:** Handwriting search — **UNVERIFIED this session** (help page not captured).
-- **Sync & storage:** Cloud sync via Goodnotes account; local files exportable; cross-platform library sync on Pro (https://www.goodnotes.com/pricing). E2EE: **UNVERIFIED**.
-- **Collaboration/sharing:** Private link sharing and hosting real-time collaboration on Pro (https://www.goodnotes.com/pricing); send a link to work on the same notes (App Store listing).
-- **Publishing/export:** PDF export, email, print (App Store listing).
-- **AI:** Goodnotes AI: generative AI for handwritten notes (Goodnotes 6 launch: spot/correct mistakes — https://support.goodnotes.com/hc/en-us/articles/7353710958991-Get-started-with-Goodnotes-6); AI for Meetings and AI Create Mode on Pro; AI Pass add-on adds advanced AI and 12x more AI credits (https://www.goodnotes.com/pricing).
-- **Platforms:** iPad/iPhone, Mac, Windows, Android, Web (plan comparison: https://support.goodnotes.com/hc/en-us/articles/13808767840015-Introducing-Our-New-Payment-Plans).
-- **Pricing model:** Free tier; Special Edition, Essential ($11.99/year class), Pro ($35.99/year with link sharing, real-time collaboration, advanced AI, cross-platform library sync); AI Pass +$9.99/month; 7-day trial (https://www.goodnotes.com/pricing; plan table https://support.goodnotes.com/hc/en-us/articles/13808767840015-Introducing-Our-New-Payment-Plans). One-time purchase option: **UNVERIFIED this session**.
-- **UX note:** No representative thread captured. Praise/complaints summary: **UNVERIFIED**.
-
-## 6. Notability (Ginger Labs)
-
-Closed-source.
-
-- **Core editor model:** Paged notes; freeform ink + typed text + media on pages; PDF import/annotation.
-- **Capture:** Drag-and-drop documents/photos/audio from desktop (UC Riverside SDRC page — third-party; treat specifics as **UNVERIFIED**). Web clipper: none — **UNVERIFIED**.
-- **Editor features:** Handwriting, typing, drawing, imported documents in one note (https://apps.apple.com/us/app/notability-ai-notes-planner/id360593530). Division/multiplication-style math conversion — **UNVERIFIED with vendor citation this session**.
-- **Handwriting:** Ink engine; lasso selection to edit ink and convert handwriting to text (Colorado College quick-start PDF — third-party; treat as **UNVERIFIED**). Handwriting search in 14 languages — third-party source (https://sdrc.ucr.edu/notability), **UNVERIFIED with vendor citation**.
-- **Audio/video:** Recording synced to notes via timestamps on every ink stroke, so notes replay in real time while scrubbing the recording (official engineering blog: https://blog.notability.com/post/how-we-built-live-transcription). Audio Transcripts: turn any recording into text within the note (https://blog.notability.com/post/introducing-audio-transcripts-2). Live Transcription in real time; transcripts interactive and linked both ways to notes (https://blog.notability.com/post/become-an-audio-pro-how-to-record-lectures-in-notability). Timestamp support in Live Transcription and diarization announced as coming (https://blog.notability.com/post/how-we-built-live-transcription).
-- **Search & OCR:** Handwritten-word search — **UNVERIFIED with vendor citation this session**.
-- **Sync & storage:** Cloud sync via Notability/iCloud — **UNVERIFIED this session**. Notability Cloud exists as a plan/admin capability (https://notability.com/pricing/compare).
-- **Collaboration/sharing:** Sharing notes/exports — **UNVERIFIED this session**.
-- **Publishing/export:** PDF export — **UNVERIFIED this session**.
-- **AI:** AI-powered quizzes and flashcards generated from notes; real-time summaries (https://notability.com/). Smart Notes and Chat with Notes during recordings referenced as Pro AI features (third-party: https://checkthat.ai/brands/notability/pricing). Confirmed live by the R9 camoufox scrape of that source: its Notability pricing page lists a $99.99/yr Pro tier with unlimited editing, post-recording transcription and iCloud sync, and a lower tier allowing 400 AI quizzes/flashcards per month, with Smart Notes and Chat with Notes named as the AI features. Still a third party, not Notability's own pricing page.
-- **Platforms:** iOS (iPad/iPhone), macOS — subscription usable across max 10 devices (https://support.gingerlabs.com/hc/en-us/articles/4409501940122-Notability-Subscription-FAQ). Requires iOS 17+/macOS 14+ (same FAQ). Windows/Android/web: **UNVERIFIED** (not offered as of captured pages).
-- **Pricing model:** Free app with Starter tier; Plus, Pro, Business tiers with 30-day trial (https://notability.com/pricing; https://notability.com/pricing/compare). Free tier has an Edit Limit (third-party description: https://checkthat.ai/brands/notability/pricing — **UNVERIFIED**). Pricing history: became a free app with annual subscription option (https://blog.notability.com/post/pricing-updates).
-- **UX note:** Complaints captured: free-tier Edit Limit friction and subscription costs (https://checkthat.ai/brands/notability/pricing; GetApp review snippets https://www.getapp.com/collaboration-software/a/notability/). Praise: audio-note sync and lecture recording (https://blog.notability.com/post/become-an-audio-pro-how-to-record-lectures-in-notability context).
+- **Sync & storage (corrected):** Cloud sync via iCloud or Notability Cloud; subscription usable across max 10 devices (https://support.gingerlabs.com/en-us/articles/16300172-notability-subscription-faq).
+- **AI (corrected):** Plus tier adds limited AI-powered quizzes/flashcards and audio transcription; Pro adds unlimited transcription with real-time AI summaries and Chat with your notes (https://notability.com/pricing).
+- **Platforms (corrected):** iOS (iPad/iPhone) and macOS; requires iOS 17+/macOS 14+; no Family Sharing (https://support.gingerlabs.com/en-us/articles/16300172-notability-subscription-faq).
+- **Pricing model (corrected):** Starter $0 (5 free notes); Lite $11.99/yr; Plus $15.99/yr; Pro $79.99/yr (reg. $99.99); Business $60/yr per user (https://notability.com/pricing). NOTABILITY CLASSIC returned as a one-time purchase with no subscription (App Store: https://apps.apple.com/us/app/notability-ai-notes-planner/id360593530).
 
 ## 7. Noteshelf (Fluid Touch)
 
@@ -184,59 +138,21 @@ Closed-source. Outliner: one infinite nested-bullet tree.
 - **Pricing model:** Free plan with limited monthly bullets; Pro paid tier; education: free Pro for university faculty, for students for the course duration; 50% nonprofit discount (https://workflowy.com/pricing/). Exact Pro price: **UNVERIFIED** (third-party figures conflict: ~$4.99-$8.99/mo at https://checkthat.ai/brands/workflowy/pricing and https://www.xpay.sh/saas-pricing/workflowy/).
 - **UX note:** No representative thread captured. Praise (third-party review summary): minimal fast outliner that supports the user's thinking style (https://www.g2.com/products/workflowy-workflowy/pricing — review snippet). Complaints: **UNVERIFIED**.
 
-## 11. Tana
+- **Pricing model (corrected):** Free $0 (5 AI meetings/mo, 50 AI queries); Pro $20/user/mo early-bird (reg. $30; botless meeting agent, full MCP); Business from $35/user/mo (SAML SSO, EU cloud); 30-day free trial (https://tana.inc/pricing). The third-party "Core $10 / Plus $20" tier names are WRONG — replace them with the vendor tiers above.
 
-Closed-source. Outliner with structured data (supertags).
+Ownership/model shift (header note): CONFIRMED — the vendor homepage now headlines "Meet Reflect Open": an open-source app with local Markdown files, free on Mac, with paid iPhone/iPad builds and iCloud Drive or Git sync (https://reflect.app/).
+- **Sync & storage (corrected):** Open version stores local Markdown with iCloud Drive or Git sync; hosted cloud version remains at reflect.app (https://reflect.app/).
+- **Publishing/export (corrected):** Local Markdown files (https://reflect.app/).
+- **Platforms (corrected):** Mac (free open build), iPhone/iPad (paid), per homepage; web not re-confirmed this session.
+- **Pricing model (corrected):** Open version free on Mac; hosted version subscription-based; Classic subscribers receive one year of the iOS app (https://reflect.app/). Third-party 30-day money-back claim unconfirmed.
 
-- **Core editor model:** Outliner (nested bullets) where any node can become a structured object via supertags; supertags "work like a blend of tags, types, and fields… enabling nested content in a way that regular bullets cannot" (https://outliner.tana.inc/faq#tagged-nodes-questions).
-- **Capture:** Capture to Inbox node; Paste-to-Tana — third-party (https://noteapps.info/apps/tana), **UNVERIFIED with vendor citation**. Tana Capture app: **UNVERIFIED this session**.
-- **Editor features:** Supertags (custom types with fields), commands, field-based databases, views over tagged nodes, outline formatting — supertags per FAQ above; other features: **UNVERIFIED individually this session** (long-standing help content).
-- **Handwriting:** None.
-- **Audio/video:** Audio capture/transcription — **UNVERIFIED this session**.
-- **Search & OCR:** Search nodes — **UNVERIFIED this session**.
-- **Sync & storage:** Cloud-hosted; no E2EE; offline — **UNVERIFIED this session**.
-- **Collaboration/sharing:** Workspace sharing of nodes/workspaces — **UNVERIFIED this session**.
-- **Publishing/export:** Export — **UNVERIFIED this session**.
-- **AI:** Named AI features: AI voice memo, AI templated fields, Tana Write for me, Tana Transcribe — third-party product review (https://smartspark.ai/blog/tana-review-features-pricing), **UNVERIFIED with vendor citation**. Pricing page advertises "botless meeting agent" as the headline AI use (https://tana.inc/pricing).
-- **Platforms:** Desktop app, web, mobile app — **UNVERIFIED this session**.
-- **Pricing model:** Free plan and paid plans; 30-day trial of everything (https://tana.inc/pricing). Plan names/prices: **UNVERIFIED** (third-party: Core $10, Plus $20 — https://smartspark.ai/blog/tana-review-features-pricing, **UNVERIFIED**).
-- **UX note:** Complaints captured: no iPad/mobile app parity, "feels like a company of one" support concerns, no local execution — https://www.reddit.com/r/tanaapp/comments/1hzuc0r/tana_downsides/. Praise: AI-native structured outlining (same thread's counterpart sentiment; also https://noteapps.info/apps/tana).
+- **AI (corrected):** AI on all tiers via AI Models Core/Fast/Max (https://www.craft.do/pricing).
+- **Pricing model (corrected):** Starter free with a 1,500-block cap and 1 Personal Space; Plus €6.4-8/mo for unlimited blocks; Team $5/member/mo (min 3 members); Family €12/mo; student Plus free; Enterprise custom (https://www.craft.do/pricing). The master's "unlimited docs and blocks" free tier is WRONG — the free tier is block-capped.
+===== END SECTION =====
 
-## 12. Reflect
+## Out of scope (R13)
 
-Cloud notes app, backlinked daily notes, AI built in. Ownership/model shift: the vendor homepage now describes Reflect as an open-source app with local Markdown files and a free Mac build, and a public GitHub repo (team-reflect/reflect-open, MIT license) exists — https://reflect.app/ and https://github.com/team-reflect/reflect-open. The hosted cloud version remains at reflect.app (AI features, MCP server). Status of which is canonical going forward: **UNVERIFIED**.
-
-- **Core editor model:** Pages of notes with bidirectional links; daily notes as an organizing layer. Third-party summary: "collects your web snippets, Kindle highlights, and important links — all in one place, then rapidly resurfaces them where you need it" (https://reflect.academy/reflect-ai-notes-product-changelog/), consistent with the vendor site.
-- **Capture:** Web snippets/highlights capture (https://reflect.academy/reflect-ai-notes-product-changelog/); Kindle highlights import — same source, treat as **UNVERIFIED with vendor citation**. Web clipper: **UNVERIFIED this session**.
-- **Editor features:** Backlinks, graph view, daily notes — third-party changelog page above (consistent with vendor marketing); fold/outline, templates, tags: **UNVERIFIED individually this session**.
-- **Handwriting:** None — **UNVERIFIED**.
-- **Audio/video:** Voice memos: uses OpenAI Whisper for transcription (https://reflect.academy/reflect-ai-notes-product-changelog/). Audio recording feature page: **UNVERIFIED this session**.
-- **Search & OCR:** Instant search, "Voice Notes synced across all devices" — third-party pricing/feature summary (https://www.costbench.com/tools/reflect), **UNVERIFIED with vendor citation**.
-- **Sync & storage:** Hosted version is cloud-only with E2EE — **UNVERIFIED this session** (long-standing vendor claim; page not captured). The open-source version stores local Markdown files (https://reflect.app/).
-- **Collaboration/sharing:** Shared notes/networked collaboration — **UNVERIFIED this session**.
-- **Publishing/export:** Markdown export (open-source version: local files at https://reflect.app/); hosted export: **UNVERIFIED**.
-- **AI:** GPT-4 and Whisper-powered AI: writing assistant, backlink building, summarize, outline, meeting summaries (https://reflect.academy/reflect-ai-notes-product-changelog/); MCP server to connect Reflect to other AI apps (https://reflect.academy/blog/what-is-mcp); "schedule a meeting to summarize" via calendar integration — third-party changelog page (consistent with vendor feature marketing).
-- **Platforms:** Mac, iOS, web — **UNVERIFIED this session** (long-standing platform list; no captured page).
-- **Pricing model:** Monthly or annual subscription with free trial; "30-day money back guarantee" (https://www.costbench.com/tools/reflect — third-party; **UNVERIFIED with vendor citation**). Hosted free/Pro tiers: **UNVERIFIED**.
-- **UX note:** No representative thread captured. Praise/complaints summary: **UNVERIFIED**.
-
-## 13. Craft
-
-Closed-source.
-
-- **Core editor model:** Pages made of blocks; nested subpages; spaces for organization.
-- **Capture:** Import/convert documents from other apps (App Store listing, https://apps.apple.com/us/app/craft-docs-and-visual-ideas/id1487937127). Web clipper: **UNVERIFIED this session**.
-- **Editor features:** Rich doc editor with folders and advanced organization, structured docs with content blocks — from vendor marketing (https://craft.do/). Specifics: **UNVERIFIED individually this session** (support page not captured beyond homepage).
-- **Handwriting:** None — **UNVERIFIED**.
-- **Audio/video:** Embeds — **UNVERIFIED this session**.
-- **Search & OCR:** Search — **UNVERIFIED this session**.
-- **Sync & storage:** Cloud sync via Craft account; local storage on Mac — **UNVERIFIED this session**. E2EE: **UNVERIFIED**.
-- **Collaboration/sharing:** Real-time collaborative editing in shared documents; collaboration and publishing rolled out on Craft X (https://craft.do/blog/introducing-craft-x). Invite collaborators, share docs/pages, create groups — support page **UNVERIFIED this session**.
-- **Publishing/export:** Publish to the web, export, copy-paste, hand-off; share docs, pages, or entire folders via links (App Store listing).
-- **AI:** AI assistant, AI-powered writing — vendor pricing page (https://craft.do/pricing).
-- **Platforms:** iOS, iPadOS, macOS, Windows, web — third-party (https://anywr.co/blog-posts/why-notion-isnt-the-best-craft-alternative), consistent with vendor site; Android: **UNVERIFIED this session**.
-- **Pricing model:** "Free to start, unlimited docs and blocks"; paid plans add AI assistant, unlimited storage, full version history (30-day), publishing, collaboration (https://craft.do/pricing). Exact prices: **UNVERIFIED** (third-party: $5-10/user/mo — https://craft-compass.com/blog/posts/pricing-comparsion/, **UNVERIFIED**).
-- **UX note:** Complaints captured: organizing/CAL (chronological access to learning) friction and feature inconsistencies (https://www.reddit.com/r/craftdocs/comments/1i8elq1/craft_after_one_year_its_amazing_and_frustrating_at/). Praise: document design and UX (same thread).
+None encountered in this file.
 
 ## 14. Milanote
 

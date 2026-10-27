@@ -46,7 +46,7 @@
 42. [passed] R9 close: MILESTONES entry, secret gate (passed: worktree and history clean), commit, push. Pushed as c99ab8a to main.
 43. [passed] R10: project/ folder created (MILESTONES, todo, REQUIREMENTS, PLAYBOOK moved via git mv, AGENTS.md root pointer rewritten, README updated); RESEARCH.md, FEATURES.md, APPS-LINKS.md rebuilt into per-section tables by three parallel lanes with verified carry-over (270/270 entries, 209/209 URLs, all UNVERIFIED markers and findings pointers preserved); backups in BACKUPS/*.bak-preR10.
 44. [passed] R11: FEATURES.md regrouped into uniform per-section tables (Features | Sentiment | Wants | Pricing and platforms), 747/747 rows verified; AGENTS.md verified non-blank on the pushed remote via fresh clone.
-45. [in progress] R12 round 1 (evidence-enrichment): for every app in APPS-LINKS.md a three-part pass — visual surface (screenshots captured via WSL camoufox into research-material/images/r12/), exhaustive docs/help-center analysis (UNVERIFIED marks where not confirmable), and feature-tied sentiment sweep. Lanes (exclusive findings files):
+45. [passed] R12 round 1 (evidence-enrichment): for every app in APPS-LINKS.md a three-part pass — visual surface (screenshots captured via WSL camoufox into research-material/images/r12/), exhaustive docs/help-center analysis (UNVERIFIED marks where not confirmable), and feature-tied sentiment sweep. Lanes (exclusive findings files):
     - 45a [passed] Lane A: study/PDF majors (Goodnotes, Notability, Noteshelf, CollaNote, MarginNote 4, Flexcil, LiquidText, Xodo, PDF Expert, University Notes, Write by Styluslabs, Zotero, Hypothesis, Noteful/Freenotes/Notes+, Drawboard PDF, Drawboard Projects, PDFCraft) -> r12-enrich-a.md
     - 45b [passed] Lane B: majors 1 (Obsidian, Obsidian Publish, OneNote, Evernote, Notion, Craft, Anytype, Tana, Reflect, Milanote, Miro, Samsung Notes) -> r12-enrich-b.md
     - 45c [passed] Lane C: majors 2 / OSS majors (Logseq, Joplin, Notesnook, Trilium Notes, AFFiNE, ente, Heptabase, Kinopio, tldraw, Excalidraw, Saber, Lockbook) -> r12-enrich-c.md
@@ -57,7 +57,17 @@
     - 45h [passed] Main session: camoufox-in-WSL capture of lane shot-lists into research-material/images/r12/
     - 45i [passed] Integrate lanes into RESEARCH.md, FEATURES.md, APPS-LINKS.md (R11 format); corrections to master files where evidence contradicts earlier findings.
     - 45j [passed] Video-evidence pass (per REQUIREMENTS): official demo/tutorial videos, YouTube walkthroughs, review footage, comment threads under them, and HN/Reddit-style threads, for every app. Lanes still running (45a, 45d, 45e, 45g) fold this into their remaining apps as a ### Video evidence subsection; completed lanes B, C, F get a supplement section appended to their files for their apps.
-46. [pending] R12 round 2 (confirmation and gaps): re-verify existing findings claim by claim, confirm or deny; fill the 68 unmerged candidates in research-material/findings/r9-camoufox-sweep.md; hunt for anything missed.
+46. [passed] R12 round 2 (confirmation and gaps): re-verify existing findings claim by claim, confirm or deny; fill the 68 unmerged candidates in research-material/findings/r9-camoufox-sweep.md; hunt for anything missed. Lanes (exclusive findings files, written in the assistant workspace then copied into research-material/findings/):
+    - 46a [passed] Lane 1: re-verify r7-feature-inventory-majors.md claim by claim (195 UNVERIFIED) + its 24 r9-sweep candidates -> r12-confirm-1.md
+    - 46b [passed] Lane 2: re-verify r7-feature-inventory-handwriting.md (90 UNVERIFIED) + its 18 r9-sweep candidates -> r12-confirm-2.md
+    - 46c [passed] Lane 3: re-verify r7-feature-inventory-oss.md (73 UNVERIFIED) + its 17 r9-sweep candidates -> r12-confirm-3.md
+    - 46d [passed] Lane 4: re-verify r7-user-repos-a.md, r7-user-repos-b.md, r7-remakes-evernote-notion.md (69 UNVERIFIED) + their 12 r9-sweep candidates -> r12-confirm-4.md
+    - 46e [passed] Lane 5: re-verify deep-repos-a/b/c.md (88 UNVERIFIED) -> r12-confirm-5.md
+    - 46f [passed] Lane 6: re-verify thread-a..g, thread3-digest, r7-user-sentiment-sweep, community-digest (~64 UNVERIFIED) -> r12-confirm-6.md
+    - 46g [passed] Lane 7: re-verify r6-sync-crdt-stack.md, r6-obsidian-plugins.md, r6-nostr-transports-extras.md, integrations-1.md (73 UNVERIFIED) -> r12-confirm-7.md
+    - 46h [passed] Lane 8: re-verify linked-apps-1/2, github-repos-1/2, apps-likes-wants, input-mode-switching, tolaria, myscript-nebo-reverse, r6-unverified-resolutions, r8-factcheck-corrections re-check (~66 UNVERIFIED) -> r12-confirm-8.md
+    - 46i [passed] Lane 9: gap hunt — APPS-LINKS.md rows with no/thin findings coverage and feature areas unrepresented; research the gaps -> r12-confirm-9.md
+    - 46j [passed] Main session: integrate lanes into RESEARCH.md/FEATURES.md/APPS-LINKS.md (R11 format), apply corrections with recorded reasons; close round (MILESTONES, gate, commit, push).
 47. [pending] R12 round 3 (alternatives sweep): for every closed-source app in APPS-LINKS.md, find open-source or lesser-known alternatives not yet covered, at full depth.
 48. [pending] R12 round 4 (Discord re-check): re-read all Discord exports against current findings; list every app, repo, feature request, or complaint with no findings coverage; research the gaps.
 

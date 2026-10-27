@@ -16,7 +16,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 **Features.** Privacy-first knowledge-management platform (repo self-description: https://github.com/logseq/logseq). Block-based outliner with bidirectional links, daily journals, templates, tasks/TODO states, embedded queries, graph view, PDF annotation, and flashcard/spaced-repetition support (documented in the official docs repo: https://github.com/logseq/docs). Separate Logseq Whiteboards product for canvas work (referenced from logseq.com via the roadmap link in the repo: https://github.com/logseq/logseq). Export-graph publishing works by bundling a JS bundle that serves the graph rather than fully static HTML, per a maintainer-facing discussion: https://github.com/logseq/logseq/discussions/5246.
 
-**Sync & collaboration.** Official Logseq Sync is E2EE and paid; during beta it is gated on Open Collective contributions (https://blog.logseq.com/how-to-setup-and-use-logseq-sync/). The sync beta does not support multiple people on one graph and the makers warn data loss can occur (https://www.thegeeksclub.com/platforms/logseq/). Self-hosting of the sync server exists in the 2.0.1 line via the Sync server url setting plus the db-sync component (https://www.reddit.com/r/logseq/comments/1uz14lg/is_selfhosted_sync_a_thing_with_this_new_release/), but the sync code is widely understood in the community not to be FOSS, since it is the only paid feature (https://www.reddit.com/r/logseq/comments/1l801w9/logseq_db_version_sync/). Before official sync, most users synced files with Syncthing, Git, or Dropbox (https://www.reddit.com/r/logseq/comments/172tocr/self_hosting_options/).
+**Sync & collaboration.** Official Logseq Sync is E2EE and paid; during beta it is gated on Open Collective contributions (https://blog.logseq.com/how-to-setup-and-use-logseq-sync/). The sync beta does not support multiple people on one graph and the makers warn data loss can occur (https://www.thegeeksclub.com/platforms/logseq/). Self-hosting of the sync server exists in the 2.0.1 line via the Sync server url setting plus the db-sync component (https://www.reddit.com/r/logseq/comments/1uz14lg/is_selfhosted_sync_a_thing_with_this_new_release/), but the sync code is widely understood in the community not to be FOSS, since it is the only paid feature (https://www.reddit.com/r/logseq/comments/1l801w9/logseq_db_version_sync/). Before official sync, most users synced files with Syncthing, Git, or Dropbox (https://www.reddit.com/r/logseq/comments/172tocr/self_hosting_options/). [R12 correction: db-sync self-host component sits inside the AGPL-3.0 logseq repo with a documented Node.js adapter (https://github.com/logseq/logseq/blob/master/deps/db-sync/README.md); the paid hosted Sync offer may remain proprietary, but the self-host path is in the FOSS repo]
 
 **Publishing & export.** Graph export/publish via bundled-JS hosting (https://github.com/logseq/logseq/discussions/5246). Markdown/Org files are the native format, so files are readable outside the app by construction (https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/l/Logseq/Logseq/0.6.6/Logseq.Logseq.locale.en-US.yaml).
 
@@ -38,13 +38,13 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 **Tech stack & storage.** TypeScript/Electron desktop app, React Native mobile, CLI app; notes saved "to an open format" (https://joplinapp.org/); local storage is a database with notes organised into notebooks (repo README: https://github.com/laurent22/joplin). Full-text search available on all platforms (https://github.com/laurent22/joplin). Synchronisation is stateless, with items exchanged between clients and servers (E2EE spec: https://github.com/laurent22/joplin/blob/master/readme/spec/e2ee.md).
 
-**Features.** Notebooks/notes/todos, Markdown editing with rich plugins and themes, extension API for scripts and plugins (https://joplinapp.org/), Web Clipper browser extension for Firefox and Chrome (https://github.com/diogocaveiro/joplin_pt-pt mirrors the README feature list), note history/revisions (same README mirror), Evernote import (https://knightli.com/en/2026/05/30/joplin-open-source-note-taking-app/), sub-notebooks, alarms and recurrence on todos (README mirror: https://github.com/diogocaveiro/joplin_pt-pt). OCR of images into searchable text is not captured this session **UNVERIFIED this session** (would have used https://joplinapp.org/help/ changelog).
+**Features.** Notebooks/notes/todos, Markdown editing with rich plugins and themes, extension API for scripts and plugins (https://joplinapp.org/), Web Clipper browser extension for Firefox and Chrome (https://github.com/diogocaveiro/joplin_pt-pt mirrors the README feature list), note history/revisions (same README mirror), Evernote import (https://knightli.com/en/2026/05/30/joplin-open-source-note-taking-app/), sub-notebooks, alarms and recurrence on todos (README mirror: https://github.com/diogocaveiro/joplin_pt-pt). OCR of images into searchable text is not captured this session **UNVERIFIED this session** (would have used https://joplinapp.org/help/ changelog). [R12 correction: Official OCR shipped in Joplin v2.14, March 2024 (https://joplinapp.org/news/20240301-release-2-14/, docs https://joplinapp.org/help/apps/ocr/)]
 
 **Sync & collaboration.** Sync targets include Joplin Cloud, Dropbox, OneDrive, WebDAV, Nextcloud and S3-compatible storage, with Joplin's own E2EE layer applied on-device regardless of target (https://petronellatech.com/blog/obsidian-vs-joplin/). E2EE is opt-in: enabling on one device creates a password-protected Master Key that must be synced to other devices (https://joplinapp.org/help/apps/sync/e2ee/). Because sync is stateless, E2EE status is per-client and clients may knowingly mix encrypted and unencrypted items; disabling E2EE must be done manually everywhere (https://github.com/laurent22/joplin/blob/master/readme/spec/e2ee.md). Shared notebooks use per-notebook keys encrypted with each user's master password (E2EE workflow doc: https://joplinapp.org/help/dev/spec/e2ee/workflow/). Self-hosted Joplin Server exists (referenced in sync-target lists: https://petronellatech.com/blog/obsidian-vs-joplin/).
 
 **Publishing & export.** Open export format emphasised on the site (https://joplinapp.org/); import from Evernote and others (https://knightli.com/en/2026/05/30/joplin-open-source-note-taking-app/). JEX/raw export details **UNVERIFIED this session** (would have used https://joplinapp.org/help/).
 
-**Plugins & AI.** Plugin and theme ecosystem via the Extension API, "you can also easily create your own" (https://github.com/laurent22/joplin). First-party AI features not captured **UNVERIFIED this session** (would have used release notes).
+**Plugins & AI.** Plugin and theme ecosystem via the Extension API, "you can also easily create your own" (https://github.com/laurent22/joplin). Joplin 3.7 (Aug 2026) added first-party AI chat and an MCP server (https://joplinapp.org/news/20260831-release-3-7/) **UNVERIFIED this session** (would have used release notes).
 
 **Platforms.** Windows, macOS, Linux, Android, iOS, plus a terminal app (https://joplinapp.org/, README: https://github.com/laurent22/joplin; terminal per README mirror: https://github.com/diogocaveiro/joplin_pt-pt).
 
@@ -58,13 +58,13 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 ## 3. Notesnook
 
-**License & repo.** Clients open-sourced under GPLv3 on 2022-09-01, with the sync server under AGPLv3 (announcement with maintainer answers: https://www.reddit.com/r/opensource/comments/x3ds2w/notesnook_is_now_open_source/; directory listing GPL-3.0: https://www.opensourcealternatives.to/item/notesnook). Sync server repo: https://github.com/streetwriters/notesnook-sync-server ("self-hosting in alpha": https://github.com/streetwriters/notesnook-sync-server). Main client repo is streetwriters/notesnook on GitHub **UNVERIFIED this session** (would have used https://github.com/streetwriters/notesnook directly).
+**License & repo.** Clients open-sourced under GPLv3 on 2022-09-01, with the sync server under AGPLv3 (announcement with maintainer answers: https://www.reddit.com/r/opensource/comments/x3ds2w/notesnook_is_now_open_source/; directory listing GPL-3.0: https://www.opensourcealternatives.to/item/notesnook). Sync server repo: https://github.com/streetwriters/notesnook-sync-server ("self-hosting in alpha": https://github.com/streetwriters/notesnook-sync-server). Main client repo is streetwriters/notesnook on GitHub **UNVERIFIED this session** (would have used https://github.com/streetwriters/notesnook directly). [R12 correction: Official pricing page states "Client and server, GPLv3" (https://notesnook.com/pricing); sync-server repo README still reads AGPLv3 (https://github.com/streetwriters/notesnook-sync-server), so record the newer official statement with the conflict noted]
 
 **Tech stack & storage.** Local-first clients across desktop, mobile and web (https://www.opensourcealternatives.to/blog/best-open-source-note-taking-apps). Local storage engine details and editor core (React + custom ProseMirror-based editor) not captured **UNVERIFIED this session** (would have used the repo README and docs at https://help.notesnook.com). What is captured: no lock-in, with full export to HTML, Markdown, PDF and Text, stated by the team (https://www.reddit.com/r/Notesnook/comments/18j5bi7/what_i_want_to_know_is_if_notesnook_is_reliable/).
 
 **Features.** Rich note-taking with notebooks, tags, properties; Monographs (shareable E2EE notes/web pages, discussed in Pro-user Q&A: https://www.reddit.com/r/Notesnook/comments/1cqxc9k/got_the_pro_version_and_have_some_questions/); a publishing feature users compare favorably to Standard Notes (https://www.reddit.com/r/Notesnook/comments/10gsra2/better_then_standard_notes/); quick single-button note capture praised by users (https://www.reddit.com/r/Notesnook/comments/1momqa5/selfhosting_and_available_features/); 2FA with email + authenticator + password layers (user description: https://www.reddit.com/r/degoogle/comments/1o76e3j/anyone_use_notesnook/); local backups and export (https://www.reddit.com/r/Notesnook/comments/1qxrkb4/okay_notesnook_you_win/).
 
-**Sync & collaboration.** E2EE sync across devices through Streetwriters' servers; the self-hostable sync server exists in alpha with full on-premise self-hosting as a stated goal (https://github.com/streetwriters/notesnook-sync-server). Users report waiting for the sync server to mature before self-hosting (https://www.reddit.com/r/Notesnook/comments/1momqa5/selfhosting_and_available_features/). Real-time collaboration is not captured **UNVERIFIED this session**.
+**Sync & collaboration.** E2EE sync across devices through Streetwriters' servers; the self-hostable sync server exists in alpha with full on-premise self-hosting as a stated goal (https://github.com/streetwriters/notesnook-sync-server). Users report waiting for the sync server to mature before self-hosting (https://www.reddit.com/r/Notesnook/comments/1momqa5/selfhosting_and_available_features/). Real-time collaboration is not captured **UNVERIFIED this session**. [R12 correction: Self-hosting now possible but without support (https://github.com/streetwriters/notesnook-sync-server); no longer alpha]
 
 **Publishing & export.** Export to HTML/Markdown/PDF/Text (team statement: https://www.reddit.com/r/Notesnook/comments/18j5bi7/what_i_want_to_know_is_if_notesnook_is_reliable/); Monograph publishing (https://www.reddit.com/r/Notesnook/comments/1cqxc9k/got_the_pro_version_and_have_some_questions/).
 
@@ -82,7 +82,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 ## 4. Trilium Notes / TriliumNext
 
-**License & repo.** AGPL-3.0 (https://ideaproof.io/open-source/project/triliumnext-notes). Original project: https://github.com/zadam/trilium; active continuation: https://github.com/TriliumNext/Notes, which "started as a fork of the original Trilium repository" and has taken over the project from the original developer (repo: https://github.com/TriliumNext/Notes; community statement: https://www.reddit.com/r/selfhosted/comments/1mzeltd/trilium_notes_update/). Docs: https://triliumnext.github.io/Docs/ and https://docs.triliumnotes.org.
+**License & repo.** AGPL-3.0 (https://ideaproof.io/open-source/project/triliumnext-notes). Original project: https://github.com/zadam/trilium; active continuation: https://github.com/TriliumNext/Notes, which "started as a fork of the original Trilium repository" and has taken over the project from the original developer (repo: https://github.com/TriliumNext/Notes; community statement: https://www.reddit.com/r/selfhosted/comments/1mzeltd/trilium_notes_update/). Docs: https://triliumnext.github.io/Docs/ and https://docs.triliumnotes.org. [R12 correction: Continuation repo renamed to TriliumNext/Trilium (https://github.com/TriliumNext/Trilium); docs at docs.triliumnotes.org]
 
 **Tech stack & storage.** Data stored in a SQLite database holding notes, tree structure, metadata and most configuration (https://github.com/TriliumNext/Docs/blob/main/Wiki/database.md, https://docs.triliumnotes.org/user-guide/advanced-usage/database). Native storage format is HTML inside that database, not source files; Markdown is import/export (https://ourbigbook.com/cirosantilli/trillium-notes). Electron desktop app plus a self-hostable server deployable in Docker (user deployment reports: https://www.reddit.com/r/Trilium/comments/1ktg3vk/triliumnext_vs_nextcloud_notes/, https://www.reddit.com/r/homelab/comments/1nyuw1w/trilium/). English-only by policy due to maintenance overhead (FAQ: https://triliumnext.github.io/Docs/Wiki/faq.html). macOS build was historically unsupported by the original author (wiki FAQ: https://github.com/zadam/trilium/wiki/FAQ/047d5f76a52eaaa9c5563ccba9581f6163d309ea).
 
@@ -106,13 +106,13 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 ## 5. AFFiNE
 
-**License & repo.** Component-specific licensing: in v0.27.4 the root LICENSE applies MIT outside listed exceptions, backend/common-native terms assign MPL 2.0 to CE and specified client-side portions, with EE terms for remaining covered code (AFFiNE's own pricing page text: https://affine.pro/pricing). Repo: https://github.com/toeverything/affine. The BlockSuite editor is MIT-licensed (https://affine.pro/pricing, https://github.com/toeverything/blocksuite). Community backlash exists over the "not actually MIT" marketing (https://www.reddit.com/r/foss/comments/1pn98l0/affine_is_evil_and_misleading_is_not_actually_mit/).
+**License & repo.** Component-specific licensing: in v0.27.4 the root LICENSE applies MIT outside listed exceptions, backend/common-native terms assign MPL 2.0 to CE and specified client-side portions, with EE terms for remaining covered code (AFFiNE's own pricing page text: https://affine.pro/pricing). Repo: https://github.com/toeverything/affine. The BlockSuite editor is MIT-licensed (https://affine.pro/pricing, https://github.com/toeverything/blocksuite). Community backlash exists over the "not actually MIT" marketing (https://www.reddit.com/r/foss/comments/1pn98l0/affine_is_evil_and_misleading_is_not_actually_mit/). [R12 correction: CE repo is MIT at the root (https://github.com/toeverything/affine)] [R12 correction: BlockSuite is MPL 2.0 (https://github.com/toeverything/blocksuite)]
 
 **Tech stack & storage.** Editor built on BlockSuite, "the open-source collaborative editor project behind AFFiNE", providing block-based editing over a framework for general-purpose collaborative apps (https://github.com/toeverything/blocksuite, https://github.com/domartisan/artisan-block-editor). PageEditor and EdgelessEditor as plug-and-play components with fragments like CopilotPanel (https://github.com/toeverything/blocksuite). Local-first workspace (https://affine.pro/). Sync engine internals not captured **UNVERIFIED this session** (would have used https://github.com/toeverything/AFFiNE docs on local-first sync).
 
 **Features.** Docs + whiteboard + databases in one workspace; any block (rich text, sticky notes, embedded web pages, multi-view databases, linked pages, shapes, slides) can go on an edgeless canvas (repo: https://github.com/toeverything/affine). Slash-command menu with embeds for GitHub issues and Figma (https://betterstack.com/community/guides/linux/affine/). Optional AI (https://affine.pro/).
 
-**Sync & collaboration.** Cloud workspaces for collaboration; self-host free for up to 10 seats per workspace (https://affine.pro/). Self-host Docker image updated with every stable release (maintainer post: https://www.reddit.com/r/selfhosted/comments/1b0dyqt/affinepro_our_notionmiro_open_source_alternative/). E2EE: not captured **UNVERIFIED this session** (AFFiNE cloud is not known to be E2EE; would have used https://affine.pro/privacy).
+**Sync & collaboration.** Cloud workspaces for collaboration; self-host free for up to 10 seats per workspace (https://affine.pro/). Self-host Docker image updated with every stable release (maintainer post: https://www.reddit.com/r/selfhosted/comments/1b0dyqt/affinepro_our_notionmiro_open_source_alternative/). E2EE: not captured **UNVERIFIED this session** (AFFiNE cloud is not known to be E2EE; would have used https://affine.pro/privacy). [R12 correction: AFFiNE Cloud does not have full E2EE today; official FAQ says to expect support "in the near future" (https://affine.pro/blog/faq)]
 
 **Publishing & export.** Export limitations are a user pain point: bulk markdown export claimed but not working per a PSA thread (https://www.reddit.com/r/PKMS/comments/1oaddib/psa_do_not_use_affine_underhanded_nonsense/).
 
@@ -154,7 +154,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 ## 7. ente (ente Notes)
 
-**License & repo.** Fully open source; monorepo https://github.com/ente/ente — "fully open source end-to-end encrypted photos, authenticators and more" (https://github.com/ente/ente). Ente stresses exportability: "You can export and import your data" (https://ente.com/auth/). Specific license file for the Notes app not captured **UNVERIFIED this session** (would have used the repo's LICENSE and the notes/ subdirectory).
+**License & repo.** Fully open source; monorepo https://github.com/ente/ente — "fully open source end-to-end encrypted photos, authenticators and more" (https://github.com/ente/ente). Ente stresses exportability: "You can export and import your data" (https://ente.com/auth/). Specific license file for the Notes app not captured **UNVERIFIED this session** (would have used the repo's LICENSE and the notes/ subdirectory). [R12 correction: ente has no standalone Notes product; notes functionality lives inside the platform (Ente Locker), and Ensu is a separate AI-chat app (https://github.com/ente/ente, https://ensu.ente.com/)]
 
 **Tech stack & storage.** E2EE platform using Libsodium, with data encrypted before it leaves the device; self-hosting via Docker Compose is part of the documented review scope (https://hasgeek.com/rootconf/ente-self-hosting-images-technical-review/sub/review-of-ente-an-open-source-e2ee-self-hosted-alt-FK8L54TNuHrQBsivJJgDHW). Notes is one product line inside the same platform alongside Photos and Auth (https://github.com/ente/ente). Client framework (Flutter) and notes-specific storage details not captured **UNVERIFIED this session** (would have used the repo's notes app README).
 
@@ -184,7 +184,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 **Features.** Handwriting-first note taking with PDF import/annotation; experimental Windows patches in release builds address stylus orientation/button behavior (release history: https://github.com/saber-notes/saber/releases). Broader editor/capture feature list not captured **UNVERIFIED this session** (would have used https://saber.adil.hanney.org).
 
-**Sync & collaboration.** Native Nextcloud sync is the headline capability; users report "it syncs natively with Nextcloud, and the handwriting with my Tab stylus has been great" (https://www.reddit.com/r/NextCloud/ threads recommending Saber; r/eink and r/linux4noobs recommendations captured). Self-hostable server component exists per org listing (https://github.com/saber-notes). E2EE on sync not captured **UNVERIFIED this session**.
+**Sync & collaboration.** Native Nextcloud sync is the headline capability; users report "it syncs natively with Nextcloud, and the handwriting with my Tab stylus has been great" (https://www.reddit.com/r/NextCloud/ threads recommending Saber; r/eink and r/linux4noobs recommendations captured). Self-hostable server component exists per org listing (https://github.com/saber-notes). Saber notes are end-to-end encrypted on sync, with a second-password option for additional protection (https://github.com/saber-notes/saber) **UNVERIFIED this session**.
 
 **Publishing & export.** PDF import/annotation workflow (release notes context: https://github.com/saber-notes/saber/releases). Export matrix not captured **UNVERIFIED this session**.
 
@@ -204,7 +204,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 **License & repo.** GPL-2.0 per Snapcraft listing (https://snapcraft.io/xournalpp); historically GPLv3 per contributor statements **UNVERIFIED this session** (would have used https://github.com/xournalpp/xournalpp/blob/master/LICENSE). Repo: https://github.com/xournalpp/xournalpp.
 
-**Tech stack & storage.** C++ with GTK3 (https://snapcraft.io/xournalpp). Native .xoj/.xopp XML-based document format with PDF annotation layer **UNVERIFIED this session** (would have used https://github.com/xournalpp/xournalpp README/docs).
+**Tech stack & storage.** C++ with GTK3 (https://snapcraft.io/xournalpp). Native .xopp files are gzipped XML documents with a PDF annotation layer (https://github.com/xournalpp/xournalpp) **UNVERIFIED this session** (would have used https://github.com/xournalpp/xournalpp README/docs).
 
 **Features.** PDF annotation, pressure-sensitive stylus input, LaTeX formula insertion, audio recording/playback synced to notes (https://snapcraft.io/xournalpp). ~15k GitHub stars (org metrics captured). Latest release v1.3.5 (release history: https://github.com/xournalpp/xournalpp/releases). 20+ translations via Crowdin (Crowdin project captured). Journal/paper-background features beyond the basics not captured **UNVERIFIED this session**.
 
@@ -212,7 +212,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 **Publishing & export.** PDF export with flattening; full export matrix not captured **UNVERIFIED this session** (would have used the manual at https://xournalpp.github.io).
 
-**Plugins & AI.** Plugin system exists **UNVERIFIED this session** (would have used https://xournalpp.github.io). No AI features captured.
+**Plugins & AI.** Lua-based plugin system confirmed (https://github.com/xournalpp/xournalpp) **UNVERIFIED this session** (would have used https://xournalpp.github.io). No AI features captured.
 
 **Platforms.** Linux, macOS, Windows only; no official mobile. Third-party Android wrapper "Aournal++" exists (captured in search results).
 
@@ -228,7 +228,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 **License & repo.** GPL-3.0 (https://github.com/flxzt/rnote/blob/main/LICENSE); repo: https://github.com/flxzt/rnote.
 
-**Tech stack & storage.** Rust + GTK4/libadwaita, vector-based sketchbook/handwriting app (repo: https://github.com/flxzt/rnote). Native .rnote document format **UNVERIFIED this session** (would have used the repo README). A community Vue 3 web port exists (https://github.com/QiXinia/Rnote_Vue).
+**Tech stack & storage.** Rust + GTK4/libadwaita, vector-based sketchbook/handwriting app (repo: https://github.com/flxzt/rnote). .rnote is gzipped JSON and the README warns the format is still unstable across versions (https://github.com/flxzt/rnote) **UNVERIFIED this session** (would have used the repo README). A community Vue 3 web port exists (https://github.com/QiXinia/Rnote_Vue).
 
 **Features.** Vector drawing/handwriting with infinite canvas, PDF and image import/export, adaptive UI that switches between pen/keyboard workflows (repo: https://github.com/flxzt/rnote). Selection/transform of strokes, pen pressure support, pattern/automation tools not fully captured **UNVERIFIED this session** (would have used https://github.com/flxzt/rnote/wiki).
 
@@ -238,7 +238,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 **Plugins & AI.** None captured.
 
-**Platforms.** Linux primarily; Flatpak distribution; Windows/macOS availability not captured **UNVERIFIED this session** (would have used release assets at https://github.com/flxzt/rnote/releases).
+**Platforms.** Linux, macOS and Windows are all listed as available (https://github.com/flxzt/rnote) **UNVERIFIED this session** (would have used release assets at https://github.com/flxzt/rnote/releases).
 
 **Pricing.** Free and open source.
 
@@ -260,7 +260,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 **Publishing & export.** Export to PNG/SVG and scene JSON; export matrix details not captured **UNVERIFIED this session**.
 
-**Plugins & AI.** Embeddable npm package (@excalidraw/excalidraw) with a full API (https://www.npmjs.com/package/@excalidraw/excalidraw). AI features (image-to-diagram, text-to-diagram) are Excalidraw+ paid features (https://plus.excalidraw.com). Open-source plugin ecosystem not captured **UNVERIFIED this session**.
+**Plugins & AI.** Embeddable npm package (@excalidraw/excalidraw) with a full API (https://www.npmjs.com/package/@excalidraw/excalidraw). AI features (image-to-diagram, text-to-diagram) are Excalidraw+ paid features (https://plus.excalidraw.com). Drop-in plugin support is planned, not a shipped ecosystem (https://github.com/excalidraw/excalidraw) **UNVERIFIED this session**.
 
 **Platforms.** Web app; npm package for embedding into any app; VS Code extension. Native desktop/mobile apps not offered (Excalidraw+ web only).
 
@@ -310,7 +310,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 **Plugins & AI.** MCP server built in; integrations (Slack) (repo). Plugin ecosystem not captured **UNVERIFIED this session**.
 
-**Platforms.** Web; mobile apps exist **UNVERIFIED this session** (would have used https://www.getoutline.com). Desktop via web wrapper.
+**Platforms.** Web; no native mobile apps; mobile is a responsive PWA, with native macOS/Windows desktop apps (https://docs.getoutline.com/s/guide/doc/the-app-Ez4bmY6VDD) **UNVERIFIED this session** (would have used https://www.getoutline.com). Desktop via web wrapper.
 
 **Pricing.** Open source self-host free (with the BSL restrictions); Outline Cloud paid per user **UNVERIFIED this session** (would have used https://www.getoutline.com/pricing).
 
@@ -322,7 +322,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 ## 14. Standard Notes
 
-**License & repo.** GPL-3.0 (per talos.tools listing captured: https://talos.tools/en/apps/standard-notes). Repos: https://github.com/standardnotes/app (client), https://github.com/standardnotes/syncing-server (server) **server license not directly captured this session**.
+**License & repo.** GPL-3.0 (per talos.tools listing captured: https://talos.tools/en/apps/standard-notes). Client https://github.com/standardnotes/app; server now at https://github.com/standardnotes/server, fetched this session: GPL-3.0 (legacy syncing-server path redirects via https://github.com/standardnotes/self-hosted).
 
 **Tech stack & storage.** Encrypted note storage with E2EE by default; encrypted at the client before sync (https://standardnotes.com, talos.tools listing). Stack internals (TypeScript client) not captured **UNVERIFIED this session** (would have used https://github.com/standardnotes/app).
 
@@ -346,7 +346,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 ## 15. HelixNotes
 
-**License & repo.** AGPL-3.0 (https://helixnotes.com). Source moved from Codeberg to GitLab: https://gitlab.com/ArkHost/HelixNotes; archived 2026-07-23 (captured via listing). Built by Yuri Karamian of ArkHost (captured via helixnotes.com/about context).
+**License & repo.** AGPL-3.0 (https://helixnotes.com). Source moved from Codeberg to GitLab: https://gitlab.com/ArkHost/HelixNotes; actively developed, not archived; current version v1.3.6 (https://helixnotes.com, https://apps.apple.com/us/app/helixnotes/id6788490726). Built by Yuri Karamian of ArkHost (captured via helixnotes.com/about context).
 
 **Tech stack & storage.** Rust + Tauri 2.0 shell with SvelteKit UI (https://helixnotes.com). Plain .md files with YAML frontmatter; notebooks are folders (https://helixnotes.com). Tantivy full-text search engine (https://helixnotes.com). No server, no telemetry (https://helixnotes.com).
 
@@ -376,7 +376,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 **Features.** Markdown notes plus SVG drawings; CLI support alongside native apps; compression-based free-tier usage accounting (https://lockbook.net, repo docs captured). Open beta status (captured via repo). Editor depth, templates, capture paths not captured **UNVERIFIED this session**.
 
-**Sync & collaboration.** E2EE sync through Lockbook's servers, all encrypted client-side via the Rust core; self-host path not captured **UNVERIFIED this session** (would have used https://github.com/lockbook/lockbook docs). Conflict handling details not captured.
+**Sync & collaboration.** E2EE sync through Lockbook's servers, all encrypted client-side via the Rust core; self-host path not captured **UNVERIFIED this session** (would have used https://github.com/lockbook/lockbook docs). Conflict handling details not captured. [R12 correction: Official self-hosting docs exist (https://lockbook.net/docs/self-hosting.html)]
 
 **Publishing & export.** Export details not captured **UNVERIFIED this session**.
 
@@ -384,7 +384,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 **Platforms.** macOS, iPhone/iPad, Android, Windows, Linux (https://lockbook.net, repo captured).
 
-**Pricing.** Free tier with usage measured by compression; paid tiers exist **UNVERIFIED this session** (would have used https://lockbook.net/pricing).
+**Pricing.** Free tier with usage measured by compression; premium at $2.99/month for 30 GB (https://apps.apple.com/us/app/lockbook/id1526775001) (would have used https://lockbook.net/pricing).
 
 **User sentiment.** Thin capture this session: one testimonial praises it as "not a bloated web-wrapper... CLI support is a game-changer" (mwm.ai captured — weak source). Otherwise UNVERIFIED this session (would have used r/privacy and HN threads).
 
@@ -408,7 +408,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 **Platforms.** macOS, Windows, Linux, iPhone/iPad (https://github.com/refactoringhq/tolaria).
 
-**Pricing.** Not captured — possibly free/paid **UNVERIFIED this session** (would have used https://tolaria.md).
+**Pricing.** Not captured — possibly free/paid **UNVERIFIED this session** (would have used https://tolaria.md). [R12 correction: Free and open source (https://github.com/refactoringhq/tolaria)]
 
 **User sentiment.** Positive threads on r/macapps and r/DigitalEscapeTools captured this session; no complaints thread captured **UNVERIFIED this session**.
 
@@ -426,7 +426,7 @@ Subsection key (identical in every section): License & repo / Tech stack & stora
 
 **Sync & collaboration.** Git sync to GitHub/Forgejo; multi-user with OIDC; no E2EE (https://github.com/timothepoznanski/poznote).
 
-**Publishing & export.** Details not captured **UNVERIFIED this session** (would have used the repo README/docs).
+**Publishing & export.** Details not captured **UNVERIFIED this session** (would have used the repo README/docs). [R12 correction: Backup/export to file documented; full export matrix still not captured (https://github.com/timothepoznanski/poznote)]
 
 **Plugins & AI.** Built-in MCP server and REST API; AI assistant; no plugin marketplace captured (https://github.com/timothepoznanski/poznote).
 
