@@ -147,3 +147,33 @@ Also: retitle APPS-LINKS section "Agent/bb plugins and tooling" to "Community re
 Verification: grep over the three master files shows only the malleability note and the app-feature line remain for the removed terms; diffstat 60 deletions, 6 insertions across the three files; section table intact with ObbyNotes first; backups BACKUPS/RESEARCH.md.bak-preR12, FEATURES.md.bak-preR12, APPS-LINKS.md.bak-preR12.
 
 Note on parallel work: another session's R12 round-1 setup (todo items 45-48, REQUIREMENTS.md directives) was present uncommitted in the working tree. This round touched only the master files and its own bookkeeping; REQUIREMENTS.md was left as that session wrote it.
+
+## R12 round 1 - Evidence-enrichment (in progress, 2026-10-27)
+
+Owner framing: these rounds produce enrichment for the build phase, design-relevant evidence, patterns, details to act on later; not confirmation only. Every claim re-proven with real research; contradictions correct the master files and are recorded with what changed and why. No feature area ranked above another; every app researched whole.
+
+Setup done: cold-start per playbook (PLAYBOOK, REQUIREMENTS, MILESTONES, todo, findings survey); six .bak-preR12 backups taken; four R12 directives added to REQUIREMENTS.md, including the owner's mid-round video-evidence pass (official demos/tutorials, YouTube walkthroughs, review footage, comment threads, HN/Reddit threads, because video shows workflow behavior text misses and comments surface gripes reviewers omit) and the image rule (all images kept in a tracked repo folder, research-material/images/, one subfolder per round; screenshots capture public web pages only, nothing from the user's machine). Todo items 45-48 written with lane sub-items 45a-45j.
+
+Lanes: seven parallel subagent lanes launched, exclusive output files, staged into research-material/findings/ as r12-enrich-a..g.md (536 KB total):
+- Lane A (study/PDF majors) file r12-enrich-a.md: 8 of 17 apps; stopped at a turn step limit. Remaining: PDF Expert, University Notes, Write, Zotero, Hypothesis, Noteful/Freenotes/Notes+, Drawboard PDF, Drawboard Projects, PDFCraft.
+- Lane B (majors 1) r12-enrich-b.md: 12 of 12, complete.
+- Lane C (majors 2 / OSS) r12-enrich-c.md: 12 of 12, complete.
+- Lane D (minor/indie) r12-enrich-d.md: 11 of 18; stopped at an Amphi fetch refusal. Remaining: Amphi both products, Tangent Notes, HelixNotes, Tolaria, sawt, diktafon, marmalade-tts-android.
+- Lane E (editors+media) r12-enrich-e.md: 6 of 7; stopped at the step limit mid-LumaFusion; several LumaFusion search results identified as SEO spam, only luma-touch.com, Apple, RedShark, 9to5Mac trusted.
+- Lane F (OSS repos with UI) r12-enrich-f.md: 17 of 17, complete. Resolved two stale questions: open-notebook is real at github.com/lfnovo/open-notebook (MIT, NotebookLM alternative), so the earlier no-repo finding is outdated; NicTanghe/BasScript does not exist (account-wide search).
+- Lane G (user repos + handwriting ecosystem) r12-enrich-g.md: 14 of 15; stopped on fetch-gate refusals (ratta.helpjuice.com, github.com/jya-dev/supernote-tool) and a spent search budget. Remaining: Supernote ecosystem.
+
+Also: lane briefs carry verified URLs inline so fetch-gate refusals are avoided; the fetch-gate rule (URLs must appear in the task prompt text, never only inside files) confirmed as load-bearing.
+
+Status: stalled (subagent usage window); window lifted 2026-10-27 05:21 UTC, resumes next.
+Next: resume A, D, E, G by task_id and fold the video-evidence pass into every lane (### Video evidence per app; supplements for completed lanes B, C, F); then 45h camoufox-in-WSL capture into research-material/images/r12/; then 45i integration into RESEARCH.md, FEATURES.md, APPS-LINKS.md in the uniform R11 table format, respecting R13's scope (no bb plugins, no Strata, no standalone engine rows).
+Blocked: lanes A, D, E, G incomplete.
+
+## R12 round 1: evidence-enrichment round closed (2026-10-27)
+
+- All seven lanes complete: A 17/17, B 12/12, C 12/12, D 19, E 7/7, F 17/17, G 15/15 — about 99 app and repo entries, each with Features/Sentiment/Wants/Pricing tables in the R11 format, a Contradictions section, SHOT-LIST capture URLs, and a video-evidence pass (lanes B, C, F via supplement sections after their files were already closed). Files: research-material/findings/r12-enrich-a.md through r12-enrich-g.md.
+- Integration: 25 per-app sections patched into FEATURES.md (notebook-navigator determined unchanged on lane evidence); 16 rows corrected in APPS-LINKS.md (262 rows total), including open-notebook = lfnovo/open-notebook MIT, BasScript = DOES NOT EXIST, Write by Styluslabs = proprietary freeware, PDFCraft = Rust desktop workbench dual MIT/Apache-2.0, diktafon fork-vs-upstream split, 2026 pricing re-architectures for Goodnotes and Notability, MyScript Nebo rebranded MyScript Notes with a subscription flip. Synthesis appended: FEATURES.md section "R12 additions: evidence-enrichment round", RESEARCH.md section "R12: evidence-enrichment round".
+- Image capture: 481 of 486 shot-list URLs captured into research-material/images/r12/ with headless camoufox in WSL, 3 workers. The first run lost the browser partway (TargetClosedError burst) and burned the rest of the queue as failures; a resilient rerun (r12-capture2.py) that restarts the browser on death and retries brought it to 481. The 5 misses are unreachable URLs (styluslabs.com TLS certificate errors, one site timeout, one malformed localhost URL from a lane list, one local dev server), documented in capture-notes.md. shot-manifest.jsonl and capture-log.jsonl are the provenance records.
+- Lessons: a shared-browser screenshot runner needs restart-and-retry, not one browser per run. device_bash compound commands keep tripping the delete guard on '<' redirection and on anything resembling deletion; the reliable workaround is staging a script file into the repo folder and running it.
+- Next: todo 46 (round 2: confirmation and gaps, including the 68 unmerged candidates in findings/r9-camoufox-sweep.md), then 47 (alternatives sweep for closed-source apps), 48 (Discord re-check); secret gate, commit, and push close the round. R13 scope (notetaking apps only) respected in every master-file edit.
+

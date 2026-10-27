@@ -8,6 +8,12 @@ set -u
 cd "$(dirname "$0")/.."
 RULES="research-material/local-rules.txt"
 fail=0
+# IPv4 rule (octet-bounded, see MILESTONES R8). Loopback documentation
+# addresses (127.x.y.z, e.g. an app's own "runs at 127.0.0.1:5190") are not
+# identifying infrastructure and are stripped before the non-loopback test
+# (refined in R12; proof-of-fire test in MILESTONES R12).
+IPRE='(^|[^A-Za-z0-9.])((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])([^0-9.]|$)'
+LOOPSTRIP='s/127\.([0-9]{1,3}\.){2}[0-9]{1,3}/127.0.0.LOOP/g'
 
 if [ ! -f "$RULES" ]; then
   echo "SECRET CHECK WARNING: $RULES missing; running pattern-only scan."
@@ -15,8 +21,12 @@ fi
 
 scan() {
   local label="$1" f="$2"
-  if grep -nEa 'DESKTOP-[A-Z0-9]{6}|C:.Users\.[A-Za-z]|(^|[^A-Za-z0-9.])((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])([^0-9.]|$)' "$f" >/dev/null 2>&1; then
-    echo "SECRET-HIT [$label] $f (machine/user-path/IP pattern)"
+  if grep -nEa 'DESKTOP-[A-Z0-9]{6}|C:.Users\\.[A-Za-z]' "$f" >/dev/null 2>&1; then
+    echo "SECRET-HIT [$label] $f (machine/user-path pattern)"
+    fail=1
+  fi
+  if grep -nEa "$IPRE" "$f" 2>/dev/null | sed -E "$LOOPSTRIP" | grep -Ea "$IPRE" >/dev/null 2>&1; then
+    echo "SECRET-HIT [$label] $f (non-loopback IP pattern)"
     fail=1
   fi
   if [ -f "$RULES" ]; then
@@ -43,7 +53,10 @@ done < <( { git ls-files -z; find . -type f -not -path './.git/*' -not -path './
 
 if [ -d .git ]; then
   for c in $(git rev-list --all 2>/dev/null); do
-    git grep -nEa 'DESKTOP-[A-Z0-9]{6}|C:.Users\.[A-Za-z]|(^|[^A-Za-z0-9.])((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])([^0-9.]|$)' "$c" -- . 2>/dev/null | head -3 | while read -r line; do
+    git grep -nEa 'DESKTOP-[A-Z0-9]{6}|C:.Users\\.[A-Za-z]' "$c" -- . 2>/dev/null | head -3 | while read -r line; do
+      echo "SECRET-HIT [history $c] $line"
+    done
+    git grep -nEa "$IPRE" "$c" -- . 2>/dev/null | sed -E "$LOOPSTRIP" | grep -Ea "$IPRE" | head -3 | while read -r line; do
       echo "SECRET-HIT [history $c] $line"
     done
   done
