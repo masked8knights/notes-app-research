@@ -45,6 +45,7 @@
 41. [passed] R9 camoufox: 334 URLs scraped from WSL camoufox (323 ok, 11 documented errors); corpus in scraper/r9-corpus.jsonl; 71 UNVERIFIED-fill candidates matched into research-material/findings/r9-camoufox-sweep.md; three strongest fills merged into r7-feature-inventory-majors.md L110 (Notability $99.99/yr Pro, 400 AI quizzes/month) and r7-feature-inventory-handwriting.md L45 (Stylus Labs listing makes no pressure claim) and L119 (LiquidText tier structure confirmed, dollar figures still UNVERIFIED).
 42. [passed] R9 close: MILESTONES entry, secret gate (passed: worktree and history clean), commit, push. Pushed as c99ab8a to main.
 43. [passed] R10: project/ folder created (MILESTONES, todo, REQUIREMENTS, PLAYBOOK moved via git mv, AGENTS.md root pointer rewritten, README updated); RESEARCH.md, FEATURES.md, APPS-LINKS.md rebuilt into per-section tables by three parallel lanes with verified carry-over (270/270 entries, 209/209 URLs, all UNVERIFIED markers and findings pointers preserved); backups in BACKUPS/*.bak-preR10.
+44. [passed] R11: FEATURES.md regrouped into uniform per-section tables (Features | Sentiment | Wants | Pricing and platforms), 747/747 rows verified; AGENTS.md verified non-blank on the pushed remote via fresh clone.
 
 ## Status notes
 

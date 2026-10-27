@@ -114,3 +114,12 @@ Learned: RESEARCH.md and FEATURES.md cite findings filenames rather than raw URL
 Next: Phase 2 plan remains deferred per user instruction ("dont make a build plan just yet"). The 68 unmerged UNVERIFIED fill candidates remain in research-material/findings/r9-camoufox-sweep.md.
 Blocked: none.
 Status: done
+
+### Round R11: uniform table groups in FEATURES.md, AGENTS.md verification
+Date: 2026-10-27
+Did: Two fixes from the user's feedback. (1) FEATURES.md restructured again: every app and repo section now uses the same groups in the same order, **Features** (Area | Detail), **Sentiment** (What people say), **Wants** (What people want changed), **Pricing and platforms** (Item | Detail), with empty groups omitted. The previous single-table format had 199 rows labeled Standout and 101 labeled Wants in one shared first column, which the owner found unreadable. All 747 rows verified surviving row by row (Features 374, Sentiment 199, Wants 101, Pricing 73); UNVERIFIED markers, R8 fact-check notes, prices and domains all verified at identical counts. The Standout rows contained both praise and complaints, so the group is named Sentiment rather than Likes. Conventions line rewritten to match. (2) AGENTS.md verified against the pushed remote with a fresh clone: 459 bytes locally, in HEAD, and on GitHub; the owner's blank-file report did not reproduce, likely a stale view.
+Result: FEATURES.md is scannable: small uniform tables, one claim per row, no label soup. APPS-LINKS.md and RESEARCH.md were already uniform within themselves (App/Repo | Open source | Link | Key facts, and Topic | What the research found | Evidence) and were left alone.
+Learned: Ask the file's row semantics before grouping: the source lane had used Standout as a catch-all for sentiment of both polarities, so a mechanical rename to Likes would have filed grievances under praise.
+Next: Phase 2 plan remains deferred per user instruction. The 68 unmerged UNVERIFIED fill candidates remain in research-material/findings/r9-camoufox-sweep.md.
+Blocked: none.
+Status: done
