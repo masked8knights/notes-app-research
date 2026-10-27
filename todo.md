@@ -30,7 +30,7 @@
 26. [passed] R7 wave 1 (user's in-depth demand): exhaustive per-app feature inventories — majors lane (20 apps incl. 4-app top-up), open-source lane (19 apps), handwriting/study lane (19 subjects).
 27. [passed] R7 wave 1: internet-wide user-sentiment sweep (Reddit, app-store patterns, HN): 8 ranked demands with 2+ independent sources each.
 28. [passed] R7 wave 1: Evernote/Notion remake landscape: 33 projects mapped, 17 alive / 13 dead with evidence.
-29. [in progress] R7 wave 2: feature inventories for the 11 user-supplied repos (2 lanes, passed); integrate all R7 files into master files; gate; push.
+29. [passed] R7 wave 2: feature inventories for the 11 user-supplied repos (2 lanes, passed); integrate all R7 files into master files; gate; push. Evidence: commit 0189532 pushed to main (13 files, 2,189 insertions); secret gate passed after its IP rule was refined to octet-bounded IPv4 and proven to still fire on real IPs.
 
 ## Status notes
 
