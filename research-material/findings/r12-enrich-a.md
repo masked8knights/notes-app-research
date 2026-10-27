@@ -991,14 +991,16 @@ Sources: https://apps.apple.com/us/app/notes-notes-for-pencil/id1609361989 ; htt
 ### Visual surface
 - Windows (flagship): a radial/favorites markup UX — a customizable favorites bar of markup tools, radial-menu option, pressure-sensitive ink, canvas-first document view; dark mode; grid paper backgrounds (notebook, Gregg/Pitman ruled, graph, engineering, isometric) (https://www.drawboard.com/pdf, https://sourceforge.net/software/product/Drawboard-PDF/).
 - iOS/Android/web: same markup toolkit; Drawboard Cloud as the new home for shared docs (https://slashdot.org/software/p/Drawboard-PDF/).
+- Students page details (2026-10-27): a new Markup Toolbar keeps every tool within reach; measurement tooling reimagined with shape leader lines, label position and endpoint style options; annotations can be locked in place and sync in real time; cloud document storage caps of 10/50/unlimited docs, max file size 40 MB/200 MB/unlimited, 150k/600k AI credits per month, document conversion up to 200 MB/1 GB per doc (https://www.drawboard.com/solutions/for-students).
 - SHOT-LIST:
   - Windows favorites-bar markup on a plan drawing — https://www.drawboard.com/pdf (product page visuals)
   - Drawboard Cloud sharing screen — https://slashdot.org/software/p/Drawboard-PDF/ (copy) and App Store screenshots https://apps.apple.com/us/app/drawboard-pdf-paperless-tools/id1086503728
   - Pricing page (PDF vs Projects split) — https://www.drawboard.com/pricing
+  - Students page Markup Toolbar, measurement leader lines and lock-in-place annotation visuals — https://www.drawboard.com/solutions/for-students
 
 ### Docs analysis
 - Free "Pro Basic/Essentials" plan since May 2020 (previously a $10 once-off); paid plans: Pro Lite $5.99/mo, Pro Plus $9.99/mo, Pro Unlimited $18.99/mo, 30% annual discount; some lifetime IAPs exist on iOS (Pro Lite $49.99, Pro Unlimited $159.99 per App Store IAP list) (https://sourceforge.net/software/product/Drawboard-PDF/, https://apps.apple.com/us/app/drawboard-pdf-paperless-tools/id1086503728, https://support.drawboard.com/hc/en-us/articles/4409163761423-Understanding-our-Subscription-Model)
-- Students/teachers: one-off payment for Pro, no subscription, no renewals (https://www.drawboard.com/pricing)
+- Students/teachers: one-off payment for Pro, no subscription, no renewals (https://www.drawboard.com/pricing). The students page (fetched 2026-10-27) spells this out: a one-time payment for a 3-year Pro Plus license sized to an average degree, student tiers at Pro Plus $10 and Pro Unlimited $20; logging in with a student email claims the discount instantly after the school domain validates (alternative proof of enrollment accepted by support ticket), the license covers Web/Windows/macOS/iOS/Android with automatic sync, and access lapses when the student email stops being valid unless the user upgrades to a regular license (https://www.drawboard.com/solutions/for-students)
 - Legacy License program (2025): acknowledging early users, restores premium features for legacy $10 buyers (https://www.drawboard.com/blog/acknowledging-drawboards-early-users-and-introducing-the-legacy-license)
 - Feature moves: some Essentials tools were moved into Pro tiers (https://www.drawboard.com/pdf/new-pro-plans); 256-bit encryption, passwords, digital signatures, full offline mode (https://sourceforge.net/software/product/Drawboard-PDF/)
 - License must be linked to a cloud account on sign-in (https://support.drawboard.com/hc/en-us/articles/4406251856527-Plans-Benefits)
