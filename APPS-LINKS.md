@@ -84,22 +84,10 @@ Compiled from every findings file in research-material/findings/ plus links-inve
 | EvotecIT/OfficeIMO | y (MIT) | https://github.com/EvotecIT/OfficeIMO | .NET library that reads and writes OneNote files, with OfficeIMO.MarkdownRenderer. findings: community-digest, integrations-1 |
 | OfficeIMO (community-linked fork) | MIT (.NET) via canonical repo | URL UNVERIFIED; findings could not confirm it exists; canonical repo EvotecIT/OfficeIMO | Repo name referenced in community links. findings: community-digest |
 
-## Agent/bb plugins and tooling
+## Community repos and Obsidian plugins
 
 | App / Repo | Open source | Link | Key facts |
 |---|---|---|---|
-| MGrin/awesome-bb-plugins | y (license not stated) | https://github.com/MGrin/awesome-bb-plugins | Curated list of bb (Bubbles/agent) plugins. findings: deep-repos-c |
-| amrtawfik160/bb-plugin-antigravity | y (license not stated) | https://github.com/amrtawfik160/bb-plugin-antigravity | bb plugin named antigravity. findings: deep-repos-c |
-| davideiffert/bb-plugin-calm | y (MIT) | https://github.com/davideiffert/bb-plugin-calm | bb plugin named calm. findings: deep-repos-c |
-| iamhenry/bb-opencode | y (license unknown) | https://github.com/iamhenry/bb-opencode | bb integration for opencode (license unknown in findings). findings: deep-repos-c |
-| masked8knights/bb-kilocode | y (license unknown) | https://github.com/masked8knights/bb-kilocode | bb integration for kilocode (license unknown in findings). findings: deep-repos-c |
-| bborn/bb-tui | y (license not stated) | https://github.com/bborn/bb-tui | Go-based TUI for bb, the verified repo. findings: deep-repos-c |
-| slogsdon/bb-tui | not stated | https://github.com/slogsdon/bb-tui (UNVERIFIED; findings note it appears not to exist) | Repo name referenced for bb TUI. findings: deep-repos-c |
-| DeePractice/bb-verified-plugins | y (license not stated) | https://github.com/DeePractice/bb-verified-plugins | Collection of verified bb plugins. findings: deep-repos-c |
-| ShaatLa/bb-plugins | y (license not stated) | https://github.com/ShaatLa/bb-plugins | Collection of bb plugins. findings: deep-repos-c |
-| iamhenry/ai-project-starter-kit | y (license unknown) | https://github.com/iamhenry/ai-project-starter-kit | AI project starter kit (license unknown in findings). findings: deep-repos-c |
-| daijro/openplayground | y (license not stated) | https://github.com/daijro/openplayground (plus PR 6) | Playground for local LLMs discussed in findings, with a pull request noted. findings: deep-repos-c, thread-c-local-models |
-| Niko1221/Strata | y (MIT) | https://github.com/Niko1221/Strata | Local-LLM engine/tooling. findings: deep-repos-c |
 | ThatSheepGuy22/ObbyNotes | not stated | URL UNVERIFIED | Repo name referenced in community links. findings: community-digest |
 | notebook-navigator (johansan) | y (GPL-3.0) | https://github.com/johansan/notebook-navigator | Obsidian plugin for file/notebook navigation. findings: community-digest |
 | obsidian-numerals (gtg922r) | y (MIT) | https://github.com/gtg922r/obsidian-numerals | Obsidian plugin for numerical evaluations. findings: community-digest |
@@ -185,7 +173,6 @@ Compiled from every findings file in research-material/findings/ plus links-inve
 | Phi-4-mini-instruct | y (MIT) | https://huggingface.co/microsoft/Phi-4-mini-instruct | Microsoft small LLM candidate. findings: thread-c-local-models |
 | SmolLM3-3B | y (Apache-2.0) | https://huggingface.co/HuggingFaceTB/SmolLM3-3B | Hugging Face's small open LLM candidate, GGUF builds by bartowski. findings: thread-c-local-models |
 | Gemma3-1B-IT (litert-community) | custom ToU (Gemma) | (litert-community model page referenced in findings) | Small Gemma variant for on-device inference via LiteRT. findings: thread-c-local-models |
-| llama.cpp | y (MIT) | https://github.com/ggml-org/llama.cpp | The GGUF inference engine backing local LLM plans. findings: thread-c-local-models |
 | whisper.cpp | y (MIT) | https://github.com/ggml-org/whisper.cpp | On-device speech-to-text engine, MIT-licensed. findings: thread-c-local-models |
 | Whisper tiny/base/small | y (MIT, per model cards) | https://huggingface.co/openai/whisper-tiny, https://huggingface.co/openai/whisper-base, https://huggingface.co/openai/whisper-small | OpenAI STT model sizes evaluated for on-device use. findings: thread-c-local-models |
 | Moonshine tiny/base | y (MIT) | https://github.com/moonshine-ai/moonshine (models https://huggingface.co/UsefulSensors/moonshine) | Efficient STT alternative, 27M/61M parameters. findings: thread-c-local-models |
@@ -193,7 +180,6 @@ Compiled from every findings file in research-material/findings/ plus links-inve
 | Kokoro-82M | y (Apache-2.0) | https://huggingface.co/hexgrad/Kokoro-82M (code https://github.com/hexgrad/kokoro, zh variant via onnx-community) | Small TTS model candidate. findings: thread-c-local-models |
 | Piper | y (MIT original; GPL continuation) | https://github.com/rhasspy/piper (original archived; continuation https://github.com/OHF-Voice/piper1-gpl under GPL) | Lightweight TTS engine candidate. findings: thread-c-local-models |
 | everyai-com/snapbench | y (license not stated) | https://github.com/everyai-com/snapbench | Benchmarking project for local models mentioned in findings. findings: thread-c-local-models |
-| MediaPipe LLM inference | n (SDK) | https://ai.google.dev/edge/mediapipe | Google's on-device LLM inference stack. findings: thread-c-local-models |
 
 ## Media/document components
 
@@ -259,7 +245,6 @@ Six further input lines were pointers, not entries: "Covered by the capsuleos / 
 | Phi-4-mini-instruct | - | https://huggingface.co/microsoft/Phi-4-mini-instruct | MIT-licensed small LLM candidate. findings: thread-c-local-models |
 | Gemma 3n E4B-it | - | https://huggingface.co/google/gemma-3n-E4B-it | Evaluated but rejected on custom Gemma ToU. findings: thread-c-local-models |
 | Gemma3-1B-IT | - | litert-community model page (per findings) | On-device Gemma variant via LiteRT. findings: thread-c-local-models |
-| llama.cpp | - | https://github.com/ggml-org/llama.cpp | Inference engine for local LLMs (MIT). findings: thread-c-local-models |
 | whisper.cpp | - | https://github.com/ggml-org/whisper.cpp | On-device STT engine (MIT). findings: thread-c-local-models |
 | Whisper tiny/base/small | - | https://huggingface.co/openai/whisper-tiny, https://huggingface.co/openai/whisper-base, https://huggingface.co/openai/whisper-small | STT model size candidates (MIT). findings: thread-c-local-models |
 | Moonshine tiny/base | - | https://github.com/moonshine-ai/moonshine and https://huggingface.co/UsefulSensors/moonshine | Efficient STT candidate (MIT, 27M/61M params). findings: thread-c-local-models |
@@ -321,7 +306,7 @@ Six further input lines were pointers, not entries: "Covered by the capsuleos / 
 | HTR/OCR engines A: ML Kit Digital Ink, TrOCR, PARSeq, docTR, Tesseract, PaddleOCR v5 | ML Kit proprietary; TrOCR, PARSeq, docTR, Tesseract, PaddleOCR open (Apache-2.0; TrOCR MIT) | (see Handwriting/OCR/HTR table above) | ML Kit ~20 MB/language, stroke-input only; TrOCR best open handwriting: IAM CER 2.89 large / 3.42 base / 4.22 small; PARSeq scene text only; docTR 9.41 CER on handwriting; Tesseract 49.58% CER on handwriting, disqualified as HTR; PaddleOCR v5 mobile 16 MB recognition, handwriting claim Chinese-weighted. findings: R6-htr-a |
 | HTR/OCR engines B: ocrmypdf, docling, paperless-ngx, Apple Vision + PencilKit, OnlineHTR, ArabicOCR_KHATT, palm-rejection techniques | docling MIT + Granite-Docling-258M Apache-2.0; paperless-ngx GPL-3.0; OnlineHTR MIT; ArabicOCR_KHATT MIT; Apple closed; ocrmypdf MPL-2.0 | (see Handwriting/OCR/HTR table above) | ocrmypdf concepts only; docling layout 633 ms/page x86 CPU, ~506 MiB weights; paperless-ngx concepts only; Apple Vision + PencilKit closed, Swift bridge only; OnlineHTR github.com/PellelNitram/OnlineHTR; ArabicOCR_KHATT github.com/FixFips/ArabicOCR_KHATT, KHATT dataset licensing a hard checkpoint; palm-rejection techniques per platform (Android MotionEvent, iPadOS drawingPolicy/UIPencilInteraction, Windows pen-first suppression). findings: R6-htr-b |
 | Handwriting ecosystem: Xournal++, RNote, Supernote .note format | Xournal++ GPL-2.0, C++/GTK3, v1.3.8; RNote GPL-3.0-or-later (corrected from earlier assumption; Rust/GTK4, v0.14.x; rnote-engine unpublished on crates.io) | (see Handwriting/OCR/HTR table above) | Supernote .note format fully reverse-engineered 2026-08 (philips/supernote-typescript vector-format-spec; Walnut356/snlib Rust parser, no license). findings: R6-xournal |
-| Obsidian plugins (16 researched, registry cross-checked): Excalidraw, InkedMark, Badges, List Callouts, Meta Bind, Sheets, Numerals, Notebook Navigator, Nostr Writer, Dataview, Templater, Omnisearch, Kanban, Remotely Save, LiveSync | y unless noted (Excalidraw AGPL-3.0, Nostr Writer MIT, Dataview MIT, Omnisearch GPL-3.0, Kanban GPL-3.0, Remotely Save Apache-2.0 with PolyForm-locked pro folder, LiveSync MIT/Apache) | (see Agent/bb plugins table above) | Templater license conflict: AGPL package.json vs GPL badge, no LICENSE file, needs human check; Kanban orphaned maintenance. findings: R6-plugins |
+| Obsidian plugins (16 researched, registry cross-checked): Excalidraw, InkedMark, Badges, List Callouts, Meta Bind, Sheets, Numerals, Notebook Navigator, Nostr Writer, Dataview, Templater, Omnisearch, Kanban, Remotely Save, LiveSync | y unless noted (Excalidraw AGPL-3.0, Nostr Writer MIT, Dataview MIT, Omnisearch GPL-3.0, Kanban GPL-3.0, Remotely Save Apache-2.0 with PolyForm-locked pro folder, LiveSync MIT/Apache) | (see Community repos and Obsidian plugins table above) | Templater license conflict: AGPL package.json vs GPL badge, no LICENSE file, needs human check; Kanban orphaned maintenance. findings: R6-plugins |
 | OSS repos batch D: nexlore, jpzk/opensidian, thiagovasconcelosti/opensidian, cheeterdev/notes, Meridian-Notes, xnotes-android | y (nexlore AGPL-3.0; jpzk/opensidian GPL-3.0-or-later; thiagovasconcelosti/opensidian MIT; Meridian-Notes MIT per an R6 search snapshot, UNVERIFIED in R8; xnotes-android MIT) | (see Open-source notes apps and engines table above) | nexlore byte-preserving partial write-back + conflict copies concept; jpzk/opensidian Rust+Tauri v2 clean-room Obsidian clone, closest existing project to ours, restricted-mode plugin trust design; thiagovasconcelosti/opensidian Node MCP server module pullable; cheeterdev/notes dead end: two-sentence README, no code, no license; Meridian-Notes (realbynl) pure-Rust custom-drawn editor, rope-buffer/UI crates possibly valuable; xnotes-android (shardulvs) 269 stars, open .xnote/xtemplate formats, no-network users immediately demand encryption+sync. findings: R6-batch-d |
 | Nostr/transports: NIP-44 v2, NIP-59 gift wrap, NIP-78 kind 30078, NIP-77 negentropy, Blossom, nostr/nostr-sdk Rust crates | y (Blossom public domain; nostr crates MIT) | (see Sync/CRDT/storage table above) | NIP-44 v2 Cure53-audited; verdict: concepts-only for sync plus optional export path (relay economics, single-identity-key conflict); negentropy set-reconciliation and NIP-44 padding discipline worth pulling regardless; two nostrapps.com pages 404, apps researched via primary sources. findings: R6-nostr |
 

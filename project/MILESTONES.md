@@ -123,3 +123,27 @@ Learned: Ask the file's row semantics before grouping: the source lane had used 
 Next: Phase 2 plan remains deferred per user instruction. The 68 unmerged UNVERIFIED fill candidates remain in research-material/findings/r9-camoufox-sweep.md.
 Blocked: none.
 Status: done
+
+## R13 - Housekeeping: scope the master files to notetaking apps (2026-10-27)
+
+User instruction: remove all getbb.app and AI inference engine mentions; for getbb.app keep only how malleable it is; only notetaking apps wanted in the master files.
+
+What was removed from RESEARCH.md, FEATURES.md, APPS-LINKS.md (findings files untouched per the no-delete rule):
+- The whole bb plugin ecosystem block in APPS-LINKS.md: awesome-bb-plugins, bb-plugin-antigravity, bb-plugin-calm, bb-opencode, bb-kilocode, bborn/bb-tui, slogsdon/bb-tui, bb-verified-plugins, bb-plugins.
+- ai-project-starter-kit and openplayground (AI tooling, not notetaking).
+- Niko1221/Strata everywhere: its FEATURES.md section, its APPS-LINKS row, and its mention in RESEARCH.md's liftable-assets list.
+- llama.cpp: both APPS-LINKS rows (Local AI section and Model candidates section) and its mention in the FEATURES.md local-AI runtimes synthesis line.
+- MediaPipe LLM inference row (on-device LLM stack).
+- getbb.app: the RESEARCH.md exclusion note reworded so the only thing it records is how malleable getbb.app is as a platform.
+
+What was kept, deliberately:
+- RESEARCH.md line 19 still names getbb.app once, inside the exclusion note, for the malleability quality the user asked to keep.
+- FEATURES.md keeps the voice-notes app line "vendored whisper.cpp + llama.cpp": that is a notetaking app's own AI feature, not a standalone engine entry; flagged to the user in chat.
+- STT/TTS models, LLM model candidates (Qwen, Gemma, Phi, SmolLM3), and whisper.cpp stayed: they are the AI features notetaking apps embed, not engine entries.
+- project/MILESTONES.md history (including its older getbb.app exclusion line) untouched: the log records what happened.
+
+Also: retitle APPS-LINKS section "Agent/bb plugins and tooling" to "Community repos and Obsidian plugins" (its remaining rows are notes-related community repos and Obsidian plugins) and fix the Obsidian-plugins cross-reference that pointed at the old title.
+
+Verification: grep over the three master files shows only the malleability note and the app-feature line remain for the removed terms; diffstat 60 deletions, 6 insertions across the three files; section table intact with ObbyNotes first; backups BACKUPS/RESEARCH.md.bak-preR12, FEATURES.md.bak-preR12, APPS-LINKS.md.bak-preR12.
+
+Note on parallel work: another session's R12 round-1 setup (todo items 45-48, REQUIREMENTS.md directives) was present uncommitted in the working tree. This round touched only the master files and its own bookkeeping; REQUIREMENTS.md was left as that session wrote it.

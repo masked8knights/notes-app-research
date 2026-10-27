@@ -1151,45 +1151,6 @@ Two unrelated projects share the name; the findings cover both.
 
 Sources: deep-repos-c.md, github-repos-2.md
 
-## Strata (Niko1221/Strata)
-
-**Features**
-
-| Area | Detail |
-|---|---|
-| Core | A local LLM inference engine that runs models on the user's own machine. |
-| Install | One-click installer. |
-| Models | Automatic engine/model selection for the user's hardware. |
-| Models | GPU offload with CPU fallback. |
-| API | OpenAI-compatible and Anthropic-compatible localhost API endpoints so existing agents and tools can point at local models. |
-| API | A `strata connect` flow that configures those agents. |
-| Benchmark | Built-in benchmark suite. |
-| Image generation | Via a Stable Diffusion CLI companion (`sd-cli`). |
-
-**Sentiment**
-
-| What people say |
-|---|
-| The localhost server speaking OpenAI/Anthropic wire formats is the pragmatic route for private AI features in a notes app (works against any local or remote model). |
-| The "auto-pick engine for this hardware" UX and the benchmark-harness discipline (reproducible local benchmarks shipped with the app) both transfer. |
-| The issue tracker is the busy part: 439 open issues across labels [TUI], [GUI], [Engine], [Benchmark], [Other], active as recently as 2026-10-26. |
-| Community members posting their own benchmark runs on consumer RTX hardware. |
-
-**Wants**
-
-| What people want changed |
-|---|
-| Nothing recorded at feature level beyond the labeled issue surface above. |
-
-**Pricing and platforms**
-
-| Item | Detail |
-|---|---|
-| Platform | Desktop app plus terminal client. |
-| License | MIT. |
-
-Sources: deep-repos-a.md, github-repos-1.md
-
 ## xnotes-android (shardulvs/xnotes-android)
 
 **Features**
@@ -1569,7 +1530,7 @@ Cross-cutting conclusion carried from the findings: the three recurring gaps acr
 - Local AI verdict: small open-weights models are viable per task with license discipline. Qwen3-Embedding-0.6B (Apache) as default RAG embedder, sqlite-vec brute-force sufficing at notes-app corpus sizes.: findings/r6-local-ai-models.md
 - Local AI verdict: batch Whisper feasible on phones while streaming STT needs Moonshine (MIT) or platform APIs (whisper.cpp Android streaming runs slower than realtime; the exact ratio UNVERIFIED in the R8 fact-check).: findings/r6-local-ai-models.md
 - Local AI verdict: Kokoro-82M the desktop TTS pick, KittenTTS and Supertonic phone-size but with license warnings, Piper GPL (concepts only).: findings/r6-local-ai-models.md
-- Local AI runtimes: llama.cpp, MLC, ExecuTorch, Core ML, ONNX Runtime, MediaPipe/LiteRT, plus Rust-native candle, mistral.rs, burn.: findings/r6-local-ai-models.md
+- Local AI runtimes: MLC, ExecuTorch, Core ML, ONNX Runtime, MediaPipe/LiteRT, plus Rust-native candle, mistral.rs, burn.: findings/r6-local-ai-models.md
 - Local AI verdict: Ollama is a desktop distribution layer, never the mobile mechanism.: findings/r6-local-ai-models.md
 - Local AI license traps: Llama Community and Gemma Terms are not OSI licenses; a pre-ship license-verification checklist is in the findings file.: findings/r6-local-ai-models.md
 - Minor-apps verdict: across Squid, Concepts, Saber, Workflowy, DEVONthink, ente, Kinopio, Poznote, Tangent, Lockbook and the rest, the demand pattern is consistent.: findings/r6-batch1-minor-note-apps.md, findings/r6-batch2-minor-note-apps.md

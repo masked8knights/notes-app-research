@@ -16,7 +16,7 @@ Synthesis of Phase 1 research. Raw findings live in `research-material/findings/
 | Thread E (handwriting/OCR on-device) | Answer lane. | research-material/findings/thread-e-handwriting.md |
 | Thread F (editor cores, shell, embedded-block threat model) | Answer lane. | research-material/findings/thread-f-editor-platform.md |
 | Thread G (trust and UX unknowns) | Answer lane. | research-material/findings/thread-g-trust-ux.md |
-| Exclusions honored | getbb.app and the whole "bb" plugin ecosystem were dropped from research per user instruction. | (user instruction) |
+| Exclusions honored | getbb.app and the whole "bb" plugin ecosystem were dropped from research per user instruction; the one quality worth carrying over is how malleable getbb.app is as a platform. | (user instruction) |
 
 ## What the community wants (strongest signals)
 
@@ -226,8 +226,8 @@ Sources: apps-likes-wants.md
 
 | Topic / question | What the research found | Evidence |
 |---|---|---|
-| Not-found resolutions | NicTanghe/BasScript does not exist (canonical counterpart: BaseScript.lang, irrelevant to this project). ThatSheepGuy22/ObbyNotes is not findable. slogsdon/bb-tui resolves to bborn/bb-tui (Go); a community member's OfficeIMO fork resolves to EvotecIT/OfficeIMO (MIT, .NET). | deep-repos-a.md, deep-repos-b.md, deep-repos-c.md |
-| Top liftable Rust-first assets | realbynl/Meridian-Notes (native Rust editor architecture, license to confirm), AlienTechSoftware/notecraft (Rust core/UI split, MIT/Apache-2.0, alpha 0.0.6), EkarinLB/e-journal (egui + encryption-at-rest, MIT), Niko1221/Strata (localhost LLM API pattern, MIT), gtg922r/obsidian-numerals (math engine as pure module, MIT, ~600 stars), hughhowey/neo (plain-file data model, MIT, ~1.6k stars), johansan/notebook-navigator (virtualized 100k-note browser; GPL-3.0 so spec-only, 2,782 stars / 1M+ downloads), kostyk348/CapsuleCraft (.eml-per-note storage, MIT). | deep-repos-a.md, deep-repos-b.md, deep-repos-c.md |
+| Not-found resolutions | NicTanghe/BasScript does not exist (canonical counterpart: BaseScript.lang, irrelevant to this project). ThatSheepGuy22/ObbyNotes is not findable. A community member's OfficeIMO fork resolves to EvotecIT/OfficeIMO (MIT, .NET). | deep-repos-a.md, deep-repos-b.md, deep-repos-c.md |
+| Top liftable Rust-first assets | realbynl/Meridian-Notes (native Rust editor architecture, license to confirm), AlienTechSoftware/notecraft (Rust core/UI split, MIT/Apache-2.0, alpha 0.0.6), EkarinLB/e-journal (egui + encryption-at-rest, MIT), gtg922r/obsidian-numerals (math engine as pure module, MIT, ~600 stars), hughhowey/neo (plain-file data model, MIT, ~1.6k stars), johansan/notebook-navigator (virtualized 100k-note browser; GPL-3.0 so spec-only, 2,782 stars / 1M+ downloads), kostyk348/CapsuleCraft (.eml-per-note storage, MIT). | deep-repos-a.md, deep-repos-b.md, deep-repos-c.md |
 | AFFiNE deep dive | BlockSuite duality, OctoBase sync, MIT. | deep-repos-c.md |
 
 Sources: deep-repos-a.md, deep-repos-b.md, deep-repos-c.md
