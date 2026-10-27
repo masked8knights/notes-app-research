@@ -8,7 +8,7 @@ Compiled from every findings file in research-material/findings/ plus links-inve
 
 | App / Repo | Open source | Link | Key facts |
 |---|---|---|---|
-| Obsidian | n (status disputed in findings) | https://obsidian.md | Proprietary markdown notes app with canvas, plugins, and a plugin ecosystem, the central comparison target throughout the research. findings: community-digest, apps-likes-wants, thread-a-sync, thread-b-storage, thread-d-indexing, thread-f-editor-platform, thread-g-trust-ux, integrations-1 |
+| Obsidian | n (status disputed in findings) | https://obsidian.md | Proprietary markdown notes app with canvas, plugins, and a plugin ecosystem, the central comparison target throughout the research; v1.15 desktop (Oct 2026) ships Pele, kepano's MIT Mermaid renderer, 100-500x faster and ~230 kB gz vs ~1.6 MB, Mermaid 12.1.0 compatible (R12 round 4). findings: community-digest, apps-likes-wants, thread-a-sync, thread-b-storage, thread-d-indexing, thread-f-editor-platform, thread-g-trust-ux, integrations-1, r12-discord-recheck |
 | Obsidian Publish | n | https://publish.obsidian.md | Obsidian's paid publishing service, cited as an example of hosted publishing. findings: linked-apps-1 |
 | OneNote | n | https://www.microsoft.com/microsoft-365/onenote | Microsoft's free-form note app with canvas and handwriting, a key inspiration for the project. findings: community-digest, apps-likes-wants, thread-b-storage, thread-e-handwriting, integrations-1 |
 | Evernote | n | https://evernote.com/en-us/features/notes-app | Classic proprietary notes app, cited for its search and export pain points. findings: community-digest, thread-d-indexing, thread-g-trust-ux |
@@ -74,13 +74,15 @@ Compiled from every findings file in research-material/findings/ plus links-inve
 
 | App / Repo | Open source | Link | Key facts |
 |---|---|---|---|
-| AlienTechSoftware/notecraft | y (MIT OR Apache-2.0) | https://github.com/AlienTechSoftware/notecraft | Rust-based OneNote-style notes app project, the main "notecraft" repo. findings: deep-repos-a, community-digest |
+| AlienTechSoftware/notecraft | y (MIT OR Apache-2.0) | https://github.com/AlienTechSoftware/notecraft | Rust-based OneNote-style notes app project, the main "notecraft" repo; v0.0.6 alpha shipped the .one importer (PR #6, parsing via OfficeIMO MIT, revision store via notecraft-onenote crate), RTL text half-done, builds unsigned (R12 round 4). findings: deep-repos-a, community-digest, r12-discord-recheck |
 | joshmaster2165/Notecraft | y (license not stated) | https://github.com/joshmaster2165/Notecraft | Separate Notecraft fork/repo with the same name. findings: deep-repos-a |
 | matteo-andreuzza/notecraft | y (license not stated) | https://github.com/matteo-andreuzza/notecraft | Another distinct Notecraft repo. findings: deep-repos-a |
 | queball1999/notecraft PR 56 | y (per repo) | https://github.com/queball1999/notecraft/pull/56 | Pull request on a notecraft repo discussed in findings. findings: deep-repos-a |
 | DerKezorm/nexlore | y (AGPL-3.0) | https://github.com/DerKezorm/nexlore | Notes app repo. findings: deep-repos-a |
-| realbynl/Meridian-Notes | y (MIT) | https://github.com/realbynl/Meridian-Notes | Notes app repo (license unknown in findings). findings: deep-repos-a |
-| kostyk348/CapsuleCraft (capsuleos) | y (MIT) | https://github.com/kobaltgit/capsuleos | CapsuleCraft/capsuleos notes engine, remade.wiki project. findings: deep-repos-a, community-digest, thread3-digest; latest release v1.8.1 (2026-10-27, R12 lane 5) |
+| realbynl/Meridian-Notes | y (MIT) | https://github.com/realbynl/Meridian-Notes | Notes app repo (license unknown in findings); Discord updates past r12-enrich-f: inline calculator, split views, Ctrl+K context menu, Lua scripting alongside Rust plugins, per-vault layout folder, 600 MHz-class performance target, working title vote ONYX Notes (R12 round 4). findings: deep-repos-a, r12-enrich-f, r12-discord-recheck |
+| kostyk348/CapsuleCraft (capsuleos) | y (MIT) | https://github.com/kobaltgit/capsuleos | CapsuleCraft/capsuleos notes engine, remade.wiki project; identity resolved in R12 round 4: capsuleos is the earlier name/repo, renamed CapsuleCraft around v1.5, kobaltgit the collaborator account hosting releases, Discord "Remade my project to Egui" (2026-10-23) matches the egui shell finding. findings: deep-repos-a, community-digest, thread3-digest, r12-enrich-f, r12-discord-recheck; latest release v1.8.1 (2026-10-27, R12 lane 5) |
+| ZenNotes | y (MIT) | https://github.com/adibhanna/zennotes | Keyboard-first local Markdown notes, Vim motions, MCP server for note search, Go-based self-host; named once in Discord with no URL and several same-named projects exist, so which one was meant is UNVERIFIED (R12 round 4). findings: r12-discord-recheck |
+| Macro Docs | y (AGPL-3.0) | https://macro.com/documents | Open-source Notion/Google Docs/Obsidian hybrid, Rust backend, SolidJS frontend, docs isolated in Durable Objects, local-first edits; surfaced via openalternative.co embed in Discord (R12 round 4). findings: r12-discord-recheck |
 | jpzk/opensidian | y (GPL-3.0) | https://github.com/jpzk/opensidian | Obsidian-adjacent repo named opensidian. findings: deep-repos-b; releases page up to v0.8.0 (R12 lane 5) |
 | thiagovasconcelosti/opensidian | y (MIT) | https://github.com/thiagovasconcelosti/opensidian | Distinct second repo named opensidian. findings: deep-repos-b |
 | EkarinLB/e-journal | y (MIT) | https://github.com/EkarinLB/e-journal | Journaling app, remade.wiki project. findings: deep-repos-b, thread3-digest |
