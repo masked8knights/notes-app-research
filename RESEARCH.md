@@ -156,3 +156,17 @@ Wave 3 (Obsidian plugins, OSS batch D, Nostr): 16 plugins license-verified at ea
 Verify pass: 34 entries tracked, 22 resolved, 5 partially, 7 not found. License corrections applied (diamond-types ISC, secsync Apache-2.0 and dormant, snlib and TanaMigrator no-license-unpullable). The "Notion uses Yjs" adoption claim was dropped for lack of a source. Coverage-audit statement updated: the full-depth sweep is complete; every inventoried link now has full-depth research or a documented not-found disposition.
 
 Sources: the twelve findings/r6-*.md files.
+
+## R7: per-app feature inventories, internet-wide sentiment, remake landscape, and the user's 11 supplied repos
+
+Trigger: the user's standing demand for the most in-depth research plus 11 newly supplied repos with the instruction "research all of these in depth every feature, etc." Six subagent lanes ran (three had been cancelled by a plan limit in the first attempt and were relaunched successfully).
+
+Feature inventories: the majors lane (20 apps, Obsidian through tldraw) completed with a 4-app top-up (DEVONthink, Kinopio, Concepts, tldraw) after its first run was cancelled; the OSS lane (19 apps, Logseq through Tangent Notes); the handwriting/study lane (19 subjects, completed in the earlier run) covering the stored-ink vs live-conversion vs search-only split of HWR, pricing-model transitions as the dominant complaint pattern, and the finding that no app in the batch claims E2EE. Every captured claim carries a URL; gaps are marked UNVERIFIED this session.
+
+Internet-wide sentiment sweep: Reddit (r/NoteTaking, r/PKMS, r/ObsidianMD, r/Notion, r/Evernote, r/logseq, r/GoodNotes, r/selfhosted), HN evidence from search-indexed threads (hn.algolia.com JSON fetches were blocked), app-store review patterns via community threads (store pages not crawlable this session). Result: 8 ranked demands each with 2+ independent sources, 3 single-source items quarantined as unconfirmed, plus praise patterns, pricing-resentment patterns, handwriting-specific sentiment, an honesty check on local-first/E2EE demand, and a migration-pain section.
+
+Remake landscape: 33 projects mapped. 17 verified alive, 13 verified dead/dormant with evidence, 3 unresolvable this session. Four death patterns: vendor adopt-then-drop (Focalboard), single-maintainer exit (Notea, Athens), incumbent-API dependence (NixNote2, Geeknote, Everpad), acqui-deletion (Skiff).
+
+User repos lanes: all 11 supplied repos researched at repo HEAD plus releases, issues, and community reception. Batch A: turtl/desktop, Zettlr, QOwnNotes, blinko, edgeever, notion-re. Batch B: zappynotes, owlistic, NexaNote, memos, siyuan. SiYuan received the deepest treatment: Go kernel + Electron shell, .sy block-JSON files, FTS5, SQLCipher option, dejavu snapshot repo with repo-key E2EE over official cloud/S3/WebDAV/local, attribute views, riff flashcards, MCP server, paid sync gating. Pull-from verdicts recorded per repo in FEATURES.md.
+
+Sources: findings/r7-feature-inventory-majors.md, findings/r7-feature-inventory-oss.md, findings/r7-feature-inventory-handwriting.md, findings/r7-user-sentiment-sweep.md, findings/r7-remakes-evernote-notion.md, findings/r7-user-repos-a.md, findings/r7-user-repos-b.md

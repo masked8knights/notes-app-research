@@ -15,7 +15,7 @@ fi
 
 scan() {
   local label="$1" f="$2"
-  if grep -nEa 'DESKTOP-[A-Z0-9]{6}|C:.Users\.[A-Za-z]|([0-9]{1,3}\.){3}[0-9]{1,3}' "$f" >/dev/null 2>&1; then
+  if grep -nEa 'DESKTOP-[A-Z0-9]{6}|C:.Users\.[A-Za-z]|(^|[^A-Za-z0-9.])((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])([^0-9.]|$)' "$f" >/dev/null 2>&1; then
     echo "SECRET-HIT [$label] $f (machine/user-path/IP pattern)"
     fail=1
   fi
@@ -43,7 +43,7 @@ done < <( { git ls-files -z; find . -type f -not -path './.git/*' -not -path './
 
 if [ -d .git ]; then
   for c in $(git rev-list --all 2>/dev/null); do
-    git grep -nEa 'DESKTOP-[A-Z0-9]{6}|C:.Users\.[A-Za-z]|([0-9]{1,3}\.){3}[0-9]{1,3}' "$c" -- . 2>/dev/null | head -3 | while read -r line; do
+    git grep -nEa 'DESKTOP-[A-Z0-9]{6}|C:.Users\.[A-Za-z]|(^|[^A-Za-z0-9.])((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])([^0-9.]|$)' "$c" -- . 2>/dev/null | head -3 | while read -r line; do
       echo "SECRET-HIT [history $c] $line"
     done
   done

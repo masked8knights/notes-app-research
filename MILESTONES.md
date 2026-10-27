@@ -76,3 +76,13 @@ Fixed: Identifier and Windows-path scan of all 12 findings files run before tran
 Next: Phase 2 plan remains deferred per user instruction ("dont make a build plan just yet").
 Blocked: none.
 Status: done
+
+### Round R7: per-app inventories, internet-wide sentiment, remake landscape, and the user's 11 repos
+Date: 2026-10-27
+Did: Six subagent lanes ran after a first attempt lost three of five lanes to a plan limit (relaunched successfully once the window reset): feature-inventory majors (20 apps, 4-app top-up after a cancelled first run), feature-inventory OSS (19 apps), feature-inventory handwriting (19 subjects, completed in the earlier run), internet-wide sentiment sweep (8 ranked demands with 2+ independent sources each), Evernote/Notion remake landscape (33 projects, 17 alive / 13 dead with evidence), and two lanes covering the 11 user-supplied repos (turtl/desktop, Zettlr, QOwnNotes, blinko, edgeever, notion-re, zappynotes, owlistic, NexaNote, memos, siyuan). Seven findings files (~334 KB, ~1,900 lines) written and transferred into research-material/findings/. Master files integrated: APPS-LINKS.md (R7 section: 11 new repo entries plus inventory/remake/sentiment summary lines), FEATURES.md (R7 synthesis), RESEARCH.md (R7 section), todo.md (items 26-28).
+Result: The pull-from map gained its two strongest sync/E2EE candidates: SiYuan's dejavu snapshot/provider abstraction with repo-key E2EE (with WebDAV ETag fragility flagged as an anti-pattern) and edgeever's triple-write storage with an offline sync queue. NexaNote contributes the per-point-pressure ink canvas reference. The sentiment sweep independently confirmed the Discord threads' top demands with wider evidence.
+Learned: Plan limits can cancel subagent lanes mid-run; a lane file's existence does not prove its content is complete, so every surviving file must be verified against its brief before integration. Small projects researched honestly (notion-re, zappynotes) yield "nothing to lift" verdicts, which are findings, not padding.
+Fixed: The cancelled majors lane's incomplete file (sections 1-16 of 20) was completed rather than rewritten, preserving the earlier work.
+Next: Phase 2 plan remains deferred per user instruction; no build plan.
+Blocked: none.
+Status: done

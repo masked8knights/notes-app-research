@@ -26,7 +26,11 @@
 22. [passed] R6 wave 1: full-depth lanes on minor note apps batch 1 (Squid, Concepts, Saber, Workflowy, DEVONthink, ente, Kinopio), batch 2 (Muse, Thymer, Ideon, OwlLuna, Akasha, Poznote, Tangent Notes, HelixNotes, Lockbook, Pele, Obsidian Publish, video editors), editors/publishers (Dillinger, Ghost, Homebrewery, Proofeditor, Amphi, Samsung Notes), sync/CRDT stack (Automerge, Yjs/yrs, Loro, Diamond Types, Beelay/Keyhive, any-sync, iroh, diff-match-patch, p2panda, BlockSuite, secsync, TanaMigrator, Cryptomator, Tailscale/Netbird, IlowObsidianSync).
 23. [passed] R6 wave 2: HTR/OCR engines A (ML Kit, TrOCR family, PARSeq, docTR, Tesseract, PaddleOCR), B (ocrmypdf, docling, paperless-ngx, Apple Vision/PencilKit, OnlineHTR, ArabicOCR_KHATT, palm-rejection), Xournal++/RNote/Supernote ecosystem, local AI models deep dive.
 24. [passed] R6 wave 3: Obsidian plugin cluster, OSS repos batch D (nexlore, Meridian-Notes, opensidian x2, cheeterdev/notes, xnotes-android), Nostr/transports/extras, UNVERIFIED-items verify-and-fill pass.
-25. [in progress] R6 final: integrate all waves into master files, synthesis into FEATURES.md, gate, push.
+25. [passed] R6 final: integrate all waves into master files, synthesis into FEATURES.md, gate, push. Pushed as e6f8070 and e6fee2d after the gate passed; remote verified.
+26. [passed] R7 wave 1 (user's in-depth demand): exhaustive per-app feature inventories — majors lane (20 apps incl. 4-app top-up), open-source lane (19 apps), handwriting/study lane (19 subjects).
+27. [passed] R7 wave 1: internet-wide user-sentiment sweep (Reddit, app-store patterns, HN): 8 ranked demands with 2+ independent sources each.
+28. [passed] R7 wave 1: Evernote/Notion remake landscape: 33 projects mapped, 17 alive / 13 dead with evidence.
+29. [in progress] R7 wave 2: feature inventories for the 11 user-supplied repos (2 lanes, passed); integrate all R7 files into master files; gate; push.
 
 ## Status notes
 
