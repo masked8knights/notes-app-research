@@ -43,7 +43,7 @@
 39. [passed] R9 links: APPS-LINKS.md rework done — forge URLs for all open-source projects (remade.wiki project lines collapsed to pointers, Prosecraft/ScriptCraft kept as no-repo records), vendor features pages for closed-source apps (Evernote, Notion, Goodnotes, Descript, Heptabase, Kinopio, LiquidText, MarginNote, Squid, Thymer); backup at BACKUPS/APPS-LINKS.md.bak-preR9.
 40. [passed] R9 repo cleanup: bench.js and discord-thread3-parser.py moved to ARCHIVE/ and untracked; repo is markdown plus raw research data; checks/ holds only the secret gate.
 41. [passed] R9 camoufox: 334 URLs scraped from WSL camoufox (323 ok, 11 documented errors); corpus in scraper/r9-corpus.jsonl; 71 UNVERIFIED-fill candidates matched into research-material/findings/r9-camoufox-sweep.md; three strongest fills merged into r7-feature-inventory-majors.md L110 (Notability $99.99/yr Pro, 400 AI quizzes/month) and r7-feature-inventory-handwriting.md L45 (Stylus Labs listing makes no pressure claim) and L119 (LiquidText tier structure confirmed, dollar figures still UNVERIFIED).
-42. [in progress] R9 close: MILESTONES entry, secret gate, commit, push.
+42. [passed] R9 close: MILESTONES entry, secret gate (passed: worktree and history clean), commit, push. Pushed as c99ab8a to main.
 
 ## Status notes
 
