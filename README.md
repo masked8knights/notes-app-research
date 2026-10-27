@@ -15,8 +15,8 @@ holds the research only, accumulated across repeated full-depth passes (R1-R6).
 - `FEATURES.md` — the master feature list: everything people said they want,
   grouped, with per-round synthesis at the end.
 - `research-material/` — raw inputs and findings. `findings/` holds one file per
-  research lane (~70 files); the original source exports and parsed transcripts
-  are gitignored.
+  research lane (the R8 fact-check verdict tables live alongside them); the
+  original source exports and parsed transcripts are gitignored.
 - `MILESTONES.md` — chronological round log. `todo.md` — task state.
   `REQUIREMENTS.md` — stated requirements. `LEARNINGS.md` — durable lessons.
 
@@ -36,6 +36,11 @@ was committed.
 - R5: IdeaCraft, Drawboard PDF, and the study/PDF-textbook landscape.
 - R6: full-depth sweep of every remaining inventoried item: 12 findings files,
   a verify pass over every unverified claim, and license corrections throughout.
+- R7: exhaustive per-app feature inventories for every inventoried app, an
+  internet-wide sentiment sweep, and the Evernote/Notion remake landscape.
+- R8: full fact-check of the master files in six parallel verification lanes
+  (see `research-material/findings/r8-factcheck-corrections.md`); corrections
+  applied to `FEATURES.md`, `APPS-LINKS.md`, and `apps-likes-wants.md`.
 
 ## Reading order
 

@@ -31,6 +31,15 @@
 27. [passed] R7 wave 1: internet-wide user-sentiment sweep (Reddit, app-store patterns, HN): 8 ranked demands with 2+ independent sources each.
 28. [passed] R7 wave 1: Evernote/Notion remake landscape: 33 projects mapped, 17 alive / 13 dead with evidence.
 29. [passed] R7 wave 2: feature inventories for the 11 user-supplied repos (2 lanes, passed); integrate all R7 files into master files; gate; push. Evidence: commit 0189532 pushed to main (13 files, 2,189 insertions); secret gate passed after its IP rule was refined to octet-bounded IPv4 and proven to still fire on real IPs.
+30. [passed] R8 fact-check, lane 1: iPad/study apps incl. user-flagged Amphi error (Discord linked useamphi.com; findings glued it to the unrelated open-source repo github.com/amphi2024/notes - two different products).
+31. [passed] R8 fact-check, lane 2: PKM majors claims (Obsidian, Notion, OneNote, Evernote, Tana, Reflect, Anytype, Logseq).
+32. [passed] R8 fact-check, lane 3: canvas/minor apps claims (Miro, Milanote, Tolaria, AFFiNE, Squid, Concepts, Workflowy, DEVONthink, Kinopio, ente, Saber, Lockbook, Poznote, Tangent, Heptabase, Samsung Notes).
+33. [passed] R8 fact-check, lane 4: OSS repos + plugin claims (CapsuleCraft, Meridian, notecraft, e-journal, neo, notebook-navigator, opensidian x2, Strata, xnotes, diktafon, marmalade, ConvertOneNote2MarkDown, OfficeIMO, nexlore, cheeterdev, Obsidian plugins).
+34. [passed] R8 fact-check, lane 5: integration components claims (OnlyOffice, Stirling, Excalidraw, VLC, Audacity, OBS, GIMP, Krita, Photopea, Godot, Blender, Kdenlive).
+35. [passed] R8 fact-check, lane 6: HTR/OCR + sync stack + local AI + Nostr + sentiment numbers.
+36. [passed] R8: apply corrections to FEATURES.md (25 edits), APPS-LINKS.md (Amphi pairing, Meridian license note), apps-likes-wants.md (Amphi attribution); corrections documented in research-material/findings/r8-factcheck-corrections.md with the six lane verdict tables.
+37. [passed] Repo cleanup: move one-off scripts from checks/ to ARCHIVE, fix stale paths (FEATURES.md header points at assistant-workspace findings dir), README refresh.
+38. [in progress] R8 close: MILESTONES entry, secret gate, commit, push.
 
 ## Status notes
 
@@ -38,5 +47,6 @@
 - R5 launched on the user's coverage question plus new material: IdeaCraft link and the BookCraft study-notebook idea (Drawboard PDF named as inking reference).
 - R6 launched on the user's directive "I dont want varied, I want everything to be reasearched in full and in depth": 12 lanes across 3 waves, all done; master files integrated; the gate and push close item 25.
 - Item 8 explicitly deferred on user instruction: "dont make a build plan just yet".
+- Camoufox UNVERIFIED-filling task (user, this session): targets extracted (415 UNVERIFIED lines, 309 distinct URLs in ThauraTest/scraper/), camoufox package install interrupted. DEFERRED on user redirect to the R8 fact-check; resume after R8 if wanted.
 - Subagent lanes write only to their own findings file in findings/; main session is the only writer of RESEARCH.md, todo.md, MILESTONES.md.
 - R4 gate fixes: raw thread-3 exports untracked and gitignored; history scan case fix proven on a scratch file; 15 author-name rules now in the gitignored local rules file; secret-bearing one-shot helper scripts stubbed in checks/.
