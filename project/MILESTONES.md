@@ -214,3 +214,10 @@ Blocked: lanes A, D, E, G incomplete.
 - Coverage confirmations worth noting: monogr.ph v5 spec content re-confirmed from the pasted copy in the export against linked-apps-2.md; joshmaster2165/Notecraft and the monogr.ph content needed no changes; Goodnotes Android-port failure and the FOSS-iPad essays already covered in community-digest and linked-apps-2.
 - Files changed this round: APPS-LINKS.md (2 new rows, 3 rows' findings pointers and facts supplemented, Obsidian Pele note), RESEARCH.md (R12 round-4 section), project/todo.md (item 48), new findings/r12-discord-recheck.md. Backups: BACKUPS/*.bak-preR12r4 taken before the master-file edits.
 - Next: R12 rounds complete (47, 48 closed). Secret gate, commit, and push close this round and the R12 series.
+
+## Addendum: ML recognition links note (2026-11-06)
+
+- Task: user-requested link reference for every recognition technology the research surfaced (handwriting, OCR, image ML), open source or practical-copy paths, plus a fresh web sweep of the 2026 OCR-model landscape.
+- New file: research-material/findings/ml-recognition-links.md, eight sections: digital ink (ML Kit Digital Ink, PencilKit, MyScriptJS, xournalpp_htr), page-image HTR (Kraken, Calamari, PyLaia, eScriptorium, TrOCR), printed multilingual OCR (PaddleOCR, RapidOCR, EasyOCR, docTR, Tesseract 5.5.3, Surya, Pix2Text), document VLMs (PaddleOCR-VL, MinerU2.5-Pro, GLM-OCR, olmOCR, DeepSeek-OCR, LightOnOCR-3), the ente on-device ML pattern, adjacent recognizers (Seshat, LaTeX-OCR, $P, WritePad, OpenScan), quick picks, what stays closed.
+- Licenses carried over from findings where verified; UNVERIFIED kept on docTR, Surya, eScriptorium, OpenScan, and three model repo links the sweep named without giving URLs (GLM-OCR, DeepSeek-OCR, LightOnOCR-3).
+- Files changed: new findings/ml-recognition-links.md, project/MILESTONES.md (this entry). Backup: BACKUPS/MILESTONES.md.bak-preR13 taken before the edit.
